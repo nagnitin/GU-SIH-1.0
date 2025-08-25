@@ -1,0 +1,70 @@
+import React, { useState, useEffect } from 'react';
+
+const CountdownTimer: React.FC = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    // Set a far future date to show "Coming Soon" effect
+    const targetDate = new Date('2026-01-01T00:00:00').getTime();
+
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000)
+        });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const timeUnits = [
+    { value: timeLeft.days, label: 'Days' },
+    { value: timeLeft.hours, label: 'Hours' },
+    { value: timeLeft.minutes, label: 'Minutes' },
+    { value: timeLeft.seconds, label: 'Seconds' }
+  ];
+
+  return (
+    <div className="text-center">
+      <h3 className="text-2xl font-bold mb-6 text-green-400 retro-font">Event Starts In</h3>
+      <div className="flex justify-center space-x-4 perspective-1000">
+        {timeUnits.map((unit, index) => (
+          <div 
+            key={unit.label}
+            className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-600/30 rounded-xl p-4 min-w-[80px] transform-gpu hover:scale-110 transition-transform duration-300"
+            style={{
+              transformStyle: 'preserve-3d',
+              transform: `rotateX(${Math.sin(Date.now() / 1000 + index) * 5}deg) rotateY(${Math.cos(Date.now() / 1000 + index) * 5}deg)`
+            }}
+          >
+            <div className="text-3xl font-bold text-green-400 pixel-font mb-1">
+              {unit.value.toString().padStart(2, '0')}
+            </div>
+            <div className="text-sm text-gray-300 retro-font">
+              {unit.label}
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="text-sm text-gray-400 mt-4 retro-font">
+        Coming Soon - Dates to be announced
+      </p>
+    </div>
+  );
+};
+
+export default CountdownTimer; 
