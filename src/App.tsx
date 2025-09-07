@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Calendar, Users, Trophy, MapPin, Clock, Mail, Phone, Code, Zap, Target } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -22,6 +22,7 @@ import LazyComponent from './components/LazyComponent';
 
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   useEffect(() => {
     // Optimized hero section animations
     if (heroRef.current) {
@@ -57,6 +58,24 @@ function App() {
       );
     });
   }, []);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (isMobileMenuOpen && !target.closest('header')) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
 
   return (
       <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
@@ -102,13 +121,70 @@ function App() {
             <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap">
               Register
             </button>
-            <button className="md:hidden text-white hover:text-emerald-400 transition-colors p-1">
+            <button 
+              className="md:hidden text-white hover:text-emerald-400 transition-colors p-1"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
               </svg>
-          </button>
+            </button>
           </div>
         </nav>
+        
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900/95 backdrop-blur-sm border-t border-green-400/30 z-50">
+            <div className="px-4 py-6 space-y-4">
+              <a 
+                href="#about" 
+                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About
+              </a>
+              <a 
+                href="#themes" 
+                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Activities
+              </a>
+              <a 
+                href="#rules" 
+                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Rules
+              </a>
+              <a 
+                href="#timeline" 
+                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Timeline
+              </a>
+              <a 
+                href="#prizes" 
+                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Prizes
+              </a>
+              <a 
+                href="#contact" 
+                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
@@ -160,9 +236,9 @@ function App() {
             <a href="#registration" className="retro-button px-8 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
               Register Now
             </a>
-            <button className="border-2 border-green-400 px-8 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font">
+            <a href="#themes" className="border-2 border-green-400 px-8 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font inline-block text-center">
               View Activities
-            </button>
+            </a>
           </div>
           
           {/* Countdown Timer */}
