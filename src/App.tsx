@@ -23,6 +23,16 @@ import LazyComponent from './components/LazyComponent';
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // Prevent background scroll and potential white flash when menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add('overflow-hidden');
+      document.documentElement.style.backgroundColor = '#000';
+    } else {
+      document.body.classList.remove('overflow-hidden');
+      document.documentElement.style.backgroundColor = '';
+    }
+  }, [isMobileMenuOpen]);
   useEffect(() => {
     // Optimized hero section animations
     if (heroRef.current) {
@@ -141,7 +151,7 @@ function App() {
           <>
             {/* Backdrop */}
             <div 
-              className="md:hidden fixed inset-0 bg-black/70 z-40"
+              className="md:hidden fixed inset-0 bg-black/90 z-40"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             
