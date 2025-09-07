@@ -62,60 +62,60 @@ function App() {
       <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <BinaryBackground />
         <HeroBackground />
-        <FloatingParticles />
-        <AssamPattern />
-        <GamusaAccent />
+      <FloatingParticles />
+      <AssamPattern />
+      <GamusaAccent />
       
       {/* Header */}
-      <header className="relative z-10 p-6">
+      <header className="relative z-10 p-4 md:p-6">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="text-2xl font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font-glow">
+          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font-glow">
             GUenARK 2025
           </div>
-          <div className="hidden md:flex space-x-8">
-            <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font">
+          <div className="hidden md:flex space-x-6 lg:space-x-8">
+            <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#themes" className="hover:text-emerald-400 transition-colors relative group retro-font">
-              Themes
+            <a href="#themes" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+              Activities
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#rules" className="hover:text-emerald-400 transition-colors relative group retro-font">
+            <a href="#rules" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
               Rules
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#timeline" className="hover:text-emerald-400 transition-colors relative group retro-font">
+            <a href="#timeline" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
               Timeline
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#prizes" className="hover:text-emerald-400 transition-colors relative group retro-font">
+            <a href="#prizes" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
               Prizes
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contact" className="hover:text-emerald-400 transition-colors relative group retro-font">
+            <a href="#contact" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
-          <div className="flex items-center space-x-4">
-          <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all">
-            Register Now
-          </button>
-            <button className="md:hidden text-white hover:text-emerald-400 transition-colors">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex items-center space-x-2 md:space-x-4">
+            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-3 py-1.5 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-xs md:text-sm font-semibold">
+              Register
+            </button>
+            <button className="md:hidden text-white hover:text-emerald-400 transition-colors p-1">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-            </button>
+          </button>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 py-20 px-6" ref={heroRef}>
+      <section className="relative z-10 py-12 md:py-20 px-4 md:px-6" ref={heroRef}>
         <div className="max-w-7xl mx-auto text-center">
-          <div className="mb-8 animate-fadeInUp">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6">
+          <div className="mb-6 md:mb-8 animate-fadeInUp">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6">
               <span className="bg-gradient-to-r from-green-400 via-green-300 to-green-200 bg-clip-text text-transparent pixel-font-large">
                 GUenARK
               </span>
@@ -124,10 +124,10 @@ function App() {
                 2025
               </span>
             </h1>
-            <p className="text-2xl md:text-3xl text-green-300 mb-4 retro-font">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-300 mb-3 md:mb-4 retro-font px-2">
               Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
             </p>
-            <div className="text-xl text-green-200 min-h-[2rem] retro-font">
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl text-green-200 min-h-[1.5rem] md:min-h-[2rem] retro-font px-2">
               <TypewriterEffect 
                 texts={[
                   "Shelter for ideas, Launchpad for Startups.",
@@ -141,42 +141,42 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-12">
-            <div className="flex items-center text-green-400">
-              <Calendar className="mr-2" />
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 md:gap-8 mb-8 md:mb-12">
+            <div className="flex items-center text-green-400 text-sm md:text-base">
+              <Calendar className="mr-2 w-4 h-4 md:w-5 md:h-5" />
               <span className="retro-font">10th & 11th October, 2025</span>
             </div>
-            <div className="flex items-center text-green-300">
-              <MapPin className="mr-2" />
+            <div className="flex items-center text-green-300 text-sm md:text-base">
+              <MapPin className="mr-2 w-4 h-4 md:w-5 md:h-5" />
               <span className="retro-font">Gauhati University, Guwahati</span>
             </div>
-            <div className="flex items-center text-green-200">
-              <Users className="mr-2" />
+            <div className="flex items-center text-green-200 text-sm md:text-base">
+              <Users className="mr-2 w-4 h-4 md:w-5 md:h-5" />
               <span className="retro-font">Startup & Innovation Focus</span>
             </div>
           </div>
 
-          <div className="flex justify-center space-x-6 mb-12">
-            <a href="#registration" className="retro-button px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all animate-pulse inline-block text-white">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mb-8 md:mb-12">
+            <a href="#registration" className="retro-button px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all animate-pulse inline-block text-white">
               Register Now
             </a>
-            <button className="border-2 border-green-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font">
-              View Themes
+            <button className="border-2 border-green-400 px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font">
+              View Activities
             </button>
           </div>
           
           {/* Countdown Timer */}
-          <div className="max-w-2xl mx-auto mb-12">
+          <div className="max-w-2xl mx-auto mb-8 md:mb-12">
             <CountdownTimer />
           </div>
           
           {/* SDG Badge */}
           <ThreeDFloating>
-            <div className="flex justify-center mb-8">
-              <div className="bg-gradient-to-r from-green-600 to-green-500 px-6 py-3 rounded-full text-white font-semibold flex items-center space-x-2 shadow-2xl backdrop-blur-sm">
-                <span className="text-2xl">🌱</span>
-                <span className="retro-font">UN Sustainable Development Goals</span>
-                <span className="text-2xl">🌍</span>
+            <div className="flex justify-center mb-6 md:mb-8">
+              <div className="bg-gradient-to-r from-green-600 to-green-500 px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-semibold flex items-center space-x-2 shadow-2xl backdrop-blur-sm">
+                <span className="text-lg md:text-2xl">🌱</span>
+                <span className="retro-font text-sm md:text-base">UN Sustainable Development Goals</span>
+                <span className="text-lg md:text-2xl">🌍</span>
               </div>
             </div>
           </ThreeDFloating>
@@ -190,52 +190,52 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative z-10 py-20 px-6 bg-black/20">
+      <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-black/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
             About GUenARK 2025
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed text-gray-300 retro-font">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="space-y-4 md:space-y-6">
+              <p className="text-base md:text-lg leading-relaxed text-gray-300 retro-font">
                 GUenARK 2025 is a pioneering initiative of Gauhati University designed to ignite innovation, 
                 foster entrepreneurship, and build a vibrant ecosystem of research-driven growth. This mega event 
                 brings together students, startups, researchers, industry leaders, and policymakers to converge 
                 and co-create solutions for Northeast India.
               </p>
-              <p className="text-lg leading-relaxed text-gray-300 retro-font">
+              <p className="text-base md:text-lg leading-relaxed text-gray-300 retro-font">
                 The ARK symbolizes both a vessel of hope and a repository of knowledge. GUenARK provides a platform 
                 to safeguard, cultivate, and advance innovative ideas, helping innovators transform ideas into 
                 prototypes, businesses, and scalable endeavors through various events including hackathons, 
                 ideathons, and startup exhibitions.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-2 md:gap-4">
                 {['Hackathon', 'Ideathon', 'Startup Exhibition', 'Innovation Talks', 'Investor Meets', 'Research Showcase'].map((tag) => (
-                  <span key={tag} className="bg-green-600/20 border border-green-400 px-4 py-2 rounded-full retro-font">
+                  <span key={tag} className="bg-green-600/20 border border-green-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-xs md:text-sm">
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
             <div className="relative">
-                              <div className="bg-gradient-to-r from-green-600 to-green-500 p-8 rounded-2xl shadow-2xl">
-                <h3 className="text-2xl font-bold mb-4 retro-font">Why GUenARK 2025?</h3>
+              <div className="bg-gradient-to-r from-green-600 to-green-500 p-6 md:p-8 rounded-2xl shadow-2xl">
+                <h3 className="text-xl md:text-2xl font-bold mb-4 retro-font">Why GUenARK 2025?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Trophy className="mr-3 mt-1 text-amber-400" size={20} />
-                    <span className="retro-font">Innovation & Entrepreneurship</span>
+                    <Trophy className="mr-3 mt-1 text-amber-400 flex-shrink-0" size={18} />
+                    <span className="retro-font text-sm md:text-base">Innovation & Entrepreneurship</span>
                   </li>
                   <li className="flex items-start">
-                    <Users className="mr-3 mt-1 text-emerald-400" size={20} />
-                    <span className="retro-font">Research-Driven Growth</span>
+                    <Users className="mr-3 mt-1 text-emerald-400 flex-shrink-0" size={18} />
+                    <span className="retro-font text-sm md:text-base">Research-Driven Growth</span>
                   </li>
                   <li className="flex items-start">
-                    <MapPin className="mr-3 mt-1 text-teal-400" size={20} />
-                    <span className="retro-font">Startup Ecosystem</span>
+                    <MapPin className="mr-3 mt-1 text-teal-400 flex-shrink-0" size={18} />
+                    <span className="retro-font text-sm md:text-base">Startup Ecosystem</span>
                   </li>
                   <li className="flex items-start">
-                    <Target className="mr-3 mt-1 text-red-400" size={20} />
-                    <span className="retro-font">Industry-Academia Linkages</span>
+                    <Target className="mr-3 mt-1 text-red-400 flex-shrink-0" size={18} />
+                    <span className="retro-font text-sm md:text-base">Industry-Academia Linkages</span>
                   </li>
                 </ul>
               </div>
@@ -245,15 +245,15 @@ function App() {
       </section>
 
       {/* Themes Section */}
-      <section id="themes" className="relative z-10 py-20 px-6 bg-black/20">
+      <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-black/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
             GUenARK Activities
           </h2>
-          <p className="text-center text-gray-300 mb-12 text-lg retro-font">
+          <p className="text-center text-gray-300 mb-8 md:mb-12 text-base md:text-lg retro-font px-2">
             Three major events building tomorrow at the crossroads of ideas, investment & governance
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <ThreeDCard className="group cursor-pointer" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">

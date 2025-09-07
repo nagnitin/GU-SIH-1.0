@@ -199,3 +199,57 @@ html {
 .gamusa-border {
   border-color: #dc2626;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  .pixel-font {
+    font-size: 0.75rem;
+  }
+  
+  .pixel-font-large {
+    font-size: 1rem;
+  }
+  
+  .pixel-font-glow {
+    font-size: 1rem;
+  }
+  
+  .retro-font {
+    font-size: 1rem;
+  }
+  
+  .tech-font {
+    font-size: 0.875rem;
+  }
+  
+  .binary-digit {
+    font-size: 1rem;
+  }
+  
+  .retro-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pixel-font {
+    font-size: 0.875rem;
+  }
+  
+  .pixel-font-large {
+    font-size: 1.25rem;
+  }
+  
+  .pixel-font-glow {
+    font-size: 1.125rem;
+  }
+  
+  .retro-font {
+    font-size: 1.125rem;
+  }
+  
+  .tech-font {
+    font-size: 1rem;
+  }
+}
