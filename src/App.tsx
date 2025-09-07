@@ -174,9 +174,7 @@ function App() {
           <ThreeDFloating>
             <div className="flex justify-center mb-6 md:mb-8">
               <div className="bg-gradient-to-r from-green-600 to-green-500 px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-semibold flex items-center space-x-2 shadow-2xl backdrop-blur-sm">
-                <span className="text-lg md:text-2xl">🌱</span>
                 <span className="retro-font text-sm md:text-base">UN Sustainable Development Goals</span>
-                <span className="text-lg md:text-2xl">🌍</span>
               </div>
             </div>
           </ThreeDFloating>
@@ -408,28 +406,28 @@ function App() {
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-xl">💡</span>
+                  <span className="text-xl font-bold text-white">I</span>
                 </div>
                 <h4 className="font-bold text-green-400 mb-2 retro-font">Innovation</h4>
                 <p className="text-sm text-gray-300 retro-font">Novel approach to problem-solving</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-xl">🎯</span>
+                  <span className="text-xl font-bold text-white">I</span>
                 </div>
                 <h4 className="font-bold text-green-300 mb-2 retro-font">Impact</h4>
                 <p className="text-sm text-gray-300 retro-font">Potential for real-world application</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-xl">⚙️</span>
+                  <span className="text-xl font-bold text-white">T</span>
                 </div>
                 <h4 className="font-bold text-green-200 mb-2 retro-font">Technical Excellence</h4>
                 <p className="text-sm text-gray-300 retro-font">Code quality and implementation</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-xl">🌱</span>
+                  <span className="text-xl font-bold text-white">S</span>
                 </div>
                 <h4 className="font-bold text-green-400 mb-2 retro-font">Sustainability</h4>
                 <p className="text-sm text-gray-300 retro-font">Alignment with UN SDGs</p>
@@ -550,13 +548,13 @@ function App() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm retro-font border border-green-400/30">
-                🏆 Special Category Awards
+                Special Category Awards
               </span>
               <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm retro-font border border-green-400/30">
-                📜 Academic Recognition
+                Academic Recognition
               </span>
               <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm retro-font border border-green-400/30">
-                🚀 Implementation Support
+                Implementation Support
               </span>
             </div>
           </div>
@@ -704,8 +702,8 @@ function App() {
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400 retro-font">
             © 2025 GUenARK 2025. Organized by Innovation, Incubation and Startup Cell, Gauhati University. 
-            <span className="text-green-400">🚀</span> Building Tomorrow at the Crossroads of Ideas, Investment & Governance.
-            <span className="text-green-300">🧣</span> Honoring the spirit of Northeast India.
+            Building Tomorrow at the Crossroads of Ideas, Investment & Governance.
+            Honoring the spirit of Northeast India.
           </p>
         </div>
       </footer>
