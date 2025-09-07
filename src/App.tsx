@@ -248,33 +248,39 @@ function App() {
             </div>
           </div>
 
-          {/* Event Details - Better organized */}
-          <div className="bg-gray-900/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-8 md:mb-12 border border-green-400/20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              <div className="flex flex-col items-center text-center">
-                <Calendar className="w-6 h-6 text-green-400 mb-2" />
-                <span className="text-green-400 text-sm md:text-base retro-font font-semibold">Date</span>
-                <span className="text-white text-sm md:text-base retro-font">10th & 11th October, 2025</span>
+          {/* Event Details Card */}
+          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-lg rounded-3xl p-8 md:p-10 mb-12 border border-green-400/40 shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="w-8 h-8 text-green-400" />
+                </div>
+                <h3 className="text-green-400 text-lg md:text-xl retro-font font-bold mb-2">Date</h3>
+                <p className="text-white text-base md:text-lg retro-font">10th & 11th October, 2025</p>
               </div>
-              <div className="flex flex-col items-center text-center">
-                <MapPin className="w-6 h-6 text-green-300 mb-2" />
-                <span className="text-green-300 text-sm md:text-base retro-font font-semibold">Venue</span>
-                <span className="text-white text-sm md:text-base retro-font">Gauhati University, Guwahati</span>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-green-300" />
+                </div>
+                <h3 className="text-green-300 text-lg md:text-xl retro-font font-bold mb-2">Venue</h3>
+                <p className="text-white text-base md:text-lg retro-font">Gauhati University, Guwahati</p>
               </div>
-              <div className="flex flex-col items-center text-center">
-                <Users className="w-6 h-6 text-green-200 mb-2" />
-                <span className="text-green-200 text-sm md:text-base retro-font font-semibold">Focus</span>
-                <span className="text-white text-sm md:text-base retro-font">Startup & Innovation</span>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-green-200" />
+                </div>
+                <h3 className="text-green-200 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
+                <p className="text-white text-base md:text-lg retro-font">Startup & Innovation</p>
               </div>
             </div>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mb-8 md:mb-12">
-            <a href="#registration" className="retro-button px-10 py-4 md:px-12 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:shadow-xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+            <a href="#registration" className="retro-button px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:shadow-2xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
               Register Now
             </a>
-            <a href="#themes" className="border-2 border-green-400 px-10 py-4 md:px-12 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font text-center">
+            <a href="#themes" className="border-2 border-green-400 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-green-400 hover:text-gray-900 transition-all retro-font text-center">
               View Activities
             </a>
           </div>
