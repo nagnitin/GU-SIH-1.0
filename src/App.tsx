@@ -141,14 +141,14 @@ function App() {
           <>
             {/* Backdrop */}
             <div 
-              className="md:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
+              className="md:hidden fixed inset-0 bg-black/70 z-40"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             
             {/* Menu Content */}
             <div
               ref={mobileMenuRef}
-              className="md:hidden fixed top-20 left-4 right-4 bg-gray-900/95 backdrop-blur-lg z-50 rounded-2xl border border-green-400/30 shadow-2xl overflow-hidden"
+              className="md:hidden fixed top-20 left-4 right-4 bg-gray-900/95 z-50 rounded-2xl border border-green-400/30 shadow-2xl overflow-hidden"
             >
               <nav className="py-6">
                 {[
