@@ -73,33 +73,33 @@ function App() {
             GUenARK 2025
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
-            <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+            <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#themes" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+            <a href="#themes" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
               Activities
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#rules" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+            <a href="#rules" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
               Rules
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#timeline" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+            <a href="#timeline" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
               Timeline
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#prizes" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+            <a href="#prizes" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
               Prizes
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contact" className="hover:text-emerald-400 transition-colors relative group retro-font text-sm lg:text-base">
+            <a href="#contact" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
-            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-xs md:text-sm font-semibold whitespace-nowrap">
+            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap">
               Register
             </button>
             <button className="md:hidden text-white hover:text-emerald-400 transition-colors p-1">
@@ -192,18 +192,18 @@ function App() {
       {/* About Section */}
       <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-black/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
             About GUenARK 2025
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-4 md:space-y-6">
-              <p className="text-base md:text-lg leading-relaxed text-gray-300 retro-font">
+              <p className="text-lg md:text-xl leading-relaxed text-gray-300 retro-font">
                 GUenARK 2025 is a pioneering initiative of Gauhati University designed to ignite innovation, 
                 foster entrepreneurship, and build a vibrant ecosystem of research-driven growth. This mega event 
                 brings together students, startups, researchers, industry leaders, and policymakers to converge 
                 and co-create solutions for Northeast India.
               </p>
-              <p className="text-base md:text-lg leading-relaxed text-gray-300 retro-font">
+              <p className="text-lg md:text-xl leading-relaxed text-gray-300 retro-font">
                 The ARK symbolizes both a vessel of hope and a repository of knowledge. GUenARK provides a platform 
                 to safeguard, cultivate, and advance innovative ideas, helping innovators transform ideas into 
                 prototypes, businesses, and scalable endeavors through various events including hackathons, 
@@ -211,7 +211,7 @@ function App() {
               </p>
               <div className="flex flex-wrap gap-2 md:gap-4">
                 {['Hackathon', 'Ideathon', 'Startup Exhibition', 'Innovation Talks', 'Investor Meets', 'Research Showcase'].map((tag) => (
-                  <span key={tag} className="bg-green-600/20 border border-green-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-xs md:text-sm">
+                  <span key={tag} className="bg-green-600/20 border border-green-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-sm md:text-base">
                     {tag}
                   </span>
                 ))}
@@ -219,23 +219,23 @@ function App() {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-r from-green-600 to-green-500 p-6 md:p-8 rounded-2xl shadow-2xl">
-                <h3 className="text-xl md:text-2xl font-bold mb-4 retro-font">Why GUenARK 2025?</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 retro-font">Why GUenARK 2025?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Trophy className="mr-3 mt-1 text-amber-400 flex-shrink-0" size={18} />
-                    <span className="retro-font text-sm md:text-base">Innovation & Entrepreneurship</span>
+                    <span className="retro-font text-base md:text-lg">Innovation & Entrepreneurship</span>
                   </li>
                   <li className="flex items-start">
-                    <Users className="mr-3 mt-1 text-emerald-400 flex-shrink-0" size={18} />
-                    <span className="retro-font text-sm md:text-base">Research-Driven Growth</span>
+                    <Users className="mr-3 mt-1 text-emerald-400 flex-shrink-0" size={20} />
+                    <span className="retro-font text-base md:text-lg">Research-Driven Growth</span>
                   </li>
                   <li className="flex items-start">
-                    <MapPin className="mr-3 mt-1 text-teal-400 flex-shrink-0" size={18} />
-                    <span className="retro-font text-sm md:text-base">Startup Ecosystem</span>
+                    <MapPin className="mr-3 mt-1 text-teal-400 flex-shrink-0" size={20} />
+                    <span className="retro-font text-base md:text-lg">Startup Ecosystem</span>
                   </li>
                   <li className="flex items-start">
-                    <Target className="mr-3 mt-1 text-red-400 flex-shrink-0" size={18} />
-                    <span className="retro-font text-sm md:text-base">Industry-Academia Linkages</span>
+                    <Target className="mr-3 mt-1 text-red-400 flex-shrink-0" size={20} />
+                    <span className="retro-font text-base md:text-lg">Industry-Academia Linkages</span>
                   </li>
                 </ul>
               </div>
@@ -247,10 +247,10 @@ function App() {
       {/* Themes Section */}
       <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-black/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
             GUenARK Activities
           </h2>
-          <p className="text-center text-gray-300 mb-8 md:mb-12 text-base md:text-lg retro-font px-2">
+          <p className="text-center text-gray-300 mb-8 md:mb-12 text-lg md:text-xl retro-font px-2">
             Three major events building tomorrow at the crossroads of ideas, investment & governance
           </p>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
