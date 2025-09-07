@@ -121,27 +121,23 @@
 
 @keyframes bihuDance {
   0%, 100% { transform: rotate(0deg) scale(1); }
-  25% { transform: rotate(5deg) scale(1.05); }
-  50% { transform: rotate(0deg) scale(1.1); }
-  75% { transform: rotate(-5deg) scale(1.05); }
+  50% { transform: rotate(2deg) scale(1.02); }
 }
 
 @keyframes teaSteam {
-  0% { opacity: 0; transform: translateY(0) scale(0.5); }
-  50% { opacity: 1; transform: translateY(-10px) scale(1); }
-  100% { opacity: 0; transform: translateY(-20px) scale(0.5); }
+  0% { opacity: 0; transform: translateY(0) scale(0.8); }
+  50% { opacity: 0.6; transform: translateY(-8px) scale(1); }
+  100% { opacity: 0; transform: translateY(-16px) scale(0.8); }
 }
 
 @keyframes gamusaWave {
   0%, 100% { transform: translateX(0) rotate(0deg); }
-  25% { transform: translateX(5px) rotate(2deg); }
-  50% { transform: translateX(0) rotate(0deg); }
-  75% { transform: translateX(-5px) rotate(-2deg); }
+  50% { transform: translateX(3px) rotate(1deg); }
 }
 
 @keyframes japiBounce {
   0%, 100% { transform: translateY(0) rotate(12deg); }
-  50% { transform: translateY(-10px) rotate(15deg); }
+  50% { transform: translateY(-5px) rotate(13deg); }
 }
 
 .animate-float {
@@ -157,19 +153,19 @@
 }
 
 .animate-bihuDance {
-  animation: bihuDance 3s ease-in-out infinite;
+  animation: bihuDance 2s ease-in-out infinite;
 }
 
 .animate-teaSteam {
-  animation: teaSteam 2s ease-out infinite;
+  animation: teaSteam 1.5s ease-out infinite;
 }
 
 .animate-gamusaWave {
-  animation: gamusaWave 4s ease-in-out infinite;
+  animation: gamusaWave 3s ease-in-out infinite;
 }
 
 .animate-japiBounce {
-  animation: japiBounce 2s ease-in-out infinite;
+  animation: japiBounce 1.5s ease-in-out infinite;
 }
 
 /* Smooth scrolling */

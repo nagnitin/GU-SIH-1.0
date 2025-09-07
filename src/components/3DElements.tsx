@@ -36,8 +36,8 @@ const ThreeDElement: React.FC<ThreeDElementProps> = ({
         gsap.to(element, {
           rotateX: rotateX,
           rotateY: rotateY,
-          duration: 0.3,
-          ease: "power2.out"
+          duration: 0.2,
+          ease: "power1.out"
         });
       };
 
@@ -45,8 +45,8 @@ const ThreeDElement: React.FC<ThreeDElementProps> = ({
         gsap.to(element, {
           rotateX: 0,
           rotateY: 0,
-          duration: 0.5,
-          ease: "power2.out"
+          duration: 0.3,
+          ease: "power1.out"
         });
       };
 
@@ -99,9 +99,9 @@ export const ThreeDFloating: React.FC<ThreeDElementProps> = ({ children, classNa
   useEffect(() => {
     if (floatingRef.current) {
       gsap.to(floatingRef.current, {
-        y: -20,
-        duration: 3,
-        ease: "power2.inOut",
+        y: -15,
+        duration: 2.5,
+        ease: "power1.inOut",
         yoyo: true,
         repeat: -1
       });
@@ -128,10 +128,8 @@ export const ThreeDParallax: React.FC<{ children: React.ReactNode; speed?: numbe
         const scrolled = window.pageYOffset;
         const rate = scrolled * speed;
         
-        gsap.to(parallaxRef.current, {
-          y: rate,
-          duration: 0.1,
-          ease: "none"
+        gsap.set(parallaxRef.current, {
+          y: rate
         });
       }
     };

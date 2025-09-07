@@ -48,7 +48,7 @@ const CountdownTimer: React.FC = () => {
             className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-600/30 rounded-xl p-4 min-w-[80px] transform-gpu hover:scale-110 transition-transform duration-300"
             style={{
               transformStyle: 'preserve-3d',
-              transform: `rotateX(${Math.sin(Date.now() / 1000 + index) * 5}deg) rotateY(${Math.cos(Date.now() / 1000 + index) * 5}deg)`
+              transform: `rotateX(${Math.sin(Date.now() / 2000 + index) * 3}deg) rotateY(${Math.cos(Date.now() / 2000 + index) * 3}deg)`
             }}
           >
             <div className="text-3xl font-bold text-green-400 pixel-font mb-1">

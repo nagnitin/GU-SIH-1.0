@@ -9,12 +9,12 @@ const FloatingParticles: React.FC = () => {
       const particles = particlesRef.current.children;
       
       gsap.to(particles, {
-        y: -100,
-        x: (i) => (i % 2 === 0 ? 50 : -50),
+        y: -80,
+        x: (i) => (i % 2 === 0 ? 30 : -30),
         opacity: 0,
-        duration: (i) => 3 + Math.random() * 4,
+        duration: (i) => 2 + Math.random() * 2,
         ease: "power1.out",
-        stagger: 0.1,
+        stagger: 0.2,
         repeat: -1,
         yoyo: true
       });
@@ -23,7 +23,7 @@ const FloatingParticles: React.FC = () => {
 
   return (
     <div ref={particlesRef} className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {[...Array(30)].map((_, i) => (
+      {[...Array(20)].map((_, i) => (
         <div
           key={i}
           className="absolute"

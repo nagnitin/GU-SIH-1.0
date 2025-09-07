@@ -8,15 +8,15 @@ const BinaryBackground: React.FC = () => {
       const container = containerRef.current;
       const digits = ['0', '1'];
       
-      // Create binary digits
-      for (let i = 0; i < 50; i++) {
+      // Create binary digits (reduced for performance)
+      for (let i = 0; i < 30; i++) {
         const digit = document.createElement('div');
         digit.className = 'binary-digit';
         digit.textContent = digits[Math.floor(Math.random() * digits.length)];
         digit.style.left = `${Math.random() * 100}%`;
         digit.style.top = `${Math.random() * 100}%`;
-        digit.style.animationDelay = `${Math.random() * 8}s`;
-        digit.style.animationDuration = `${8 + Math.random() * 4}s`;
+        digit.style.animationDelay = `${Math.random() * 6}s`;
+        digit.style.animationDuration = `${6 + Math.random() * 3}s`;
         container.appendChild(digit);
       }
     }

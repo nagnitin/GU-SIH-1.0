@@ -9,11 +9,7 @@ import FloatingParticles from './components/FloatingParticles';
 import TypewriterEffect from './components/TypewriterEffect';
 import CodeSnippet from './components/CodeSnippet';
 import AssamPattern from './components/AssamPattern';
-import GamusaPattern from './components/GamusaPattern';
 import GamusaAccent from './components/GamusaAccent';
-import JapiHat from './components/JapiHat';
-import AssamTea from './components/AssamTea';
-import AssamCulture from './components/AssamCulture';
 import CountdownTimer from './components/CountdownTimer';
 import HeroBackground from './components/HeroBackground';
 import ImageGallery from './components/ImageGallery';
@@ -22,55 +18,53 @@ import GauhatiUniversity from './components/GauhatiUniversity';
 import AssamInteractiveMap from './components/AssamInteractiveMap';
 import { ThreeDCard, ThreeDFloating } from './components/3DElements';
 import BinaryBackground from './components/BinaryBackground';
+import LazyComponent from './components/LazyComponent';
 
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    // Hero section animations
+    // Optimized hero section animations
     if (heroRef.current) {
       gsap.fromTo(heroRef.current.children, 
-        { y: 50, opacity: 0 },
+        { y: 30, opacity: 0 },
         { 
           y: 0, 
           opacity: 1, 
-          duration: 1, 
-          stagger: 0.2,
-          ease: "power2.out"
+          duration: 0.6, 
+          stagger: 0.1,
+          ease: "power1.out"
         }
       );
     }
 
-    // Section animations on scroll
+    // Optimized section animations on scroll
     gsap.utils.toArray('section[id]').forEach((section: any) => {
       gsap.fromTo(section,
-        { y: 100, opacity: 0 },
+        { y: 50, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 1,
-          ease: "power2.out",
+          duration: 0.8,
+          ease: "power1.out",
           scrollTrigger: {
             trigger: section,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
+            start: "top 85%",
+            end: "bottom 15%",
+            toggleActions: "play none none reverse",
+            fastScrollEnd: true
           }
         }
       );
     });
   }, []);
 
-      return (
+  return (
       <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <BinaryBackground />
         <HeroBackground />
         <FloatingParticles />
         <AssamPattern />
-        <GamusaPattern />
         <GamusaAccent />
-        <JapiHat />
-        <AssamTea />
-        <AssamCulture />
       
       {/* Header */}
       <header className="relative z-10 p-6">
@@ -78,7 +72,7 @@ function App() {
           <div className="text-2xl font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font-glow">
             GUenARK 2025
           </div>
-                                <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8">
             <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font">
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
@@ -105,9 +99,9 @@ function App() {
             </a>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all">
-              Register Now
-            </button>
+          <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all">
+            Register Now
+          </button>
             <button className="md:hidden text-white hover:text-emerald-400 transition-colors">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -331,22 +325,30 @@ function App() {
 
       {/* Real Assam Images Section */}
       <section className="relative z-10">
-        <AssamRealImages />
+        <LazyComponent>
+          <AssamRealImages />
+        </LazyComponent>
       </section>
 
       {/* Gauhati University Section */}
       <section className="relative z-10">
-        <GauhatiUniversity />
+        <LazyComponent>
+          <GauhatiUniversity />
+        </LazyComponent>
       </section>
 
       {/* Interactive Assam Map Section */}
       <section className="relative z-10">
-        <AssamInteractiveMap />
+        <LazyComponent>
+          <AssamInteractiveMap />
+        </LazyComponent>
       </section>
 
       {/* Image Gallery Section */}
       <section className="relative z-10 bg-black/20">
-        <ImageGallery />
+        <LazyComponent>
+          <ImageGallery />
+        </LazyComponent>
       </section>
 
       {/* Rules & Regulations Section */}
@@ -538,7 +540,7 @@ function App() {
                   
                   {/* Shine Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                </div>
+              </div>
               </ThreeDCard>
             ))}
           </div>
