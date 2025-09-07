@@ -26,11 +26,11 @@ function App() {
   // Prevent background scroll and potential white flash when menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.classList.add('overflow-hidden');
-      document.documentElement.style.backgroundColor = '#000';
+      document.body.classList.add('overflow-hidden', 'menu-open');
+      document.documentElement.classList.add('menu-open');
     } else {
-      document.body.classList.remove('overflow-hidden');
-      document.documentElement.style.backgroundColor = '';
+      document.body.classList.remove('overflow-hidden', 'menu-open');
+      document.documentElement.classList.remove('menu-open');
     }
   }, [isMobileMenuOpen]);
   useEffect(() => {

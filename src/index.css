@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force dark background when mobile menu is open to prevent white flash on some browsers */
+html.menu-open, body.menu-open, body.menu-open #root {
+  background-color: #000 !important;
+}
+
 /* Pixelated Retro Font Classes */
 .pixel-font {
   font-family: 'Press Start 2P', monospace;
