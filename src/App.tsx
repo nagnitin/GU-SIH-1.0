@@ -136,85 +136,55 @@ function App() {
           </div>
         </nav>
         
-        {/* Mobile Menu */}
+        {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900/98 backdrop-blur-md border-t border-green-400/50 z-50 shadow-2xl">
-            <div className="px-6 py-8">
-              <div className="space-y-6">
-                <a 
-                  href="#about" 
-                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span>About</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a 
-                  href="#themes" 
-                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span>Activities</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a 
-                  href="#rules" 
-                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span>Rules</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a 
-                  href="#timeline" 
-                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span>Timeline</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a 
-                  href="#prizes" 
-                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span>Prizes</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a 
-                  href="#contact" 
-                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span>Contact</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
+          <>
+            {/* Backdrop */}
+            <div 
+              className="md:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            
+            {/* Menu Content */}
+            <div
+              ref={mobileMenuRef}
+              className="md:hidden fixed top-20 left-4 right-4 bg-gray-900/95 backdrop-blur-lg z-50 rounded-2xl border border-green-400/30 shadow-2xl overflow-hidden"
+            >
+              <nav className="py-6">
+                {[
+                  { name: 'About', href: '#about' },
+                  { name: 'Activities', href: '#themes' },
+                  { name: 'Rules', href: '#rules' },
+                  { name: 'Timeline', href: '#timeline' },
+                  { name: 'Prizes', href: '#prizes' },
+                  { name: 'Contact', href: '#contact' },
+                ].map((item, index) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={handleNavLinkClick}
+                    className="flex items-center justify-between px-6 py-4 text-white hover:bg-green-400/10 hover:text-green-400 transition-all duration-300 retro-font text-lg border-b border-gray-700/30 last:border-b-0"
+                  >
+                    <span>{item.name}</span>
+                    <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                ))}
+              </nav>
               
-              {/* Quick Action Button */}
-              <div className="mt-8 pt-6 border-t border-gray-700/50">
-                <a 
-                  href="#registration" 
-                  className="block w-full bg-gradient-to-r from-emerald-600 to-amber-600 text-white text-center py-4 rounded-xl font-semibold retro-font text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
-                  onClick={() => setIsMobileMenuOpen(false)}
+              {/* Register Button */}
+              <div className="px-6 pb-6">
+                <a
+                  href="#registration"
+                  onClick={handleNavLinkClick}
+                  className="bg-gradient-to-r from-emerald-600 to-amber-600 px-6 py-3 rounded-full text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all w-full block text-center retro-font"
                 >
                   Register Now
                 </a>
               </div>
             </div>
-          </div>
+          </>
         )}
       </header>
 
