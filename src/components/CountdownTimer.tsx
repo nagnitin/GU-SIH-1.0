@@ -9,8 +9,8 @@ const CountdownTimer: React.FC = () => {
   });
 
   useEffect(() => {
-    // Set a far future date to show "Coming Soon" effect
-    const targetDate = new Date('2026-01-01T00:00:00').getTime();
+    // Set target date to October 10, 2025 (GUenARK 2025 start date)
+    const targetDate = new Date('2025-10-10T09:00:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -61,7 +61,7 @@ const CountdownTimer: React.FC = () => {
         ))}
       </div>
       <p className="text-sm text-gray-400 mt-4 retro-font">
-        Coming Soon - Dates to be announced
+        October 10-11, 2025 - Gauhati University, Guwahati
       </p>
     </div>
   );

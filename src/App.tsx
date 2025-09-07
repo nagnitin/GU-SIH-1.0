@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Calendar, Users, Trophy, MapPin, Clock, Mail, Phone, Code, Zap, Target } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -15,7 +15,6 @@ import JapiHat from './components/JapiHat';
 import AssamTea from './components/AssamTea';
 import AssamCulture from './components/AssamCulture';
 import CountdownTimer from './components/CountdownTimer';
-import AssamIcons from './components/AssamIcons';
 import HeroBackground from './components/HeroBackground';
 import ImageGallery from './components/ImageGallery';
 import AssamRealImages from './components/AssamRealImages';
@@ -77,7 +76,7 @@ function App() {
       <header className="relative z-10 p-6">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="text-2xl font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font-glow">
-            GU SIH 1.0
+            GUenARK 2025
           </div>
                                 <div className="hidden md:flex space-x-8">
             <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font">
@@ -124,25 +123,25 @@ function App() {
           <div className="mb-8 animate-fadeInUp">
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
               <span className="bg-gradient-to-r from-green-400 via-green-300 to-green-200 bg-clip-text text-transparent pixel-font-large">
-                GU SIH
+                GUenARK
               </span>
               <br />
               <span className="bg-gradient-to-r from-green-300 via-green-200 to-green-100 bg-clip-text text-transparent pixel-font-large">
-                1.0
+                2025
               </span>
             </h1>
             <p className="text-2xl md:text-3xl text-green-300 mb-4 retro-font">
-              Gauhati University Smart India Hackathon
+              Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
             </p>
             <div className="text-xl text-green-200 min-h-[2rem] retro-font">
               <TypewriterEffect 
                 texts={[
-                  "Technology for Sustainable Development.",
-                  "Solving Northeast India's Challenges.",
-                  "UN SDGs in Action.",
-                  "Innovation for a Better Tomorrow.",
-                  "Where Tradition Meets Technology.",
-                  "Building Sustainable Solutions."
+                  "Shelter for ideas, Launchpad for Startups.",
+                  "Building Tomorrow at the Crossroads of Ideas, Investment & Governance.",
+                  "Innovation, Incubation and Startup Cell presents.",
+                  "A Mega event for Northeast India.",
+                  "Where Ideas Meet Investment.",
+                  "Advancing through Research and Knowledge."
                 ]}
               />
             </div>
@@ -151,7 +150,7 @@ function App() {
           <div className="flex flex-wrap justify-center items-center gap-8 mb-12">
             <div className="flex items-center text-green-400">
               <Calendar className="mr-2" />
-              <span className="retro-font">Coming Soon</span>
+              <span className="retro-font">10th & 11th October, 2025</span>
             </div>
             <div className="flex items-center text-green-300">
               <MapPin className="mr-2" />
@@ -159,7 +158,7 @@ function App() {
             </div>
             <div className="flex items-center text-green-200">
               <Users className="mr-2" />
-              <span className="retro-font">UN SDGs Focus</span>
+              <span className="retro-font">Startup & Innovation Focus</span>
             </div>
           </div>
 
@@ -200,23 +199,24 @@ function App() {
       <section id="about" className="relative z-10 py-20 px-6 bg-black/20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
-            About GU SIH 1.0
+            About GUenARK 2025
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-gray-300 retro-font">
-                Northeast India, with its rich biodiversity, cultural heritage, and economic potential, 
-                faces unique sustainability challenges. GU SIH 1.0 brings together students and innovators 
-                to co-create locally relevant, impactful solutions aligned with the UN Sustainable 
-                Development Goals (SDGs).
+                GUenARK 2025 is a pioneering initiative of Gauhati University designed to ignite innovation, 
+                foster entrepreneurship, and build a vibrant ecosystem of research-driven growth. This mega event 
+                brings together students, startups, researchers, industry leaders, and policymakers to converge 
+                and co-create solutions for Northeast India.
               </p>
               <p className="text-lg leading-relaxed text-gray-300 retro-font">
-                From floods from the Brahmaputra to tea garden livelihood issues, waste mismanagement, 
-                and fragile power infrastructure - this hackathon addresses the region's most pressing 
-                challenges through technology-driven sustainable development solutions.
+                The ARK symbolizes both a vessel of hope and a repository of knowledge. GUenARK provides a platform 
+                to safeguard, cultivate, and advance innovative ideas, helping innovators transform ideas into 
+                prototypes, businesses, and scalable endeavors through various events including hackathons, 
+                ideathons, and startup exhibitions.
               </p>
               <div className="flex flex-wrap gap-4">
-                {['Flood Management', 'Tea Garden Tech', 'Waste Management', 'Power Infrastructure', 'Biodiversity', 'Cultural Heritage'].map((tag) => (
+                {['Hackathon', 'Ideathon', 'Startup Exhibition', 'Innovation Talks', 'Investor Meets', 'Research Showcase'].map((tag) => (
                   <span key={tag} className="bg-green-600/20 border border-green-400 px-4 py-2 rounded-full retro-font">
                     {tag}
                   </span>
@@ -225,23 +225,23 @@ function App() {
             </div>
             <div className="relative">
                               <div className="bg-gradient-to-r from-green-600 to-green-500 p-8 rounded-2xl shadow-2xl">
-                <h3 className="text-2xl font-bold mb-4 retro-font">Why GU SIH 1.0?</h3>
+                <h3 className="text-2xl font-bold mb-4 retro-font">Why GUenARK 2025?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Trophy className="mr-3 mt-1 text-amber-400" size={20} />
-                    <span className="retro-font">UN SDGs Alignment</span>
+                    <span className="retro-font">Innovation & Entrepreneurship</span>
                   </li>
                   <li className="flex items-start">
                     <Users className="mr-3 mt-1 text-emerald-400" size={20} />
-                    <span className="retro-font">Academic Excellence</span>
+                    <span className="retro-font">Research-Driven Growth</span>
                   </li>
                   <li className="flex items-start">
                     <MapPin className="mr-3 mt-1 text-teal-400" size={20} />
-                    <span className="retro-font">Local Impact Focus</span>
+                    <span className="retro-font">Startup Ecosystem</span>
                   </li>
                   <li className="flex items-start">
                     <Target className="mr-3 mt-1 text-red-400" size={20} />
-                    <span className="retro-font">Sustainable Solutions</span>
+                    <span className="retro-font">Industry-Academia Linkages</span>
                   </li>
                 </ul>
               </div>
@@ -254,28 +254,29 @@ function App() {
       <section id="themes" className="relative z-10 py-20 px-6 bg-black/20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
-            Hackathon Themes
+            GUenARK Activities
           </h2>
           <p className="text-center text-gray-300 mb-12 text-lg retro-font">
-            Focus on UN Sustainable Development Goals (SDGs) for Northeast India
+            Three major events building tomorrow at the crossroads of ideas, investment & governance
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ThreeDCard className="group cursor-pointer" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <AssamIcons type="brahmaputra" className="text-white" size={32} />
+                  <Code className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-blue-400 mb-2 retro-font">Flood Management</h3>
-                <p className="text-sm text-blue-300 retro-font">SDG 13: Climate Action</p>
+                <h3 className="text-xl font-bold text-blue-400 mb-2 retro-font">HACKATHON</h3>
+                <p className="text-sm text-blue-300 retro-font">24-Hour Technology Challenge</p>
               </div>
               <p className="text-gray-300 text-center retro-font">
-                Technology solutions for Brahmaputra flood prediction, early warning systems, 
-                and resilient infrastructure development.
+                24-hour Hackathon on Technology for Sustainable Development focusing on practical solutions 
+                for Northeast India's challenges (water, tea-agriculture, waste, tourism, healthcare, urban resilience), 
+                aligned with UN SDGs, promoting interdisciplinary teamwork and outcome-driven prototypes.
               </p>
               <div className="mt-4 p-4 bg-blue-600/10 rounded-lg border border-blue-400/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop" 
-                  alt="Brahmaputra River"
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" 
+                  alt="Hackathon"
                   className="w-full h-24 object-cover rounded-lg opacity-80"
                 />
               </div>
@@ -284,19 +285,20 @@ function App() {
                         <ThreeDCard className="group cursor-pointer" depth={50}>
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-green-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <AssamIcons type="tea-garden" className="text-white" size={32} />
+                    <Zap className="text-white" size={32} />
                   </div>
-                  <h3 className="text-xl font-bold text-green-400 mb-2 retro-font">Tea Garden Technology</h3>
-                  <p className="text-sm text-green-300 retro-font">SDG 8: Decent Work</p>
+                  <h3 className="text-xl font-bold text-green-400 mb-2 retro-font">IDEATHON</h3>
+                  <p className="text-sm text-green-300 retro-font">24-Hour Innovation Challenge</p>
                 </div>
                 <p className="text-gray-300 text-center retro-font">
-                  Digital solutions for tea garden workers' livelihood improvement, 
-                  sustainable farming practices, and market access.
+                  24-hour Ideathon on Sustainable Futures for Northeast India challenging students to design 
+                  business models, policy frameworks, community campaigns, financial tools, and education innovations 
+                  addressing regional issues beyond technology, leading to practical models and policy-ready solutions.
                 </p>
                 <div className="mt-4 p-4 bg-green-600/10 rounded-lg border border-green-400/20">
                   <img 
-                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" 
-                    alt="Tea Gardens"
+                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
+                    alt="Ideathon"
                     className="w-full h-24 object-cover rounded-lg opacity-80"
                   />
                 </div>
@@ -305,93 +307,20 @@ function App() {
             <ThreeDCard className="group cursor-pointer" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-600 to-yellow-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2 L12 22" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <path d="M8 6 L16 6" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <path d="M8 10 L16 10" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <path d="M8 14 L16 14" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <path d="M8 18 L16 18" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <circle cx="12" cy="8" r="1" fill="currentColor"/>
-                    <circle cx="12" cy="12" r="1" fill="currentColor"/>
-                    <circle cx="12" cy="16" r="1" fill="currentColor"/>
-                  </svg>
+                  <Trophy className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-yellow-400 mb-2 retro-font">Waste Management</h3>
-                <p className="text-sm text-yellow-300 retro-font">SDG 12: Responsible Consumption</p>
+                <h3 className="text-xl font-bold text-yellow-400 mb-2 retro-font">STARTUP EXHIBITION</h3>
+                <p className="text-sm text-yellow-300 retro-font">100+ Innovation Stalls</p>
               </div>
               <p className="text-gray-300 text-center retro-font">
-                Smart waste collection, recycling innovations, and circular economy 
-                solutions for urban and rural areas.
+                Startup & Innovation Exhibition showcasing 100+ startups, innovators, and student entrepreneurs 
+                from Assam and Northeast India, focusing on solutions in agritech, clean energy, tourism, 
+                digital commerce, etc. Offering visibility, funding, and vital linkages.
               </p>
               <div className="mt-4 p-4 bg-yellow-600/10 rounded-lg border border-yellow-400/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop" 
-                  alt="Waste Management"
-                  className="w-full h-24 object-cover rounded-lg opacity-80"
-                />
-              </div>
-            </ThreeDCard>
-            
-            <ThreeDCard className="group cursor-pointer" depth={50}>
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 2 L3 14 L12 14 L11 22 L21 10 L12 10 Z" fill="currentColor"/>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-purple-400 mb-2 retro-font">Power Infrastructure</h3>
-                <p className="text-sm text-purple-300 retro-font">SDG 7: Affordable Energy</p>
-              </div>
-              <p className="text-gray-300 text-center retro-font">
-                Renewable energy solutions, smart grid technologies, and energy 
-                access for remote communities.
-              </p>
-              <div className="mt-4 p-4 bg-purple-600/10 rounded-lg border border-purple-400/20">
-                <img 
-                  src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=200&fit=crop" 
-                  alt="Power Infrastructure"
-                  className="w-full h-24 object-cover rounded-lg opacity-80"
-                />
-              </div>
-            </ThreeDCard>
-            
-            <ThreeDCard className="group cursor-pointer" depth={50}>
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <AssamIcons type="biodiversity" className="text-white" size={32} />
-                </div>
-                <h3 className="text-xl font-bold text-emerald-400 mb-2 retro-font">Biodiversity Conservation</h3>
-                <p className="text-sm text-emerald-300 retro-font">SDG 15: Life on Land</p>
-              </div>
-              <p className="text-gray-300 text-center retro-font">
-                Wildlife monitoring, forest conservation, and sustainable tourism 
-                solutions for Northeast's rich biodiversity.
-              </p>
-              <div className="mt-4 p-4 bg-emerald-600/10 rounded-lg border border-emerald-400/20">
-                <img 
-                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=200&fit=crop" 
-                  alt="Biodiversity"
-                  className="w-full h-24 object-cover rounded-lg opacity-80"
-                />
-              </div>
-            </ThreeDCard>
-            
-            <ThreeDCard className="group cursor-pointer" depth={50}>
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <AssamIcons type="heritage" className="text-white" size={32} />
-                </div>
-                <h3 className="text-xl font-bold text-red-400 mb-2 retro-font">Cultural Heritage</h3>
-                <p className="text-sm text-red-300 retro-font">SDG 11: Sustainable Cities</p>
-              </div>
-              <p className="text-gray-300 text-center retro-font">
-                Digital preservation of cultural heritage, traditional knowledge 
-                documentation, and cultural tourism enhancement.
-              </p>
-              <div className="mt-4 p-4 bg-red-600/10 rounded-lg border border-red-400/20">
-                <img 
-                  src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=400&h=200&fit=crop" 
-                  alt="Cultural Heritage"
+                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
+                  alt="Startup Exhibition"
                   className="w-full h-24 object-cover rounded-lg opacity-80"
                 />
               </div>
@@ -516,9 +445,8 @@ function App() {
           </h2>
           <div className="space-y-8">
             {[
-              { day: 'Day 1', time: 'Coming Soon', events: ['Registration & Team Formation', 'Opening Ceremony & SDG Workshop', 'Theme Announcement', 'Hacking Begins!'] },
-              { day: 'Day 2', time: 'Coming Soon', events: ['Expert Mentor Sessions', 'Workshop: Sustainable Tech Solutions', 'Mid-point Check-ins', 'Cultural Evening with Bihu'] },
-              { day: 'Day 3', time: 'Coming Soon', events: ['Final Submissions', 'Project Presentations', 'SDG Impact Assessment', 'Awards & Closing Ceremony'] }
+              { day: 'Day 1', time: '10th October 2025', events: ['Startup & Innovation Expo Setup', 'Opening Ceremony & Keynote', 'Hackathon & Ideathon Launch', 'Investor Meets & Innovation Talks'] },
+              { day: 'Day 2', time: '11th October 2025', events: ['24-Hour Hackathon Continues', 'Startup Exhibition & Networking', 'Structured Engagement Sessions', 'Final Presentations & Awards'] }
             ].map((day, index) => (
               <div key={index} className="flex items-start space-x-6 group">
                 <div className="bg-gradient-to-r from-green-600 to-green-500 w-16 h-16 rounded-full flex items-center justify-center font-bold shrink-0 group-hover:scale-110 transition-transform">
@@ -641,8 +569,8 @@ function App() {
           </h2>
                       <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm border border-green-400/30">
             <p className="text-lg text-gray-300 mb-8 retro-font">
-              Ready to make a difference? Register your team for GU SIH 1.0 and be part of the solution 
-              for Northeast India's sustainable development challenges.
+              Ready to be part of the innovation ecosystem? Register for GUenARK 2025 and join the mega event 
+              building tomorrow at the crossroads of ideas, investment & governance.
             </p>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="text-left">
@@ -681,6 +609,38 @@ function App() {
         </div>
       </section>
 
+      {/* Patrons Section */}
+      <section className="relative z-10 py-20 px-6 bg-black/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+            Patrons & Leadership
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <ThreeDCard className="text-center" depth={30}>
+              <h3 className="text-xl font-bold text-green-400 mb-4 retro-font">Chief Patron</h3>
+              <p className="text-lg font-semibold text-white mb-2 retro-font">Dr. Himanta Biswa Sarma</p>
+              <p className="text-gray-300 retro-font">Hon'ble Chief Minister, Assam</p>
+            </ThreeDCard>
+            <ThreeDCard className="text-center" depth={30}>
+              <h3 className="text-xl font-bold text-green-300 mb-4 retro-font">Patrons</h3>
+              <p className="text-lg font-semibold text-white mb-2 retro-font">Shri Keshab Mahanta</p>
+              <p className="text-gray-300 retro-font mb-2">Hon'ble Minister of Revenue, Disaster Management, IT, Science, Technology & Climate Change</p>
+              <p className="text-lg font-semibold text-white mb-2 retro-font">Shri Bimal Borah</p>
+              <p className="text-gray-300 retro-font">Hon'ble Minister of Cultural Affairs, Industries, Commerce and Public Enterprises</p>
+            </ThreeDCard>
+            <ThreeDCard className="text-center" depth={30}>
+              <h3 className="text-xl font-bold text-green-200 mb-4 retro-font">Co-Patrons</h3>
+              <p className="text-lg font-semibold text-white mb-2 retro-font">Prof. Nani Gopal Mahanta</p>
+              <p className="text-gray-300 retro-font mb-2">Hon'ble Vice Chancellor, Gauhati University</p>
+              <p className="text-lg font-semibold text-white mb-2 retro-font">Dr. Krishna Kumar Dwivedi, IAS</p>
+              <p className="text-gray-300 retro-font mb-2">Principal Secretary to CM</p>
+              <p className="text-lg font-semibold text-white mb-2 retro-font">Dr. Jeevan Basavaraj, IAS</p>
+              <p className="text-gray-300 retro-font">Secretary, Dept. of Innovation, Incubation and Startups (DIIS), Govt. of Assam</p>
+            </ThreeDCard>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -691,7 +651,7 @@ function App() {
             <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm">
               <Mail className="mx-auto mb-4 text-green-400" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Email Us</h3>
-              <p className="text-gray-300 retro-font">gusih@gauhati.ac.in</p>
+              <p className="text-gray-300 retro-font">guenark@gauhati.ac.in</p>
             </div>
             <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm">
               <Phone className="mx-auto mb-4 text-green-300" size={48} />
@@ -701,11 +661,37 @@ function App() {
           </div>
           
           <div className="mt-8 bg-gradient-to-r from-green-600/20 to-green-500/20 p-6 rounded-2xl border border-green-400/30">
-            <h3 className="text-xl font-bold text-center mb-4 text-white retro-font">Organized By</h3>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-green-400 mb-2 retro-font">Gauhati University</p>
-              <p className="text-gray-300 retro-font">Department of Electronics and Communication Engineering</p>
-              <p className="text-gray-300 retro-font">Guwahati, Assam, India</p>
+            <h3 className="text-xl font-bold text-center mb-4 text-white retro-font">Gauhati University Rankings</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
+                <p className="text-lg font-bold text-green-400 retro-font">1st</p>
+                <p className="text-sm text-gray-300 retro-font">Among Universities of NE India</p>
+              </div>
+              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
+                <p className="text-lg font-bold text-green-400 retro-font">9th</p>
+                <p className="text-sm text-gray-300 retro-font">Among State Universities of India</p>
+              </div>
+              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
+                <p className="text-lg font-bold text-green-400 retro-font">33rd</p>
+                <p className="text-sm text-gray-300 retro-font">Among all Universities of India</p>
+              </div>
+              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
+                <p className="text-lg font-bold text-green-400 retro-font">52nd</p>
+                <p className="text-sm text-gray-300 retro-font">Among all Institutions of India</p>
+              </div>
+              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
+                <p className="text-lg font-bold text-green-400 retro-font">NAAC A+</p>
+                <p className="text-sm text-gray-300 retro-font">Accredited University</p>
+              </div>
+              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
+                <p className="text-lg font-bold text-green-400 retro-font">NIRF 2025</p>
+                <p className="text-sm text-gray-300 retro-font">Ranked University</p>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-2xl font-bold text-green-400 mb-2 retro-font">Innovation, Incubation and Startup Cell</p>
+              <p className="text-gray-300 retro-font">Gauhati University, Guwahati-781014, Assam, India</p>
+              <p className="text-gray-300 retro-font">Web: www.gauhati.ac.in/guenark2025</p>
             </div>
           </div>
         </div>
@@ -715,8 +701,8 @@ function App() {
       <footer className="relative z-10 py-8 px-6 bg-black/40">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400 retro-font">
-            © 2025 GU SIH 1.0. Organized by Gauhati University. 
-            <span className="text-green-400">🌱</span> Advancing UN Sustainable Development Goals.
+            © 2025 GUenARK 2025. Organized by Innovation, Incubation and Startup Cell, Gauhati University. 
+            <span className="text-green-400">🚀</span> Building Tomorrow at the Crossroads of Ideas, Investment & Governance.
             <span className="text-green-300">🧣</span> Honoring the spirit of Northeast India.
           </p>
         </div>
