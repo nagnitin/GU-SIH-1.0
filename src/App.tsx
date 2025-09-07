@@ -138,50 +138,81 @@ function App() {
         
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900/95 backdrop-blur-sm border-t border-green-400/30 z-50">
-            <div className="px-4 py-6 space-y-4">
-              <a 
-                href="#about" 
-                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </a>
-              <a 
-                href="#themes" 
-                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Activities
-              </a>
-              <a 
-                href="#rules" 
-                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Rules
-              </a>
-              <a 
-                href="#timeline" 
-                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Timeline
-              </a>
-              <a 
-                href="#prizes" 
-                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Prizes
-              </a>
-              <a 
-                href="#contact" 
-                className="block text-white hover:text-emerald-400 transition-colors retro-font text-lg"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </a>
+          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900/98 backdrop-blur-md border-t border-green-400/50 z-50 shadow-2xl">
+            <div className="px-6 py-8">
+              <div className="space-y-6">
+                <a 
+                  href="#about" 
+                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>About</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a 
+                  href="#themes" 
+                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>Activities</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a 
+                  href="#rules" 
+                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>Rules</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a 
+                  href="#timeline" 
+                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>Timeline</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a 
+                  href="#prizes" 
+                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3 border-b border-gray-700/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>Prizes</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a 
+                  href="#contact" 
+                  className="flex items-center justify-between text-white hover:text-emerald-400 transition-all duration-300 retro-font text-xl py-3"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>Contact</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              
+              {/* Quick Action Button */}
+              <div className="mt-8 pt-6 border-t border-gray-700/50">
+                <a 
+                  href="#registration" 
+                  className="block w-full bg-gradient-to-r from-emerald-600 to-amber-600 text-white text-center py-4 rounded-xl font-semibold retro-font text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Register Now
+                </a>
+              </div>
             </div>
           </div>
         )}
