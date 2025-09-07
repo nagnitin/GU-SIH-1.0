@@ -99,7 +99,7 @@ function App() {
             </a>
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
-            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-3 py-1.5 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-xs md:text-sm font-semibold">
+            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-xs md:text-sm font-semibold whitespace-nowrap">
               Register
             </button>
             <button className="md:hidden text-white hover:text-emerald-400 transition-colors p-1">
@@ -124,10 +124,10 @@ function App() {
                 2025
               </span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-300 mb-3 md:mb-4 retro-font px-2">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-green-300 mb-3 md:mb-4 retro-font px-4 leading-relaxed mobile-text">
               Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
             </p>
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl text-green-200 min-h-[1.5rem] md:min-h-[2rem] retro-font px-2">
+            <div className="text-xs sm:text-sm md:text-base lg:text-lg text-green-200 min-h-[1.5rem] md:min-h-[2rem] retro-font px-4 mobile-text">
               <TypewriterEffect 
                 texts={[
                   "Shelter for ideas, Launchpad for Startups.",
@@ -141,26 +141,26 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 md:gap-8 mb-8 md:mb-12">
-            <div className="flex items-center text-green-400 text-sm md:text-base">
-              <Calendar className="mr-2 w-4 h-4 md:w-5 md:h-5" />
+          <div className="flex flex-col justify-center items-center gap-3 md:gap-4 mb-8 md:mb-12 px-4 mobile-padding">
+            <div className="flex items-center text-green-400 text-xs md:text-sm">
+              <Calendar className="mr-2 w-4 h-4 flex-shrink-0" />
               <span className="retro-font">10th & 11th October, 2025</span>
             </div>
-            <div className="flex items-center text-green-300 text-sm md:text-base">
-              <MapPin className="mr-2 w-4 h-4 md:w-5 md:h-5" />
+            <div className="flex items-center text-green-300 text-xs md:text-sm">
+              <MapPin className="mr-2 w-4 h-4 flex-shrink-0" />
               <span className="retro-font">Gauhati University, Guwahati</span>
             </div>
-            <div className="flex items-center text-green-200 text-sm md:text-base">
-              <Users className="mr-2 w-4 h-4 md:w-5 md:h-5" />
+            <div className="flex items-center text-green-200 text-xs md:text-sm">
+              <Users className="mr-2 w-4 h-4 flex-shrink-0" />
               <span className="retro-font">Startup & Innovation Focus</span>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mb-8 md:mb-12">
-            <a href="#registration" className="retro-button px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all animate-pulse inline-block text-white">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mb-8 md:mb-12 px-4 mobile-padding">
+            <a href="#registration" className="retro-button px-8 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-semibold hover:shadow-xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
               Register Now
             </a>
-            <button className="border-2 border-green-400 px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font">
+            <button className="border-2 border-green-400 px-8 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-semibold hover:bg-green-400 hover:text-gray-900 transition-all retro-font">
               View Activities
             </button>
           </div>

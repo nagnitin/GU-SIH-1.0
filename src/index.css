@@ -203,32 +203,51 @@ html {
 /* Mobile Responsive Styles */
 @media (max-width: 767px) {
   .pixel-font {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    line-height: 1.2;
   }
   
   .pixel-font-large {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.1;
   }
   
   .pixel-font-glow {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.1;
   }
   
   .retro-font {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
   
   .tech-font {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
   
   .binary-digit {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .retro-button {
     padding: 0.75rem 1.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  
+  /* Better mobile spacing */
+  .mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Prevent text overflow */
+  .mobile-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 }
 
@@ -251,5 +270,41 @@ html {
   
   .tech-font {
     font-size: 1rem;
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 480px) {
+  .pixel-font-large {
+    font-size: 0.8rem;
+  }
+  
+  .retro-font {
+    font-size: 0.8rem;
+  }
+  
+  .pixel-font {
+    font-size: 0.65rem;
+  }
+  
+  /* Extra small mobile spacing */
+  .mobile-padding {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  .retro-button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  button, a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
