@@ -58,12 +58,12 @@ html.menu-open, body.menu-open, body.menu-open #root {
   pointer-events: none;
   z-index: 1;
   overflow: hidden;
-  background: linear-gradient(135deg, #0a1a0a 0%, #1a2a1a 25%, #0f1f0f 50%, #1a2a1a 75%, #0a1a0a 100%);
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 25%, #fbbf24 50%, #fde68a 75%, #fef3c7 100%);
 }
 
 .binary-digit {
   position: absolute;
-  color: #00ff00;
+  color: #d97706;
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
   opacity: 0.4;

@@ -88,7 +88,7 @@ function App() {
   }, [isMobileMenuOpen]);
 
   return (
-    <div className="min-h-screen text-gray-900 relative overflow-hidden bg-gradient-to-br from-yellow-200 via-yellow-100 to-white">
+    <div className="min-h-screen text-gray-900 relative overflow-hidden bg-white">
         <BinaryBackground />
         <HeroBackground />
       <FloatingParticles />
@@ -158,7 +158,7 @@ function App() {
             {/* Menu Content */}
             <div
               ref={mobileMenuRef}
-              className="md:hidden fixed top-20 left-4 right-4 bg-gray-900/95 z-50 rounded-2xl border border-yellow-400/30 shadow-2xl overflow-hidden"
+              className="md:hidden fixed top-20 left-4 right-4 bg-white z-50 rounded-2xl border-2 border-yellow-500 shadow-2xl overflow-hidden"
             >
               <nav className="py-6">
                 {[
@@ -173,7 +173,7 @@ function App() {
                     key={item.name}
                     href={item.href}
                     onClick={handleNavLinkClick}
-                    className="flex items-center justify-between px-6 py-4 text-gray-800 hover:bg-yellow-400/10 hover:text-yellow-600 transition-all duration-300 retro-font text-lg border-b border-gray-700/30 last:border-b-0"
+                    className="flex items-center justify-between px-6 py-4 text-gray-900 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-300 retro-font text-lg border-b border-gray-300 last:border-b-0"
                   >
                     <span>{item.name}</span>
                     <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -229,7 +229,7 @@ function App() {
           </div>
 
           {/* Event Details Card */}
-          <div className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-lg rounded-3xl p-8 md:p-10 mb-12 border border-yellow-400/40 shadow-2xl">
+          <div className="bg-white rounded-3xl p-8 md:p-10 mb-12 border-2 border-yellow-500 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -288,7 +288,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
+      <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             About GUenARK 2025
@@ -309,7 +309,7 @@ function App() {
               </p>
               <div className="flex flex-wrap gap-2 md:gap-4">
                 {['Hackathon', 'Ideathon', 'Startup Exhibition', 'Innovation Talks', 'Investor Meets', 'Research Showcase'].map((tag) => (
-                  <span key={tag} className="bg-yellow-600/20 border border-yellow-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-sm md:text-base">
+                  <span key={tag} className="bg-yellow-100 border-2 border-yellow-500 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-sm md:text-base text-gray-900">
                     {tag}
                   </span>
                 ))}
@@ -360,7 +360,7 @@ function App() {
       </section>
 
       {/* Themes Section */}
-      <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
+      <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
             GUenARK Activities
@@ -404,7 +404,7 @@ function App() {
                   business models, policy frameworks, community campaigns, financial tools, and education innovations 
                   addressing regional issues beyond technology, leading to practical models and policy-ready solutions.
                 </p>
-                <div className="mt-4 p-4 bg-yellow-600/10 rounded-lg border border-yellow-400/20">
+                <div className="mt-4 p-4 bg-yellow-50 rounded-lg border-2 border-yellow-300">
                   <img 
                     src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
                     alt="Ideathon"
@@ -460,7 +460,7 @@ function App() {
       </section>
 
       {/* Image Gallery Section */}
-      <section className="relative z-10 bg-gradient-to-br from-yellow-100/50 to-white/50">
+      <section className="relative z-10 bg-white">
         <LazyComponent>
           <ImageGallery />
         </LazyComponent>
@@ -496,8 +496,8 @@ function App() {
             </ThreeDCard>
             
             <ThreeDCard className="space-y-6" depth={30}>
-              <h3 className="text-2xl font-bold text-yellow-300 mb-4 retro-font">Competition Rules</h3>
-              <ul className="space-y-4 text-gray-300">
+              <h3 className="text-2xl font-bold text-yellow-600 mb-4 retro-font">Competition Rules</h3>
+              <ul className="space-y-4 text-gray-800">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">48-hour continuous coding period</span>
@@ -536,8 +536,8 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-yellow-300 mb-2 retro-font">Impact</h4>
-                <p className="text-sm text-gray-300 retro-font">Potential for real-world application</p>
+                <h4 className="font-bold text-yellow-600 mb-2 retro-font">Impact</h4>
+                <p className="text-sm text-gray-800 retro-font">Potential for real-world application</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-yellow-200 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -546,8 +546,8 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-yellow-200 mb-2 retro-font">Technical Excellence</h4>
-                <p className="text-sm text-gray-300 retro-font">Code quality and implementation</p>
+                <h4 className="font-bold text-yellow-600 mb-2 retro-font">Technical Excellence</h4>
+                <p className="text-sm text-gray-800 retro-font">Code quality and implementation</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -596,7 +596,7 @@ function App() {
       </section>
 
       {/* Prizes */}
-      <section id="prizes" className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-200/60 via-yellow-100/40 to-white/60">
+      <section id="prizes" className="relative z-10 py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             Prizes & Recognition
@@ -668,18 +668,18 @@ function App() {
               </ThreeDCard>
             ))}
           </div>
-          <div className="mt-12 bg-gradient-to-r from-yellow-600/10 to-yellow-500/10 p-8 rounded-3xl border border-yellow-400/20 backdrop-blur-sm">
-            <p className="text-lg text-gray-300 retro-font mb-4">
+          <div className="mt-12 bg-yellow-50 p-8 rounded-3xl border-2 border-yellow-300">
+            <p className="text-lg text-gray-800 retro-font mb-4">
               Plus special category prizes for each SDG theme, academic recognition, and potential implementation support!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm retro-font border border-yellow-400/30">
+              <span className="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm retro-font border-2 border-yellow-500">
                 Special Category Awards
               </span>
-              <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm retro-font border border-yellow-400/30">
+              <span className="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm retro-font border-2 border-yellow-500">
                 Academic Recognition
               </span>
-              <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm retro-font border border-yellow-400/30">
+              <span className="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm retro-font border-2 border-yellow-500">
                 Implementation Support
               </span>
             </div>
@@ -688,13 +688,13 @@ function App() {
       </section>
 
       {/* Registration Section */}
-      <section id="registration" className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
+      <section id="registration" className="relative z-10 py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             Register Your Team
           </h2>
-                      <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm border border-yellow-400/30">
-            <p className="text-lg text-gray-300 mb-8 retro-font">
+                      <div className="bg-white p-8 rounded-2xl border-2 border-yellow-500 shadow-lg">
+            <p className="text-lg text-gray-800 mb-8 retro-font">
               Ready to be part of the innovation ecosystem? Register for GUenARK 2025 and join the mega event 
               building tomorrow at the crossroads of ideas, investment & governance.
             </p>
@@ -709,8 +709,8 @@ function App() {
                 </ul>
               </div>
               <div className="text-left">
-                <h3 className="text-xl font-bold text-yellow-300 mb-4">What You'll Get</h3>
-                <ul className="space-y-2 text-gray-300">
+                <h3 className="text-xl font-bold text-yellow-600 mb-4">What You'll Get</h3>
+                <ul className="space-y-2 text-gray-800">
                   <li className="retro-font">• Expert mentorship</li>
                   <li className="retro-font">• Networking opportunities</li>
                   <li className="retro-font">• Certificate of participation</li>
@@ -736,7 +736,7 @@ function App() {
       </section>
 
       {/* Patrons Section */}
-      <section className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
+      <section className="relative z-10 py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
             Patrons & Leadership
@@ -774,42 +774,42 @@ function App() {
             Get In Touch
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-white p-8 rounded-2xl border-2 border-yellow-500 shadow-lg">
               <Mail className="mx-auto mb-4 text-yellow-400" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Email Us</h3>
-              <p className="text-gray-300 retro-font">guenark@gauhati.ac.in</p>
+              <p className="text-gray-800 retro-font">guenark@gauhati.ac.in</p>
             </div>
-            <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm">
-              <Phone className="mx-auto mb-4 text-yellow-300" size={48} />
+            <div className="bg-white p-8 rounded-2xl border-2 border-yellow-500 shadow-lg">
+              <Phone className="mx-auto mb-4 text-yellow-600" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Call Us</h3>
-              <p className="text-gray-300 retro-font">+91 361 257 0000</p>
+              <p className="text-gray-800 retro-font">+91 361 257 0000</p>
             </div>
           </div>
           
-          <div className="mt-8 bg-gradient-to-r from-yellow-600/20 to-yellow-500/20 p-6 rounded-2xl border border-yellow-400/30">
+          <div className="mt-8 bg-yellow-50 p-6 rounded-2xl border-2 border-yellow-500">
             <h3 className="text-xl font-bold text-center mb-4 text-gray-800 retro-font">Gauhati University Rankings</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
-              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
-                <p className="text-lg font-bold text-yellow-400 retro-font">1st</p>
+              <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
+                <p className="text-lg font-bold text-yellow-600 retro-font">1st</p>
                 <p className="text-sm text-gray-600 retro-font">Among Universities of NE India</p>
               </div>
-              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+              <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
                 <p className="text-lg font-bold text-yellow-400 retro-font">9th</p>
                 <p className="text-sm text-gray-600 retro-font">Among State Universities of India</p>
               </div>
-              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+              <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
                 <p className="text-lg font-bold text-yellow-400 retro-font">33rd</p>
                 <p className="text-sm text-gray-600 retro-font">Among all Universities of India</p>
               </div>
-              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+              <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
                 <p className="text-lg font-bold text-yellow-400 retro-font">52nd</p>
                 <p className="text-sm text-gray-600 retro-font">Among all Institutions of India</p>
               </div>
-              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+              <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
                 <p className="text-lg font-bold text-yellow-400 retro-font">NAAC A+</p>
                 <p className="text-sm text-gray-600 retro-font">Accredited University</p>
               </div>
-              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+              <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
                 <p className="text-lg font-bold text-yellow-400 retro-font">NIRF 2025</p>
                 <p className="text-sm text-gray-600 retro-font">Ranked University</p>
               </div>
@@ -824,7 +824,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 py-8 px-6 bg-gradient-to-br from-yellow-200/60 to-white/60">
+      <footer className="relative z-10 py-8 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-700 retro-font">
             © 2025 GUenARK 2025. Organized by Innovation, Incubation and Startup Cell, Gauhati University. 
