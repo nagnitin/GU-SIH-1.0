@@ -54,9 +54,9 @@ const AssamTea: React.FC = () => {
           {/* Tea liquid */}
           <div className="absolute inset-2 bg-gradient-to-b from-amber-800 to-amber-600 rounded-full">
             {/* Tea leaves floating */}
-            <div className="absolute top-2 left-3 w-2 h-1 bg-green-800 rounded-full opacity-60"></div>
-            <div className="absolute top-4 right-4 w-1.5 h-0.5 bg-green-800 rounded-full opacity-60"></div>
-            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 w-1 h-0.5 bg-green-800 rounded-full opacity-60"></div>
+            <div className="absolute top-2 left-3 w-2 h-1 bg-yellow-800 rounded-full opacity-60"></div>
+            <div className="absolute top-4 right-4 w-1.5 h-0.5 bg-yellow-800 rounded-full opacity-60"></div>
+            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 w-1 h-0.5 bg-yellow-800 rounded-full opacity-60"></div>
           </div>
           
           {/* Cup rim */}
@@ -81,13 +81,13 @@ const AssamTea: React.FC = () => {
         {/* Floating tea leaves */}
         <div ref={leavesRef} className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-2 -left-2 w-4 h-4">
-            <div className="w-full h-full bg-green-600 rounded-full opacity-40"></div>
+            <div className="w-full h-full bg-yellow-600 rounded-full opacity-40"></div>
           </div>
           <div className="absolute -bottom-2 -right-2 w-3 h-3">
-            <div className="w-full h-full bg-green-700 rounded-full opacity-40"></div>
+            <div className="w-full h-full bg-yellow-700 rounded-full opacity-40"></div>
           </div>
           <div className="absolute top-0 right-0 w-2 h-2">
-            <div className="w-full h-full bg-green-500 rounded-full opacity-40"></div>
+            <div className="w-full h-full bg-yellow-500 rounded-full opacity-40"></div>
           </div>
         </div>
       </div>

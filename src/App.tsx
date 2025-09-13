@@ -98,31 +98,31 @@ function App() {
       {/* Header */}
       <header className="relative z-10 p-4 md:p-6">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font-glow">
+          <div className="text-xl md:text-3xl font-bold text-yellow-600 pixel-font-glow drop-shadow-lg" style={{textShadow: '2px 2px 0px #000'}}>
             GUenARK 2025
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
-            <a href="#about" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#about" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-900 font-semibold">
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#themes" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#themes" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-900 font-semibold">
               Activities
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#rules" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#rules" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-900 font-semibold">
               Rules
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#timeline" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#timeline" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-900 font-semibold">
               Timeline
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#prizes" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#prizes" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-900 font-semibold">
               Prizes
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contact" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#contact" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-900 font-semibold">
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
@@ -132,7 +132,7 @@ function App() {
               Register
             </button>
             <button 
-              className="md:hidden text-gray-800 hover:text-yellow-600 transition-colors p-1"
+              className="md:hidden text-gray-900 font-semibold hover:text-yellow-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -202,19 +202,19 @@ function App() {
       <section className="relative z-10 py-12 md:py-20 px-4 md:px-6" ref={heroRef}>
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6 md:mb-8 animate-fadeInUp">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6">
-              <span className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 bg-clip-text text-transparent pixel-font-large">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 md:mb-8">
+              <span className="text-yellow-600 pixel-font-large drop-shadow-2xl" style={{textShadow: '3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>
                 GUenARK
               </span>
               <br />
-              <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font-large">
+              <span className="text-yellow-500 pixel-font-large drop-shadow-2xl" style={{textShadow: '3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>
                 2025
               </span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 mb-4 md:mb-6 retro-font px-2 leading-relaxed">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-900 mb-6 md:mb-8 retro-font px-2 leading-relaxed font-bold">
               Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
             </p>
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 min-h-[2rem] md:min-h-[2.5rem] retro-font px-2 mb-8">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-900 font-semibold min-h-[2.5rem] md:min-h-[3rem] retro-font px-2 mb-8 font-semibold">
               <TypewriterEffect 
                 texts={[
                   "Shelter for ideas, Launchpad for Startups.",
@@ -236,21 +236,21 @@ function App() {
                   <Calendar className="w-8 h-8 text-yellow-600" />
                 </div>
                 <h3 className="text-yellow-600 text-lg md:text-xl retro-font font-bold mb-2">Date</h3>
-                <p className="text-gray-800 text-base md:text-lg retro-font">10th & 11th October, 2025</p>
+                <p className="text-gray-900 font-semibold text-base md:text-lg retro-font">10th & 11th October, 2025</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-yellow-500" />
                 </div>
                 <h3 className="text-yellow-500 text-lg md:text-xl retro-font font-bold mb-2">Venue</h3>
-                <p className="text-gray-800 text-base md:text-lg retro-font">Gauhati University, Guwahati</p>
+                <p className="text-gray-900 font-semibold text-base md:text-lg retro-font">Gauhati University, Guwahati</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-yellow-400" />
             </div>
                 <h3 className="text-yellow-400 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
-                <p className="text-gray-800 text-base md:text-lg retro-font">Startup & Innovation</p>
+                <p className="text-gray-900 font-semibold text-base md:text-lg retro-font">Startup & Innovation</p>
             </div>
             </div>
           </div>
@@ -260,7 +260,7 @@ function App() {
             <a href="#registration" className="retro-button px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:shadow-2xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
               Register Now
             </a>
-            <a href="#themes" className="border-2 border-yellow-600 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-yellow-600 hover:text-white transition-all retro-font text-center text-gray-800">
+            <a href="#themes" className="border-2 border-yellow-600 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-yellow-600 hover:text-white transition-all retro-font text-center text-gray-900 font-semibold">
               View Activities
             </a>
           </div>
@@ -290,7 +290,7 @@ function App() {
       {/* About Section */}
       <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 md:mb-12 text-yellow-600 pixel-font drop-shadow-lg" style={{textShadow: '2px 2px 0px #000'}}>
             About GUenARK 2025
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -362,7 +362,7 @@ function App() {
       {/* Themes Section */}
       <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 text-yellow-600 pixel-font drop-shadow-lg">
             GUenARK Activities
           </h2>
           <p className="text-center text-gray-300 mb-8 md:mb-12 text-lg md:text-xl retro-font px-2">
@@ -469,7 +469,7 @@ function App() {
       {/* Rules & Regulations Section */}
       <section id="rules" className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-5xl font-bold text-center mb-12 text-yellow-600 pixel-font drop-shadow-lg" style={{textShadow: '2px 2px 0px #000'}}>
             Rules & Regulations
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -497,7 +497,7 @@ function App() {
             
             <ThreeDCard className="space-y-6" depth={30}>
               <h3 className="text-2xl font-bold text-yellow-600 mb-4 retro-font">Competition Rules</h3>
-              <ul className="space-y-4 text-gray-800">
+              <ul className="space-y-4 text-gray-900 font-semibold">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">48-hour continuous coding period</span>
@@ -519,7 +519,7 @@ function App() {
           </div>
           
           <ThreeDCard className="mt-12" depth={40}>
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800 retro-font">Judging Criteria</h3>
+            <h3 className="text-2xl font-bold text-center mb-6 text-gray-900 font-semibold retro-font">Judging Criteria</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -537,7 +537,7 @@ function App() {
                   </svg>
                 </div>
                 <h4 className="font-bold text-yellow-600 mb-2 retro-font">Impact</h4>
-                <p className="text-sm text-gray-800 retro-font">Potential for real-world application</p>
+                <p className="text-sm text-gray-900 font-semibold retro-font">Potential for real-world application</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-yellow-200 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -547,7 +547,7 @@ function App() {
                   </svg>
                 </div>
                 <h4 className="font-bold text-yellow-600 mb-2 retro-font">Technical Excellence</h4>
-                <p className="text-sm text-gray-800 retro-font">Code quality and implementation</p>
+                <p className="text-sm text-gray-900 font-semibold retro-font">Code quality and implementation</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -566,7 +566,7 @@ function App() {
       {/* Timeline */}
       <section id="timeline" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-5xl font-bold text-center mb-12 text-yellow-600 pixel-font drop-shadow-lg" style={{textShadow: '2px 2px 0px #000'}}>
             Event Timeline
           </h2>
           <div className="space-y-8">
@@ -598,7 +598,7 @@ function App() {
       {/* Prizes */}
       <section id="prizes" className="relative z-10 py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-6xl font-bold mb-8 text-yellow-600 pixel-font drop-shadow-lg" style={{textShadow: '2px 2px 0px #000'}}>
             Prizes & Recognition
           </h2>
           <p className="text-xl text-gray-300 mb-12 retro-font max-w-3xl mx-auto">
@@ -649,11 +649,11 @@ function App() {
                   
                   {/* Content */}
                   <div className="relative text-center space-y-3">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3 retro-font drop-shadow-lg">
+                    <h3 className="text-2xl font-bold text-gray-900 font-semibold mb-3 retro-font drop-shadow-lg">
                       {prize.place}
                     </h3>
                     <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 mb-3">
-                      <p className="text-4xl font-bold text-gray-800 pixel-font drop-shadow-lg">
+                      <p className="text-4xl font-bold text-gray-900 font-semibold pixel-font drop-shadow-lg">
                         {prize.prize}
                       </p>
                     </div>
@@ -669,7 +669,7 @@ function App() {
             ))}
           </div>
           <div className="mt-12 bg-yellow-50 p-8 rounded-3xl border-2 border-yellow-300">
-            <p className="text-lg text-gray-800 retro-font mb-4">
+            <p className="text-lg text-gray-900 font-semibold retro-font mb-4">
               Plus special category prizes for each SDG theme, academic recognition, and potential implementation support!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -690,11 +690,11 @@ function App() {
       {/* Registration Section */}
       <section id="registration" className="relative z-10 py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold mb-12 text-yellow-600 pixel-font drop-shadow-lg">
             Register Your Team
           </h2>
                       <div className="bg-white p-8 rounded-2xl border-2 border-yellow-500 shadow-lg">
-            <p className="text-lg text-gray-800 mb-8 retro-font">
+            <p className="text-lg text-gray-900 font-semibold mb-8 retro-font">
               Ready to be part of the innovation ecosystem? Register for GUenARK 2025 and join the mega event 
               building tomorrow at the crossroads of ideas, investment & governance.
             </p>
@@ -710,7 +710,7 @@ function App() {
               </div>
               <div className="text-left">
                 <h3 className="text-xl font-bold text-yellow-600 mb-4">What You'll Get</h3>
-                <ul className="space-y-2 text-gray-800">
+                <ul className="space-y-2 text-gray-900 font-semibold">
                   <li className="retro-font">• Expert mentorship</li>
                   <li className="retro-font">• Networking opportunities</li>
                   <li className="retro-font">• Certificate of participation</li>
@@ -738,29 +738,29 @@ function App() {
       {/* Patrons Section */}
       <section className="relative z-10 py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-5xl font-bold text-center mb-12 text-yellow-600 pixel-font drop-shadow-lg" style={{textShadow: '2px 2px 0px #000'}}>
             Patrons & Leadership
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <ThreeDCard className="text-center" depth={30}>
               <h3 className="text-xl font-bold text-yellow-600 mb-4 retro-font">Chief Patron</h3>
-              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Himanta Biswa Sarma</p>
+              <p className="text-lg font-semibold text-gray-900 font-semibold mb-2 retro-font">Dr. Himanta Biswa Sarma</p>
               <p className="text-gray-600 retro-font">Hon'ble Chief Minister, Assam</p>
             </ThreeDCard>
             <ThreeDCard className="text-center" depth={30}>
               <h3 className="text-xl font-bold text-yellow-500 mb-4 retro-font">Patrons</h3>
-              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Shri Keshab Mahanta</p>
+              <p className="text-lg font-semibold text-gray-900 font-semibold mb-2 retro-font">Shri Keshab Mahanta</p>
               <p className="text-gray-600 retro-font mb-2">Hon'ble Minister of Revenue, Disaster Management, IT, Science, Technology & Climate Change</p>
-              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Shri Bimal Borah</p>
+              <p className="text-lg font-semibold text-gray-900 font-semibold mb-2 retro-font">Shri Bimal Borah</p>
               <p className="text-gray-600 retro-font">Hon'ble Minister of Cultural Affairs, Industries, Commerce and Public Enterprises</p>
             </ThreeDCard>
             <ThreeDCard className="text-center" depth={30}>
               <h3 className="text-xl font-bold text-yellow-400 mb-4 retro-font">Co-Patrons</h3>
-              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Prof. Nani Gopal Mahanta</p>
+              <p className="text-lg font-semibold text-gray-900 font-semibold mb-2 retro-font">Prof. Nani Gopal Mahanta</p>
               <p className="text-gray-600 retro-font mb-2">Hon'ble Vice Chancellor, Gauhati University</p>
-              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Krishna Kumar Dwivedi, IAS</p>
+              <p className="text-lg font-semibold text-gray-900 font-semibold mb-2 retro-font">Dr. Krishna Kumar Dwivedi, IAS</p>
               <p className="text-gray-600 retro-font mb-2">Principal Secretary to CM</p>
-              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Jeevan Basavaraj, IAS</p>
+              <p className="text-lg font-semibold text-gray-900 font-semibold mb-2 retro-font">Dr. Jeevan Basavaraj, IAS</p>
               <p className="text-gray-600 retro-font">Secretary, Dept. of Innovation, Incubation and Startups (DIIS), Govt. of Assam</p>
             </ThreeDCard>
           </div>
@@ -770,24 +770,24 @@ function App() {
       {/* Contact */}
       <section id="contact" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold mb-12 text-yellow-600 pixel-font drop-shadow-lg">
             Get In Touch
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border-2 border-yellow-500 shadow-lg">
               <Mail className="mx-auto mb-4 text-yellow-400" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Email Us</h3>
-              <p className="text-gray-800 retro-font">guenark@gauhati.ac.in</p>
+              <p className="text-gray-900 font-semibold retro-font">guenark@gauhati.ac.in</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border-2 border-yellow-500 shadow-lg">
               <Phone className="mx-auto mb-4 text-yellow-600" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Call Us</h3>
-              <p className="text-gray-800 retro-font">+91 361 257 0000</p>
+              <p className="text-gray-900 font-semibold retro-font">+91 361 257 0000</p>
             </div>
           </div>
           
           <div className="mt-8 bg-yellow-50 p-6 rounded-2xl border-2 border-yellow-500">
-            <h3 className="text-xl font-bold text-center mb-4 text-gray-800 retro-font">Gauhati University Rankings</h3>
+            <h3 className="text-xl font-bold text-center mb-4 text-gray-900 font-semibold retro-font">Gauhati University Rankings</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
               <div className="bg-white p-4 rounded-lg border-2 border-yellow-500 shadow-md">
                 <p className="text-lg font-bold text-yellow-600 retro-font">1st</p>

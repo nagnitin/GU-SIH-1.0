@@ -21,7 +21,7 @@ const GauhatiUniversity: React.FC = () => {
       description: 'Established in 1948, Gauhati University is one of the oldest and most prestigious universities in Northeast India.',
       image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9e1?w=800&h=600&fit=crop',
       stats: [
-        { value: '75+', label: 'Years of Excellence', color: 'text-green-400' },
+        { value: '75+', label: 'Years of Excellence', color: 'text-yellow-600' },
         { value: '50+', label: 'Academic Departments', color: 'text-yellow-400' },
         { value: '100+', label: 'Research Projects', color: 'text-blue-400' },
         { value: '50K+', label: 'Students Enrolled', color: 'text-purple-400' }
@@ -33,7 +33,7 @@ const GauhatiUniversity: React.FC = () => {
       description: 'Committed to providing world-class education and fostering innovation across diverse disciplines.',
       image: 'https://images.unsplash.com/photo-1523240794102-9eb5ccb83336?w=800&h=600&fit=crop',
       stats: [
-        { value: '95%', label: 'Graduation Rate', color: 'text-green-400' },
+        { value: '95%', label: 'Graduation Rate', color: 'text-yellow-600' },
         { value: '150+', label: 'Research Papers', color: 'text-blue-400' },
         { value: '25+', label: 'International Collaborations', color: 'text-purple-400' },
         { value: '100+', label: 'Faculty Members', color: 'text-yellow-400' }
@@ -45,7 +45,7 @@ const GauhatiUniversity: React.FC = () => {
       description: 'Leading cutting-edge research in sustainable development, technology, and regional challenges.',
       image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop',
       stats: [
-        { value: '50+', label: 'Ongoing Projects', color: 'text-green-400' },
+        { value: '50+', label: 'Ongoing Projects', color: 'text-yellow-600' },
         { value: '₹10Cr+', label: 'Research Funding', color: 'text-blue-400' },
         { value: '20+', label: 'Patents Filed', color: 'text-purple-400' },
         { value: '30+', label: 'Industry Partners', color: 'text-yellow-400' }
@@ -57,7 +57,7 @@ const GauhatiUniversity: React.FC = () => {
       description: 'Vibrant campus life with diverse cultural activities, sports, and student organizations.',
       image: 'https://images.unsplash.com/photo-1523240794102-9eb5ccb83336?w=800&h=600&fit=crop',
       stats: [
-        { value: '100+', label: 'Student Clubs', color: 'text-green-400' },
+        { value: '100+', label: 'Student Clubs', color: 'text-yellow-600' },
         { value: '15+', label: 'Sports Facilities', color: 'text-blue-400' },
         { value: '25+', label: 'Cultural Events', color: 'text-purple-400' },
         { value: '10+', label: 'Hostels', color: 'text-yellow-400' }
@@ -116,7 +116,7 @@ const GauhatiUniversity: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+        <h2 className="text-4xl font-bold text-center mb-4 text-yellow-600 pixel-font drop-shadow-lg">
           Gauhati University
         </h2>
         <p className="text-center text-gray-300 mb-12 text-lg retro-font">
@@ -131,7 +131,7 @@ const GauhatiUniversity: React.FC = () => {
               onClick={() => handleTabChange(index)}
               className={`px-6 py-3 rounded-full transition-all duration-300 retro-font ${
                 activeTab === index
-                  ? 'bg-green-600 text-white shadow-lg'
+                  ? 'bg-yellow-600 text-white shadow-lg'
                   : 'bg-gray-800/50 text-gray-300 hover:bg-gray-700/50'
               }`}
             >
@@ -149,7 +149,7 @@ const GauhatiUniversity: React.FC = () => {
                 alt={universityInfo[activeTab].title}
                 className="w-full h-80 object-cover"
               />
-              <div className="absolute bottom-4 left-4 bg-green-600/80 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <div className="absolute bottom-4 left-4 bg-yellow-600/80 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span className="text-white retro-font font-semibold">75+ Years of Excellence</span>
               </div>
             </div>

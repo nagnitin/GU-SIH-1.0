@@ -40,7 +40,7 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <div className="text-center">
-      <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-green-400 retro-font">Event Starts In</h3>
+      <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-yellow-600 retro-font">Event Starts In</h3>
       <div className="flex justify-center space-x-2 md:space-x-4 perspective-1000">
         {timeUnits.map((unit, index) => (
           <div 
@@ -51,7 +51,7 @@ const CountdownTimer: React.FC = () => {
               transform: `rotateX(${Math.sin(Date.now() / 2000 + index) * 3}deg) rotateY(${Math.cos(Date.now() / 2000 + index) * 3}deg)`
             }}
           >
-            <div className="text-2xl md:text-3xl font-bold text-green-400 pixel-font mb-1">
+            <div className="text-2xl md:text-3xl font-bold text-yellow-600 pixel-font mb-1">
               {unit.value.toString().padStart(2, '0')}
             </div>
             <div className="text-sm md:text-sm text-gray-300 retro-font">

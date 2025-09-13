@@ -65,7 +65,7 @@ const JapiHat: React.FC = () => {
           </div>
           
           <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
-            <div className="w-3 h-3 bg-green-600 rounded-full opacity-80"></div>
+            <div className="w-3 h-3 bg-yellow-600 rounded-full opacity-80"></div>
           </div>
           
           <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
