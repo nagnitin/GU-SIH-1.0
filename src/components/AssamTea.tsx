@@ -76,7 +76,7 @@ const AssamTea: React.FC = () => {
         </div>
         
         {/* Tea plantation background effect */}
-        <div className="absolute -bottom-4 -left-4 w-32 h-8 bg-gradient-to-t from-green-800 to-green-600 rounded-full opacity-20"></div>
+        <div className="absolute -bottom-4 -left-4 w-32 h-8 bg-gradient-to-t from-yellow-800 to-yellow-600 rounded-full opacity-20"></div>
         
         {/* Floating tea leaves */}
         <div ref={leavesRef} className="absolute inset-0 pointer-events-none">

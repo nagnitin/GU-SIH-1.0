@@ -116,7 +116,7 @@ const GauhatiUniversity: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 text-yellow-600 pixel-font drop-shadow-lg">
+        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
           Gauhati University
         </h2>
         <p className="text-center text-gray-300 mb-12 text-lg retro-font">

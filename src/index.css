@@ -12,19 +12,23 @@ html.menu-open, body.menu-open, body.menu-open #root {
 .pixel-font {
   font-family: 'Press Start 2P', monospace;
   font-size: 1.2rem;
-  text-shadow: 2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000;
+  text-shadow: 0 0 10px currentColor;
 }
 
 .pixel-font-large {
   font-family: 'Press Start 2P', monospace;
   font-size: 3.5rem;
-  text-shadow: 3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000;
+  text-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
 }
 
 .pixel-font-glow {
   font-family: 'Press Start 2P', monospace;
   font-size: 1.5rem;
-  text-shadow: 2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000;
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
 }
 
 .retro-font {
