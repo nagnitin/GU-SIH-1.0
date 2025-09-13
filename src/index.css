@@ -72,11 +72,9 @@ html.menu-open, body.menu-open, body.menu-open #root {
 
 /* Retro Button Styles */
 .retro-button {
-  background: linear-gradient(90deg, #1a4a1a 0%, #2d5a2d 100%);
-  border: 2px solid #4a7c59;
-  box-shadow: 
-    0 0 10px rgba(26, 74, 26, 0.5),
-    0 0 20px rgba(45, 90, 45, 0.3);
+  background: linear-gradient(135deg, #059669, #d97706);
+  border: 2px solid #059669;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
   transition: all 0.3s ease;
 }
 

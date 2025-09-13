@@ -88,7 +88,7 @@ function App() {
   }, [isMobileMenuOpen]);
 
   return (
-      <div className="min-h-screen text-white relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="min-h-screen text-gray-900 relative overflow-hidden bg-gradient-to-br from-yellow-200 via-yellow-100 to-white">
         <BinaryBackground />
         <HeroBackground />
       <FloatingParticles />
@@ -98,33 +98,33 @@ function App() {
       {/* Header */}
       <header className="relative z-10 p-4 md:p-6">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font-glow">
+          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font-glow">
             GUenARK 2025
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
-            <a href="#about" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
+            <a href="#about" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#themes" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
+            <a href="#themes" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Activities
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#rules" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
+            <a href="#rules" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Rules
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#timeline" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
+            <a href="#timeline" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Timeline
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#prizes" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
+            <a href="#prizes" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Prizes
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contact" className="hover:text-emerald-400 transition-colors relative group retro-font text-base lg:text-lg">
+            <a href="#contact" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Contact
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
@@ -132,7 +132,7 @@ function App() {
               Register
             </button>
             <button 
-              className="md:hidden text-white hover:text-emerald-400 transition-colors p-1"
+              className="md:hidden text-gray-800 hover:text-green-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ function App() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
-            </button>
+          </button>
           </div>
         </nav>
         
@@ -203,18 +203,18 @@ function App() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6 md:mb-8 animate-fadeInUp">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6">
-              <span className="bg-gradient-to-r from-green-400 via-green-300 to-green-200 bg-clip-text text-transparent pixel-font-large">
+              <span className="bg-gradient-to-r from-green-600 via-green-500 to-green-400 bg-clip-text text-transparent pixel-font-large">
                 GUenARK
               </span>
               <br />
-              <span className="bg-gradient-to-r from-green-300 via-green-200 to-green-100 bg-clip-text text-transparent pixel-font-large">
+              <span className="bg-gradient-to-r from-green-500 via-green-400 to-green-300 bg-clip-text text-transparent pixel-font-large">
                 2025
               </span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-300 mb-4 md:mb-6 retro-font px-2 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 mb-4 md:mb-6 retro-font px-2 leading-relaxed">
               Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
             </p>
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-green-200 min-h-[2rem] md:min-h-[2.5rem] retro-font px-2 mb-8">
+            <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 min-h-[2rem] md:min-h-[2.5rem] retro-font px-2 mb-8">
               <TypewriterEffect 
                 texts={[
                   "Shelter for ideas, Launchpad for Startups.",
@@ -229,28 +229,28 @@ function App() {
           </div>
 
           {/* Event Details Card */}
-          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-lg rounded-3xl p-8 md:p-10 mb-12 border border-green-400/40 shadow-2xl">
+          <div className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-lg rounded-3xl p-8 md:p-10 mb-12 border border-green-400/40 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Calendar className="w-8 h-8 text-green-400" />
+                  <Calendar className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-green-400 text-lg md:text-xl retro-font font-bold mb-2">Date</h3>
-                <p className="text-white text-base md:text-lg retro-font">10th & 11th October, 2025</p>
+                <h3 className="text-green-600 text-lg md:text-xl retro-font font-bold mb-2">Date</h3>
+                <p className="text-gray-800 text-base md:text-lg retro-font">10th & 11th October, 2025</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-green-300" />
+                  <MapPin className="w-8 h-8 text-green-500" />
                 </div>
-                <h3 className="text-green-300 text-lg md:text-xl retro-font font-bold mb-2">Venue</h3>
-                <p className="text-white text-base md:text-lg retro-font">Gauhati University, Guwahati</p>
+                <h3 className="text-green-500 text-lg md:text-xl retro-font font-bold mb-2">Venue</h3>
+                <p className="text-gray-800 text-base md:text-lg retro-font">Gauhati University, Guwahati</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-green-200" />
+                  <Users className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-green-200 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
-                <p className="text-white text-base md:text-lg retro-font">Startup & Innovation</p>
+                <h3 className="text-green-400 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
+                <p className="text-gray-800 text-base md:text-lg retro-font">Startup & Innovation</p>
               </div>
             </div>
           </div>
@@ -260,7 +260,7 @@ function App() {
             <a href="#registration" className="retro-button px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:shadow-2xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
               Register Now
             </a>
-            <a href="#themes" className="border-2 border-green-400 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-green-400 hover:text-gray-900 transition-all retro-font text-center">
+            <a href="#themes" className="border-2 border-green-600 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-green-600 hover:text-white transition-all retro-font text-center text-gray-800">
               View Activities
             </a>
           </div>
