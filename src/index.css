@@ -72,17 +72,17 @@ html.menu-open, body.menu-open, body.menu-open #root {
 
 /* Retro Button Styles */
 .retro-button {
-  background: linear-gradient(135deg, #059669, #d97706);
-  border: 2px solid #059669;
-  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  border: 2px solid #d97706;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);
   transition: all 0.3s ease;
 }
 
 .retro-button:hover {
   transform: translateY(-2px);
   box-shadow: 
-    0 0 15px rgba(26, 74, 26, 0.7),
-    0 0 30px rgba(45, 90, 45, 0.5);
+    0 0 15px rgba(217, 119, 6, 0.7),
+    0 0 30px rgba(245, 158, 11, 0.5);
 }
 
 /* Sparkle Animation */

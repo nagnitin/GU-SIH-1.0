@@ -98,41 +98,41 @@ function App() {
       {/* Header */}
       <header className="relative z-10 p-4 md:p-6">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font-glow">
+          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font-glow">
             GUenARK 2025
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
-            <a href="#about" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#about" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#themes" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#themes" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Activities
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#rules" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#rules" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Rules
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#timeline" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#timeline" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Timeline
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#prizes" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#prizes" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Prizes
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contact" className="hover:text-green-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
+            <a href="#contact" className="hover:text-yellow-600 transition-colors relative group retro-font text-base lg:text-lg text-gray-800">
               Contact
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
-            <button className="bg-gradient-to-r from-emerald-600 to-amber-600 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap">
+            <button className="bg-gradient-to-r from-yellow-600 to-yellow-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white">
               Register
             </button>
             <button 
-              className="md:hidden text-gray-800 hover:text-green-600 transition-colors p-1"
+              className="md:hidden text-gray-800 hover:text-yellow-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -158,7 +158,7 @@ function App() {
             {/* Menu Content */}
             <div
               ref={mobileMenuRef}
-              className="md:hidden fixed top-20 left-4 right-4 bg-gray-900/95 z-50 rounded-2xl border border-green-400/30 shadow-2xl overflow-hidden"
+              className="md:hidden fixed top-20 left-4 right-4 bg-gray-900/95 z-50 rounded-2xl border border-yellow-400/30 shadow-2xl overflow-hidden"
             >
               <nav className="py-6">
                 {[
@@ -173,10 +173,10 @@ function App() {
                     key={item.name}
                     href={item.href}
                     onClick={handleNavLinkClick}
-                    className="flex items-center justify-between px-6 py-4 text-white hover:bg-green-400/10 hover:text-green-400 transition-all duration-300 retro-font text-lg border-b border-gray-700/30 last:border-b-0"
+                    className="flex items-center justify-between px-6 py-4 text-gray-800 hover:bg-yellow-400/10 hover:text-yellow-600 transition-all duration-300 retro-font text-lg border-b border-gray-700/30 last:border-b-0"
                   >
                     <span>{item.name}</span>
-                    <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </a>
@@ -188,7 +188,7 @@ function App() {
                 <a
                   href="#registration"
                   onClick={handleNavLinkClick}
-                  className="bg-gradient-to-r from-emerald-600 to-amber-600 px-6 py-3 rounded-full text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all w-full block text-center retro-font"
+                  className="bg-gradient-to-r from-yellow-600 to-yellow-500 px-6 py-3 rounded-full text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all w-full block text-center retro-font text-white"
                 >
                   Register Now
                 </a>
@@ -203,11 +203,11 @@ function App() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6 md:mb-8 animate-fadeInUp">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6">
-              <span className="bg-gradient-to-r from-green-600 via-green-500 to-green-400 bg-clip-text text-transparent pixel-font-large">
+              <span className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 bg-clip-text text-transparent pixel-font-large">
                 GUenARK
               </span>
               <br />
-              <span className="bg-gradient-to-r from-green-500 via-green-400 to-green-300 bg-clip-text text-transparent pixel-font-large">
+              <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font-large">
                 2025
               </span>
             </h1>
@@ -229,27 +229,27 @@ function App() {
           </div>
 
           {/* Event Details Card */}
-          <div className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-lg rounded-3xl p-8 md:p-10 mb-12 border border-green-400/40 shadow-2xl">
+          <div className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-lg rounded-3xl p-8 md:p-10 mb-12 border border-yellow-400/40 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Calendar className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="w-8 h-8 text-yellow-600" />
                 </div>
-                <h3 className="text-green-600 text-lg md:text-xl retro-font font-bold mb-2">Date</h3>
+                <h3 className="text-yellow-600 text-lg md:text-xl retro-font font-bold mb-2">Date</h3>
                 <p className="text-gray-800 text-base md:text-lg retro-font">10th & 11th October, 2025</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-green-500" />
+                <div className="w-16 h-16 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-yellow-500" />
                 </div>
-                <h3 className="text-green-500 text-lg md:text-xl retro-font font-bold mb-2">Venue</h3>
+                <h3 className="text-yellow-500 text-lg md:text-xl retro-font font-bold mb-2">Venue</h3>
                 <p className="text-gray-800 text-base md:text-lg retro-font">Gauhati University, Guwahati</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-green-400" />
+                <div className="w-16 h-16 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-yellow-400" />
             </div>
-                <h3 className="text-green-400 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
+                <h3 className="text-yellow-400 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
                 <p className="text-gray-800 text-base md:text-lg retro-font">Startup & Innovation</p>
             </div>
             </div>
@@ -260,7 +260,7 @@ function App() {
             <a href="#registration" className="retro-button px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:shadow-2xl hover:scale-105 transition-all animate-pulse inline-block text-white text-center">
               Register Now
             </a>
-            <a href="#themes" className="border-2 border-green-600 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-green-600 hover:text-white transition-all retro-font text-center text-gray-800">
+            <a href="#themes" className="border-2 border-yellow-600 px-12 py-5 md:px-16 md:py-6 rounded-full text-xl md:text-2xl font-bold hover:bg-yellow-600 hover:text-white transition-all retro-font text-center text-gray-800">
               View Activities
             </a>
           </div>
@@ -273,7 +273,7 @@ function App() {
           {/* SDG Badge */}
           <ThreeDFloating>
             <div className="flex justify-center mb-6 md:mb-8">
-              <div className="bg-gradient-to-r from-green-600 to-green-500 px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-semibold flex items-center space-x-2 shadow-2xl backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-yellow-600 to-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-semibold flex items-center space-x-2 shadow-2xl backdrop-blur-sm">
                 <span className="retro-font text-sm md:text-base">UN Sustainable Development Goals</span>
               </div>
             </div>
@@ -290,7 +290,7 @@ function App() {
       {/* About Section */}
       <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             About GUenARK 2025
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -309,14 +309,14 @@ function App() {
               </p>
               <div className="flex flex-wrap gap-2 md:gap-4">
                 {['Hackathon', 'Ideathon', 'Startup Exhibition', 'Innovation Talks', 'Investor Meets', 'Research Showcase'].map((tag) => (
-                  <span key={tag} className="bg-green-600/20 border border-green-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-sm md:text-base">
+                  <span key={tag} className="bg-yellow-600/20 border border-yellow-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full retro-font text-sm md:text-base">
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-r from-green-600 to-green-500 p-6 md:p-8 rounded-2xl shadow-2xl">
+              <div className="bg-gradient-to-r from-yellow-600 to-yellow-500 p-6 md:p-8 rounded-2xl shadow-2xl">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 retro-font">Why GUenARK 2025?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
@@ -362,7 +362,7 @@ function App() {
       {/* Themes Section */}
       <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
             GUenARK Activities
           </h2>
           <p className="text-center text-gray-300 mb-8 md:mb-12 text-lg md:text-xl retro-font px-2">
@@ -393,18 +393,18 @@ function App() {
             
                         <ThreeDCard className="group cursor-pointer" depth={50}>
                 <div className="text-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-green-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-600 to-yellow-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Zap className="text-white" size={32} />
                   </div>
-                  <h3 className="text-xl font-bold text-green-400 mb-2 retro-font">IDEATHON</h3>
-                  <p className="text-sm text-green-300 retro-font">24-Hour Innovation Challenge</p>
+                  <h3 className="text-xl font-bold text-yellow-400 mb-2 retro-font">IDEATHON</h3>
+                  <p className="text-sm text-yellow-300 retro-font">24-Hour Innovation Challenge</p>
                 </div>
                 <p className="text-gray-300 text-center retro-font">
                   24-hour Ideathon on Sustainable Futures for Northeast India challenging students to design 
                   business models, policy frameworks, community campaigns, financial tools, and education innovations 
                   addressing regional issues beyond technology, leading to practical models and policy-ready solutions.
                 </p>
-                <div className="mt-4 p-4 bg-green-600/10 rounded-lg border border-green-400/20">
+                <div className="mt-4 p-4 bg-yellow-600/10 rounded-lg border border-yellow-400/20">
                   <img 
                     src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
                     alt="Ideathon"
@@ -469,49 +469,49 @@ function App() {
       {/* Rules & Regulations Section */}
       <section id="rules" className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
             Rules & Regulations
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <ThreeDCard className="space-y-6" depth={30}>
-              <h3 className="text-2xl font-bold text-green-400 mb-4 retro-font">Team Guidelines</h3>
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4 retro-font">Team Guidelines</h3>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">Team size: 4-6 members per team</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">All team members must be current students</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">Inter-disciplinary teams are encouraged</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">One mentor per team (optional)</span>
                 </li>
               </ul>
             </ThreeDCard>
             
             <ThreeDCard className="space-y-6" depth={30}>
-              <h3 className="text-2xl font-bold text-green-300 mb-4 retro-font">Competition Rules</h3>
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4 retro-font">Competition Rules</h3>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-300 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">48-hour continuous coding period</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-300 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">All code must be written during the hackathon</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-300 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">Open source libraries and APIs allowed</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-300 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 mr-3"></div>
                   <span className="retro-font">Final presentation: 5 minutes + 3 minutes Q&A</span>
                 </li>
               </ul>
@@ -527,35 +527,35 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-green-400 mb-2 retro-font">Innovation</h4>
+                <h4 className="font-bold text-yellow-400 mb-2 retro-font">Innovation</h4>
                 <p className="text-sm text-gray-300 retro-font">Novel approach to problem-solving</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-green-300 mb-2 retro-font">Impact</h4>
+                <h4 className="font-bold text-yellow-300 mb-2 retro-font">Impact</h4>
                 <p className="text-sm text-gray-300 retro-font">Potential for real-world application</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-yellow-200 rounded-full flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-green-200 mb-2 retro-font">Technical Excellence</h4>
+                <h4 className="font-bold text-yellow-200 mb-2 retro-font">Technical Excellence</h4>
                 <p className="text-sm text-gray-300 retro-font">Code quality and implementation</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-green-400 mb-2 retro-font">Sustainability</h4>
+                <h4 className="font-bold text-yellow-400 mb-2 retro-font">Sustainability</h4>
                 <p className="text-sm text-gray-300 retro-font">Alignment with UN SDGs</p>
               </div>
             </div>
@@ -566,7 +566,7 @@ function App() {
       {/* Timeline */}
       <section id="timeline" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
             Event Timeline
           </h2>
           <div className="space-y-8">
@@ -575,15 +575,15 @@ function App() {
               { day: 'Day 2', time: '11th October 2025', events: ['24-Hour Hackathon Continues', 'Startup Exhibition & Networking', 'Structured Engagement Sessions', 'Final Presentations & Awards'] }
             ].map((day, index) => (
               <div key={index} className="flex items-start space-x-6 group">
-                <div className="bg-gradient-to-r from-green-600 to-green-500 w-16 h-16 rounded-full flex items-center justify-center font-bold shrink-0 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-r from-yellow-600 to-yellow-500 w-16 h-16 rounded-full flex items-center justify-center font-bold shrink-0 group-hover:scale-110 transition-transform">
                   {index + 1}
                 </div>
                 <div className="bg-gray-800/50 p-6 rounded-xl flex-1 backdrop-blur-sm">
-                  <h3 className="text-xl font-bold text-green-400 mb-2 retro-font">{day.day} - {day.time}</h3>
+                  <h3 className="text-xl font-bold text-yellow-400 mb-2 retro-font">{day.day} - {day.time}</h3>
                   <ul className="space-y-2 text-gray-300">
                     {day.events.map((event, i) => (
                       <li key={i} className="flex items-center">
-                        <Clock className="mr-2 text-green-400" size={16} />
+                        <Clock className="mr-2 text-yellow-400" size={16} />
                         <span className="retro-font">{event}</span>
                       </li>
                     ))}
@@ -598,7 +598,7 @@ function App() {
       {/* Prizes */}
       <section id="prizes" className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-200/60 via-yellow-100/40 to-white/60">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             Prizes & Recognition
           </h2>
           <p className="text-xl text-gray-300 mb-12 retro-font max-w-3xl mx-auto">
@@ -668,18 +668,18 @@ function App() {
               </ThreeDCard>
             ))}
           </div>
-          <div className="mt-12 bg-gradient-to-r from-green-600/10 to-green-500/10 p-8 rounded-3xl border border-green-400/20 backdrop-blur-sm">
+          <div className="mt-12 bg-gradient-to-r from-yellow-600/10 to-yellow-500/10 p-8 rounded-3xl border border-yellow-400/20 backdrop-blur-sm">
             <p className="text-lg text-gray-300 retro-font mb-4">
               Plus special category prizes for each SDG theme, academic recognition, and potential implementation support!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm retro-font border border-green-400/30">
+              <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm retro-font border border-yellow-400/30">
                 Special Category Awards
               </span>
-              <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm retro-font border border-green-400/30">
+              <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm retro-font border border-yellow-400/30">
                 Academic Recognition
               </span>
-              <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm retro-font border border-green-400/30">
+              <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm retro-font border border-yellow-400/30">
                 Implementation Support
               </span>
             </div>
@@ -690,17 +690,17 @@ function App() {
       {/* Registration Section */}
       <section id="registration" className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             Register Your Team
           </h2>
-                      <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm border border-green-400/30">
+                      <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm border border-yellow-400/30">
             <p className="text-lg text-gray-300 mb-8 retro-font">
               Ready to be part of the innovation ecosystem? Register for GUenARK 2025 and join the mega event 
               building tomorrow at the crossroads of ideas, investment & governance.
             </p>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="text-left">
-                <h3 className="text-xl font-bold text-green-400 mb-4">Registration Requirements</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Registration Requirements</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li className="retro-font">• Team of 4-6 students</li>
                   <li className="retro-font">• Valid student ID cards</li>
@@ -709,7 +709,7 @@ function App() {
                 </ul>
               </div>
               <div className="text-left">
-                <h3 className="text-xl font-bold text-green-300 mb-4">What You'll Get</h3>
+                <h3 className="text-xl font-bold text-yellow-300 mb-4">What You'll Get</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li className="retro-font">• Expert mentorship</li>
                   <li className="retro-font">• Networking opportunities</li>
@@ -723,7 +723,7 @@ function App() {
                 href="https://forms.gle/example" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block"
+                className="bg-gradient-to-r from-yellow-600 to-yellow-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block"
               >
                 Register Now - Google Form
               </a>
@@ -738,24 +738,24 @@ function App() {
       {/* Patrons Section */}
       <section className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent pixel-font">
             Patrons & Leadership
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-green-600 mb-4 retro-font">Chief Patron</h3>
+              <h3 className="text-xl font-bold text-yellow-600 mb-4 retro-font">Chief Patron</h3>
               <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Himanta Biswa Sarma</p>
               <p className="text-gray-600 retro-font">Hon'ble Chief Minister, Assam</p>
             </ThreeDCard>
             <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-green-500 mb-4 retro-font">Patrons</h3>
+              <h3 className="text-xl font-bold text-yellow-500 mb-4 retro-font">Patrons</h3>
               <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Shri Keshab Mahanta</p>
               <p className="text-gray-600 retro-font mb-2">Hon'ble Minister of Revenue, Disaster Management, IT, Science, Technology & Climate Change</p>
               <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Shri Bimal Borah</p>
               <p className="text-gray-600 retro-font">Hon'ble Minister of Cultural Affairs, Industries, Commerce and Public Enterprises</p>
             </ThreeDCard>
             <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-green-400 mb-4 retro-font">Co-Patrons</h3>
+              <h3 className="text-xl font-bold text-yellow-400 mb-4 retro-font">Co-Patrons</h3>
               <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Prof. Nani Gopal Mahanta</p>
               <p className="text-gray-600 retro-font mb-2">Hon'ble Vice Chancellor, Gauhati University</p>
               <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Krishna Kumar Dwivedi, IAS</p>
@@ -770,52 +770,52 @@ function App() {
       {/* Contact */}
       <section id="contact" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
             Get In Touch
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm">
-              <Mail className="mx-auto mb-4 text-green-400" size={48} />
+              <Mail className="mx-auto mb-4 text-yellow-400" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Email Us</h3>
               <p className="text-gray-300 retro-font">guenark@gauhati.ac.in</p>
             </div>
             <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm">
-              <Phone className="mx-auto mb-4 text-green-300" size={48} />
+              <Phone className="mx-auto mb-4 text-yellow-300" size={48} />
               <h3 className="text-xl font-bold mb-2 retro-font">Call Us</h3>
               <p className="text-gray-300 retro-font">+91 361 257 0000</p>
             </div>
           </div>
           
-          <div className="mt-8 bg-gradient-to-r from-green-600/20 to-green-500/20 p-6 rounded-2xl border border-green-400/30">
+          <div className="mt-8 bg-gradient-to-r from-yellow-600/20 to-yellow-500/20 p-6 rounded-2xl border border-yellow-400/30">
             <h3 className="text-xl font-bold text-center mb-4 text-gray-800 retro-font">Gauhati University Rankings</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
-              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
-                <p className="text-lg font-bold text-green-400 retro-font">1st</p>
+              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+                <p className="text-lg font-bold text-yellow-400 retro-font">1st</p>
                 <p className="text-sm text-gray-600 retro-font">Among Universities of NE India</p>
               </div>
-              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
-                <p className="text-lg font-bold text-green-400 retro-font">9th</p>
+              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+                <p className="text-lg font-bold text-yellow-400 retro-font">9th</p>
                 <p className="text-sm text-gray-600 retro-font">Among State Universities of India</p>
               </div>
-              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
-                <p className="text-lg font-bold text-green-400 retro-font">33rd</p>
+              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+                <p className="text-lg font-bold text-yellow-400 retro-font">33rd</p>
                 <p className="text-sm text-gray-600 retro-font">Among all Universities of India</p>
               </div>
-              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
-                <p className="text-lg font-bold text-green-400 retro-font">52nd</p>
+              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+                <p className="text-lg font-bold text-yellow-400 retro-font">52nd</p>
                 <p className="text-sm text-gray-600 retro-font">Among all Institutions of India</p>
               </div>
-              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
-                <p className="text-lg font-bold text-green-400 retro-font">NAAC A+</p>
+              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+                <p className="text-lg font-bold text-yellow-400 retro-font">NAAC A+</p>
                 <p className="text-sm text-gray-600 retro-font">Accredited University</p>
               </div>
-              <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
-                <p className="text-lg font-bold text-green-400 retro-font">NIRF 2025</p>
+              <div className="bg-yellow-600/20 p-4 rounded-lg border border-yellow-400/30">
+                <p className="text-lg font-bold text-yellow-400 retro-font">NIRF 2025</p>
                 <p className="text-sm text-gray-600 retro-font">Ranked University</p>
               </div>
             </div>
             <div className="mt-6 text-center">
-              <p className="text-2xl font-bold text-green-400 mb-2 retro-font">Innovation, Incubation and Startup Cell</p>
+              <p className="text-2xl font-bold text-yellow-400 mb-2 retro-font">Innovation, Incubation and Startup Cell</p>
               <p className="text-gray-600 retro-font">Gauhati University, Guwahati-781014, Assam, India</p>
               <p className="text-gray-600 retro-font">Web: www.gauhati.ac.in/guenark2025</p>
             </div>
