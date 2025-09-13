@@ -248,10 +248,10 @@ function App() {
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-green-400" />
-                </div>
+            </div>
                 <h3 className="text-green-400 text-lg md:text-xl retro-font font-bold mb-2">Focus</h3>
                 <p className="text-gray-800 text-base md:text-lg retro-font">Startup & Innovation</p>
-              </div>
+            </div>
             </div>
           </div>
 
@@ -288,9 +288,9 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-black/20">
+      <section id="about" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
             About GUenARK 2025
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -360,7 +360,7 @@ function App() {
       </section>
 
       {/* Themes Section */}
-      <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-black/20">
+      <section id="themes" className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
             GUenARK Activities
@@ -460,7 +460,7 @@ function App() {
       </section>
 
       {/* Image Gallery Section */}
-      <section className="relative z-10 bg-black/20">
+      <section className="relative z-10 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <LazyComponent>
           <ImageGallery />
         </LazyComponent>
@@ -519,7 +519,7 @@ function App() {
           </div>
           
           <ThreeDCard className="mt-12" depth={40}>
-            <h3 className="text-2xl font-bold text-center mb-6 text-white retro-font">Judging Criteria</h3>
+            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800 retro-font">Judging Criteria</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -596,9 +596,9 @@ function App() {
       </section>
 
       {/* Prizes */}
-      <section id="prizes" className="relative z-10 py-20 px-6 bg-gradient-to-br from-black/30 via-gray-900/20 to-black/30">
+      <section id="prizes" className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-200/60 via-yellow-100/40 to-white/60">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
             Prizes & Recognition
           </h2>
           <p className="text-xl text-gray-300 mb-12 retro-font max-w-3xl mx-auto">
@@ -649,15 +649,15 @@ function App() {
                   
                   {/* Content */}
                   <div className="relative text-center space-y-3">
-                    <h3 className="text-2xl font-bold text-white mb-3 retro-font drop-shadow-lg">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-3 retro-font drop-shadow-lg">
                       {prize.place}
                     </h3>
                     <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 mb-3">
-                      <p className="text-4xl font-bold text-white pixel-font drop-shadow-lg">
+                      <p className="text-4xl font-bold text-gray-800 pixel-font drop-shadow-lg">
                         {prize.prize}
                       </p>
                     </div>
-                    <p className="text-sm text-white/90 font-semibold retro-font drop-shadow-md">
+                    <p className="text-sm text-gray-700 font-semibold retro-font drop-shadow-md">
                       {prize.subtitle}
                     </p>
                   </div>
@@ -688,9 +688,9 @@ function App() {
       </section>
 
       {/* Registration Section */}
-      <section id="registration" className="relative z-10 py-20 px-6 bg-black/20">
+      <section id="registration" className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
             Register Your Team
           </h2>
                       <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm border border-green-400/30">
@@ -736,32 +736,32 @@ function App() {
       </section>
 
       {/* Patrons Section */}
-      <section className="relative z-10 py-20 px-6 bg-black/20">
+      <section className="relative z-10 py-20 px-6 bg-gradient-to-br from-yellow-100/50 to-white/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
             Patrons & Leadership
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-green-400 mb-4 retro-font">Chief Patron</h3>
-              <p className="text-lg font-semibold text-white mb-2 retro-font">Dr. Himanta Biswa Sarma</p>
-              <p className="text-gray-300 retro-font">Hon'ble Chief Minister, Assam</p>
+              <h3 className="text-xl font-bold text-green-600 mb-4 retro-font">Chief Patron</h3>
+              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Himanta Biswa Sarma</p>
+              <p className="text-gray-600 retro-font">Hon'ble Chief Minister, Assam</p>
             </ThreeDCard>
             <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-green-300 mb-4 retro-font">Patrons</h3>
-              <p className="text-lg font-semibold text-white mb-2 retro-font">Shri Keshab Mahanta</p>
-              <p className="text-gray-300 retro-font mb-2">Hon'ble Minister of Revenue, Disaster Management, IT, Science, Technology & Climate Change</p>
-              <p className="text-lg font-semibold text-white mb-2 retro-font">Shri Bimal Borah</p>
-              <p className="text-gray-300 retro-font">Hon'ble Minister of Cultural Affairs, Industries, Commerce and Public Enterprises</p>
+              <h3 className="text-xl font-bold text-green-500 mb-4 retro-font">Patrons</h3>
+              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Shri Keshab Mahanta</p>
+              <p className="text-gray-600 retro-font mb-2">Hon'ble Minister of Revenue, Disaster Management, IT, Science, Technology & Climate Change</p>
+              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Shri Bimal Borah</p>
+              <p className="text-gray-600 retro-font">Hon'ble Minister of Cultural Affairs, Industries, Commerce and Public Enterprises</p>
             </ThreeDCard>
             <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-green-200 mb-4 retro-font">Co-Patrons</h3>
-              <p className="text-lg font-semibold text-white mb-2 retro-font">Prof. Nani Gopal Mahanta</p>
-              <p className="text-gray-300 retro-font mb-2">Hon'ble Vice Chancellor, Gauhati University</p>
-              <p className="text-lg font-semibold text-white mb-2 retro-font">Dr. Krishna Kumar Dwivedi, IAS</p>
-              <p className="text-gray-300 retro-font mb-2">Principal Secretary to CM</p>
-              <p className="text-lg font-semibold text-white mb-2 retro-font">Dr. Jeevan Basavaraj, IAS</p>
-              <p className="text-gray-300 retro-font">Secretary, Dept. of Innovation, Incubation and Startups (DIIS), Govt. of Assam</p>
+              <h3 className="text-xl font-bold text-green-400 mb-4 retro-font">Co-Patrons</h3>
+              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Prof. Nani Gopal Mahanta</p>
+              <p className="text-gray-600 retro-font mb-2">Hon'ble Vice Chancellor, Gauhati University</p>
+              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Krishna Kumar Dwivedi, IAS</p>
+              <p className="text-gray-600 retro-font mb-2">Principal Secretary to CM</p>
+              <p className="text-lg font-semibold text-gray-800 mb-2 retro-font">Dr. Jeevan Basavaraj, IAS</p>
+              <p className="text-gray-600 retro-font">Secretary, Dept. of Innovation, Incubation and Startups (DIIS), Govt. of Assam</p>
             </ThreeDCard>
           </div>
         </div>
@@ -770,7 +770,7 @@ function App() {
       {/* Contact */}
       <section id="contact" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent pixel-font">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent pixel-font">
             Get In Touch
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -787,46 +787,46 @@ function App() {
           </div>
           
           <div className="mt-8 bg-gradient-to-r from-green-600/20 to-green-500/20 p-6 rounded-2xl border border-green-400/30">
-            <h3 className="text-xl font-bold text-center mb-4 text-white retro-font">Gauhati University Rankings</h3>
+            <h3 className="text-xl font-bold text-center mb-4 text-gray-800 retro-font">Gauhati University Rankings</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
               <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
                 <p className="text-lg font-bold text-green-400 retro-font">1st</p>
-                <p className="text-sm text-gray-300 retro-font">Among Universities of NE India</p>
+                <p className="text-sm text-gray-600 retro-font">Among Universities of NE India</p>
               </div>
               <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
                 <p className="text-lg font-bold text-green-400 retro-font">9th</p>
-                <p className="text-sm text-gray-300 retro-font">Among State Universities of India</p>
+                <p className="text-sm text-gray-600 retro-font">Among State Universities of India</p>
               </div>
               <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
                 <p className="text-lg font-bold text-green-400 retro-font">33rd</p>
-                <p className="text-sm text-gray-300 retro-font">Among all Universities of India</p>
+                <p className="text-sm text-gray-600 retro-font">Among all Universities of India</p>
               </div>
               <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
                 <p className="text-lg font-bold text-green-400 retro-font">52nd</p>
-                <p className="text-sm text-gray-300 retro-font">Among all Institutions of India</p>
+                <p className="text-sm text-gray-600 retro-font">Among all Institutions of India</p>
               </div>
               <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
                 <p className="text-lg font-bold text-green-400 retro-font">NAAC A+</p>
-                <p className="text-sm text-gray-300 retro-font">Accredited University</p>
+                <p className="text-sm text-gray-600 retro-font">Accredited University</p>
               </div>
               <div className="bg-green-600/20 p-4 rounded-lg border border-green-400/30">
                 <p className="text-lg font-bold text-green-400 retro-font">NIRF 2025</p>
-                <p className="text-sm text-gray-300 retro-font">Ranked University</p>
+                <p className="text-sm text-gray-600 retro-font">Ranked University</p>
               </div>
             </div>
             <div className="mt-6 text-center">
               <p className="text-2xl font-bold text-green-400 mb-2 retro-font">Innovation, Incubation and Startup Cell</p>
-              <p className="text-gray-300 retro-font">Gauhati University, Guwahati-781014, Assam, India</p>
-              <p className="text-gray-300 retro-font">Web: www.gauhati.ac.in/guenark2025</p>
+              <p className="text-gray-600 retro-font">Gauhati University, Guwahati-781014, Assam, India</p>
+              <p className="text-gray-600 retro-font">Web: www.gauhati.ac.in/guenark2025</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 py-8 px-6 bg-black/40">
+      <footer className="relative z-10 py-8 px-6 bg-gradient-to-br from-yellow-200/60 to-white/60">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400 retro-font">
+          <p className="text-gray-700 retro-font">
             © 2025 GUenARK 2025. Organized by Innovation, Incubation and Startup Cell, Gauhati University. 
             Building Tomorrow at the Crossroads of Ideas, Investment & Governance.
             Honoring the spirit of Northeast India.
