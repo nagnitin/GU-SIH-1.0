@@ -116,10 +116,10 @@ const GauhatiUniversity: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+        <h2 className="text-4xl font-bold text-center mb-4 text-yellow-600 pixel-font-large drop-shadow-2xl" style={{textShadow: '3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>
           Gauhati University
         </h2>
-        <p className="text-center text-gray-300 mb-12 text-lg retro-font">
+        <p className="text-center text-gray-900 mb-12 text-lg retro-font font-semibold">
           The premier institution of higher education in Northeast India, fostering innovation and sustainable development since 1948
         </p>
         
@@ -156,20 +156,20 @@ const GauhatiUniversity: React.FC = () => {
           </ThreeDCard>
 
           <div className="university-content">
-            <h3 className="text-3xl font-bold text-white mb-6 pixel-font">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6 pixel-font">
               {universityInfo[activeTab].title}
             </h3>
-            <p className="text-lg text-gray-300 mb-8 retro-font leading-relaxed">
+            <p className="text-lg text-gray-800 mb-8 retro-font leading-relaxed font-semibold">
               {universityInfo[activeTab].description}
             </p>
             
             <div className="grid grid-cols-2 gap-6">
               {universityInfo[activeTab].stats.map((stat, index) => (
-                <div key={index} className="bg-gray-800/50 p-4 rounded-xl backdrop-blur-sm">
+                <div key={index} className="bg-white/90 p-4 rounded-xl backdrop-blur-sm border-2 border-yellow-500 shadow-lg">
                   <div className={`text-3xl font-bold mb-2 pixel-font ${stat.color}`}>
                     {stat.value}
                   </div>
-                  <div className="text-sm text-gray-300 retro-font">
+                  <div className="text-sm text-gray-900 retro-font font-semibold">
                     {stat.label}
                   </div>
                 </div>

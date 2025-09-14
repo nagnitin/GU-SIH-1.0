@@ -124,10 +124,10 @@ const AssamInteractiveMap: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+        <h2 className="text-4xl font-bold text-center mb-4 text-yellow-600 pixel-font-large drop-shadow-2xl" style={{textShadow: '3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>
           Interactive Assam Map
         </h2>
-        <p className="text-center text-gray-300 mb-12 text-lg retro-font">
+        <p className="text-center text-gray-900 mb-12 text-lg retro-font font-semibold">
           Click on the points to explore key locations across Assam
         </p>
         
@@ -186,11 +186,11 @@ const AssamInteractiveMap: React.FC = () => {
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2 retro-font">{selectedLocation.name}</h3>
-                  <span className="inline-block bg-yellow-600/20 text-yellow-600 px-3 py-1 rounded-full text-sm retro-font mb-4">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 retro-font">{selectedLocation.name}</h3>
+                  <span className="inline-block bg-yellow-600/20 text-gray-800 px-3 py-1 rounded-full text-sm retro-font mb-4 font-semibold">
                     {selectedLocation.category}
                   </span>
-                  <p className="text-gray-300 mb-4 retro-font">{selectedLocation.description}</p>
+                  <p className="text-gray-800 mb-4 retro-font font-semibold">{selectedLocation.description}</p>
                   <img 
                     src={selectedLocation.image} 
                     alt={selectedLocation.name}
@@ -206,8 +206,8 @@ const AssamInteractiveMap: React.FC = () => {
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2 retro-font">Explore Assam</h3>
-                  <p className="text-gray-300 retro-font">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 retro-font">Explore Assam</h3>
+                  <p className="text-gray-800 retro-font font-semibold">
                     Click on any point on the map to learn more about that location
                   </p>
                 </div>
