@@ -245,7 +245,7 @@ function App() {
                   <Calendar className="w-8 h-8 text-gray-800" />
                 </div>
                 <h3 className="text-gray-900 text-lg md:text-xl font-semibold mb-2">Date</h3>
-                <p className="text-gray-700 font-medium text-base md:text-lg">10th & 11th October, 2025</p>
+                <p className="text-gray-700 font-medium text-base md:text-lg">10<sup>th</sup> & 11<sup>th</sup> October, 2025</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600/15 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -747,8 +747,8 @@ function App() {
           </h2>
           <div className="space-y-8">
             {[
-              { day: 'Day 1', time: '10th October 2025', events: ['Problem statement briefing & team formation', 'Requirement analysis & brainstorming', 'Initial prototyping & system design', 'Mentor check-in & technical validation'] },
-              { day: 'Day 2', time: '11th October 2025', events: ['Coding & development of core features', 'Integration & testing', 'Final touches & deployment setup', 'Final presentations & live demos (5 min/team)'] }
+              { day: 'Day 1', time: '10<sup>th</sup> October 2025', events: ['Problem statement briefing & team formation', 'Requirement analysis & brainstorming', 'Initial prototyping & system design', 'Mentor check-in & technical validation'] },
+              { day: 'Day 2', time: '11<sup>th</sup> October 2025', events: ['Coding & development of core features', 'Integration & testing', 'Final touches & deployment setup', 'Final presentations & live demos (5 min/team)'] }
             ].map((day, index) => (
               <div key={index} className="flex items-start space-x-6 group">
                 <div className="bg-gradient-to-r from-blue-700 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center font-bold shrink-0 group-hover:scale-110 transition-transform">
