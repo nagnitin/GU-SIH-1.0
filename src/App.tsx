@@ -542,13 +542,13 @@ function App() {
               </div>
               <div className="text-center mt-auto">
                 <p className="text-blue-700 font-bold text-lg">Cash Prize: ₹1.5 Lakh</p>
-              </div>
-              <div className="mt-4 p-4 bg-blue-600/10 rounded-lg border border-blue-400/20">
-                <img 
-                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" 
-                  alt="Hackathon"
-                  className="w-full h-24 object-cover rounded-lg opacity-80"
-                />
+                <div className="mt-4 p-4 bg-blue-600/10 rounded-lg border border-blue-400/20">
+                  <img 
+                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" 
+                    alt="Hackathon"
+                    className="w-full h-24 object-cover rounded-lg opacity-80"
+                  />
+                </div>
               </div>
             </ThreeDCard>
             
@@ -586,13 +586,13 @@ function App() {
                 </div>
                 <div className="text-center mt-auto">
                   <p className="text-blue-700 font-bold text-lg">Cash Prize: ₹1 Lakh</p>
-                </div>
-                <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                  <img 
-                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
-                    alt="Ideathon"
-                    className="w-full h-24 object-cover rounded-lg opacity-80"
-                  />
+                  <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <img 
+                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
+                      alt="Ideathon"
+                      className="w-full h-24 object-cover rounded-lg opacity-80"
+                    />
+                  </div>
                 </div>
               </ThreeDCard>
             
@@ -619,13 +619,13 @@ function App() {
               </div>
               <div className="text-center mt-auto">
                 <p className="text-blue-700 font-bold text-lg">Linkage for Seed Money</p>
-              </div>
-              <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
-                  alt="Startup Exhibition"
-                  className="w-full h-24 object-cover rounded-lg opacity-80"
-                />
+                <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <img 
+                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop" 
+                    alt="Startup Exhibition"
+                    className="w-full h-24 object-cover rounded-lg opacity-80"
+                  />
+                </div>
               </div>
             </ThreeDCard>
           </div>
