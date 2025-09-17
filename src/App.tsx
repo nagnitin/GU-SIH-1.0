@@ -218,7 +218,7 @@ function App() {
               Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
             </p>
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-6 md:mb-8 px-4 font-bold">
-              ⚡ 24-Hour Hackathon | Ideathon ⚡
+              ⚡ 24-Hour Hackathon | Ideathon | Startup ⚡
             </div>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 md:mb-12 px-4 font-semibold">
               Choose Your Challenge. Build. Innovate. Impact.
