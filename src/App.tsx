@@ -345,16 +345,14 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-4 md:space-y-6">
               <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-medium">
-                GUenARK 2025 is a pioneering initiative of Gauhati University designed to ignite innovation, 
-                foster entrepreneurship, and build a vibrant ecosystem of research-driven growth. This mega event 
-                brings together students, startups, researchers, industry leaders, and policymakers to converge 
-                at the crossroads of ideas, investment, and governance.
+                GUenARK 2025 is a pioneering initiative to ignite innovation, foster entrepreneurship, and build a vibrant research-driven ecosystem. 
+                The name ARK symbolizes a vessel of hope and a repository of knowledge, reflecting GUenARK's mission to safeguard, cultivate, 
+                and advance transformative ideas.
               </p>
               <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-medium">
-                The ARK symbolizes both a vessel of hope and a repository of knowledge. GUenARK provides a platform 
-                to safeguard, cultivate, and advance innovative ideas, helping innovators transform ideas into 
-                prototypes, businesses, and scalable endeavors through various events including hackathons, 
-                ideathons, and startup exhibitions.
+                It connects students, startups, researchers, industry, and policymakers. Through startup exhibitions, hackathons, ideathons, 
+                and investor networking, it enables innovators to turn ideas into prototypes, businesses, and scalable ventures. 
+                It aligns with Startup India, Startup Assam, Atmanirbhar Assam, and NEP 2020.
               </p>
               <div className="flex flex-wrap gap-2 md:gap-4">
                 {['Hackathon', 'Ideathon', 'Startup Exhibition', 'Innovation Talks', 'Investor Meets', 'Research Showcase'].map((tag) => (
@@ -768,24 +766,55 @@ function App() {
             </p>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="text-left">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">Registration Requirements</h3>
-                <ul className="space-y-2 text-gray-800">
-                  <li className="font-semibold">• Team of 5 members (including team leader)</li>
-                  <li className="font-semibold">• At least one female member mandatory</li>
-                  <li className="font-semibold">• Same institute/college only</li>
-                  <li className="font-semibold">• NOC from parents for participation</li>
-                  <li className="font-semibold">• Nomination letter from institute head</li>
-                  <li className="font-semibold">• Joining fee: ₹500/- (refundable)</li>
-                </ul>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">HACKATHON & IDEATHON</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Eligibility:</h4>
+                    <p className="text-gray-700">UG / PG / PhD students of same Institute</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Team size:</h4>
+                    <p className="text-gray-700">Total five (5) members (including Team Leader)</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Gender rule:</h4>
+                    <p className="text-gray-700">At least one team member must be female</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Documents:</h4>
+                    <ul className="text-gray-700 space-y-1 ml-4">
+                      <li>1. Nomination letter from Institute's Head</li>
+                      <li>2. NOC letter from parents for participation</li>
+                      <li>3. Idea Presentation (pdf only)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Fees:</h4>
+                    <p className="text-gray-700">Selected teams must submit ₹500/- (refundable)</p>
+                  </div>
+                </div>
               </div>
               <div className="text-left">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">What You'll Get</h3>
-                <ul className="space-y-2 text-gray-800">
-                  <li className="font-serif font-semibold">• Expert mentorship</li>
-                  <li className="font-serif font-semibold">• Networking opportunities</li>
-                  <li className="font-serif font-semibold">• Certificate of participation</li>
-                  <li className="font-serif font-semibold">• Potential implementation support</li>
-                </ul>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">STARTUP EXHIBITION</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Eligibility:</h4>
+                    <p className="text-gray-700">Assam Startup registered Ventures</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Fees:</h4>
+                    <p className="text-gray-700">₹3000/- exhibition stall fare (refundable)</p>
+                  </div>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">What You'll Get</h3>
+                  <ul className="space-y-2 text-gray-800">
+                    <li className="font-serif font-semibold">• Expert mentorship</li>
+                    <li className="font-serif font-semibold">• Networking opportunities</li>
+                    <li className="font-serif font-semibold">• Certificate of participation</li>
+                    <li className="font-serif font-semibold">• Potential implementation support</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="space-y-4">
@@ -811,7 +840,7 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
             Patrons & Leadership
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ThreeDCard className="text-center" depth={30}>
               <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">Chief Patron</h3>
               <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">Dr. Himanta Biswa Sarma</p>
@@ -829,10 +858,98 @@ function App() {
               <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">Prof. Nani Gopal Mahanta</p>
               <p className="text-gray-800 font-semibold mb-2">Hon'ble Vice Chancellor, Gauhati University</p>
               <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">Dr. Krishna Kumar Dwivedi, IAS</p>
-              <p className="text-gray-800 font-semibold mb-2">Principal Secretary to CM</p>
+              <p className="text-gray-800 font-semibold mb-2">Principal Secretary to Hon'ble CM Assam</p>
               <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">Dr. Jeevan Basavaraj, IAS</p>
-              <p className="text-gray-800 font-semibold">Secretary, Dept. of Innovation, Incubation and Startups (DIIS), Govt. of Assam</p>
+              <p className="text-gray-800 font-semibold">Secretary, Dept. of Innovation, Incubation and Startups, Govt. of Assam</p>
             </ThreeDCard>
+          </div>
+          
+          {/* Advisors Section */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-900 font-serif">Advisory Team</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <ThreeDCard className="text-center" depth={20}>
+                <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">Administrative Advisor</h4>
+                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">Prof. Utpal Sarma</p>
+                <p className="text-gray-800 font-semibold text-sm">Registrar, GU</p>
+              </ThreeDCard>
+              <ThreeDCard className="text-center" depth={20}>
+                <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">Technical Advisors</h4>
+                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">Prof. Shikhar Kumar Sarma</p>
+                <p className="text-gray-800 font-semibold text-sm mb-2">Dean Faculty of Tech, GU</p>
+                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">Prof. Kumananda Tayung</p>
+                <p className="text-gray-800 font-semibold text-sm mb-2">Dean Faculty of Science, GU</p>
+                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">Prof. Pradeep Kr. Jain</p>
+                <p className="text-gray-800 font-semibold text-sm">Dean, Faculty of Comm. & Mngt., GU</p>
+              </ThreeDCard>
+              <ThreeDCard className="text-center" depth={20}>
+                <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">Strategic Advisor</h4>
+                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">Neha K Mehra</p>
+                <p className="text-gray-800 font-semibold text-sm">Promoter, York Print</p>
+                <p className="text-gray-800 font-semibold text-sm">Board Member, FIEO</p>
+                <p className="text-gray-800 font-semibold text-sm">Secretary, Laghu Udyog Bharti NE Women's Wing</p>
+              </ThreeDCard>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="relative z-10 py-20 px-6 bg-transparent">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
+            Sponsors
+          </h2>
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-200 shadow-lg">
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-4 px-4 font-bold text-gray-900 font-serif">Benefits / Criteria</th>
+                    <th className="text-center py-4 px-4 font-bold text-blue-600 font-serif">Platinum<br/>(₹7.0-₹10 L)</th>
+                    <th className="text-center py-4 px-4 font-bold text-yellow-600 font-serif">Gold<br/>(₹5.0 L)</th>
+                    <th className="text-center py-4 px-4 font-bold text-gray-600 font-serif">Silver<br/>(₹2.0 L)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-4 px-4 font-semibold text-gray-800">Logo Visibility</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Largest (all media, stage, kits)</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Prominent (banners, kits, website)</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Side panels, event mention</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-4 px-4 font-semibold text-gray-800">Speaking Opportunity</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Inaugural session</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Breakout talk</td>
+                    <td className="py-4 px-4 text-center text-gray-700">—</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-4 px-4 font-semibold text-gray-800">Exhibition Booth</td>
+                    <td className="py-4 px-4 text-center text-gray-700">2 Premium stalls</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Large stall</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Standard stall</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4 font-semibold text-gray-800">Branding at Venue</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Stage backdrop & premium spots</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Banners & event materials</td>
+                    <td className="py-4 px-4 text-center text-gray-700">Side panels & ceremony mention</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-8 text-center">
+              <p className="text-lg text-gray-800 font-semibold mb-4">
+                Interested in sponsoring GUenARK 2025?
+              </p>
+              <a 
+                href="mailto:guenark@gauhati.ac.in" 
+                className="bg-gradient-to-r from-blue-600 to-blue-500 px-6 py-3 rounded-full text-white font-semibold hover:shadow-lg hover:scale-105 transition-all inline-block"
+              >
+                Contact Us for Sponsorship
+              </a>
+            </div>
           </div>
         </div>
       </section>
