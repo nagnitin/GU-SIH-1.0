@@ -506,8 +506,8 @@ function App() {
           <p className="text-center text-gray-800 mb-8 md:mb-12 text-lg md:text-xl lg:text-2xl px-4 font-medium max-w-4xl mx-auto">
             Choose your challenge: Participate in either Hackathon OR Ideathon building tomorrow at the crossroads of ideas, investment & governance
           </p>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <ThreeDCard className="group cursor-pointer h-full flex flex-col min-h-[600px]" depth={50}>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
+            <ThreeDCard className="group cursor-pointer h-full flex flex-col" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Code className="text-white" size={32} />
@@ -552,7 +552,7 @@ function App() {
               </div>
             </ThreeDCard>
             
-                        <ThreeDCard className="group cursor-pointer h-full flex flex-col min-h-[600px]" depth={50}></ThreeDCard>
+                        <ThreeDCard className="group cursor-pointer h-full flex flex-col" depth={50}>
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Zap className="text-white" size={32} />
@@ -596,7 +596,7 @@ function App() {
                 </div>
               </ThreeDCard>
             
-            <ThreeDCard className="group cursor-pointer h-full flex flex-col min-h-[600px]" depth={50}>
+            <ThreeDCard className="group cursor-pointer h-full flex flex-col" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Trophy className="text-white" size={32} />
