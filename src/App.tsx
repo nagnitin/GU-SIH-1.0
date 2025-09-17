@@ -296,6 +296,46 @@ function App() {
         </div>
       </section>
 
+      {/* University Rankings & Innovation Cell Section */}
+      <section className="relative z-10 py-12 md:py-16 px-4 md:px-6 bg-transparent">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-blue-50 p-6 md:p-8 rounded-2xl border border-blue-200 shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-900 font-serif">Gauhati University Rankings (NIRF 2025)</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
+                <p className="text-lg font-bold text-blue-700 font-serif">1st</p>
+                <p className="text-sm text-gray-800 font-semibold">Among Universities of NE India</p>
+              </div>
+              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
+                <p className="text-lg font-bold text-blue-600 font-serif">9th</p>
+                <p className="text-sm text-gray-800 font-semibold">Among State Universities of India</p>
+              </div>
+              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
+                <p className="text-lg font-bold text-blue-600 font-serif">33rd</p>
+                <p className="text-sm text-gray-800 font-semibold">Among all Universities of India</p>
+              </div>
+              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
+                <p className="text-lg font-bold text-blue-600 font-serif">52nd</p>
+                <p className="text-sm text-gray-800 font-semibold">Among all Institutions of India</p>
+              </div>
+              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
+                <p className="text-lg font-bold text-blue-600 font-serif">NAAC A+</p>
+                <p className="text-sm text-gray-800 font-semibold">Accredited University</p>
+              </div>
+              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
+                <p className="text-lg font-bold text-blue-600 font-serif">NIRF 2025</p>
+                <p className="text-sm text-gray-800 font-semibold">Ranked University</p>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-2xl font-bold text-gray-900 mb-2 font-serif">Innovation, Incubation and Startup Cell</p>
+              <p className="text-gray-800 font-serif font-semibold">Gauhati University, Guwahati-781014, Assam, India</p>
+              <p className="text-gray-800 font-serif font-semibold">Web: www.gauhati.ac.in/guenark2025</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="relative z-20 py-16 md:py-24 px-4 md:px-6 bg-transparent">
         <div className="max-w-6xl mx-auto">
@@ -817,40 +857,6 @@ function App() {
             </div>
           </div>
           
-          <div className="mt-8 bg-blue-50 p-6 rounded-2xl border border-blue-200">
-            <h3 className="text-xl font-bold text-center mb-4 text-gray-900 font-serif">Gauhati University Rankings (NIRF 2025)</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
-              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
-                <p className="text-lg font-bold text-blue-700 font-serif">1st</p>
-                <p className="text-sm text-gray-800 font-semibold">Among Universities of NE India</p>
-              </div>
-              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
-                <p className="text-lg font-bold text-blue-600 font-serif">9th</p>
-                <p className="text-sm text-gray-800 font-semibold">Among State Universities of India</p>
-              </div>
-              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
-                <p className="text-lg font-bold text-blue-600 font-serif">33rd</p>
-                <p className="text-sm text-gray-800 font-semibold">Among all Universities of India</p>
-              </div>
-              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
-                <p className="text-lg font-bold text-blue-600 font-serif">52nd</p>
-                <p className="text-sm text-gray-800 font-semibold">Among all Institutions of India</p>
-              </div>
-              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
-                <p className="text-lg font-bold text-blue-600 font-serif">NAAC A+</p>
-                <p className="text-sm text-gray-800 font-semibold">Accredited University</p>
-              </div>
-              <div className="bg-white/80 p-4 rounded-lg border border-slate-200 shadow-md">
-                <p className="text-lg font-bold text-blue-600 font-serif">NIRF 2025</p>
-                <p className="text-sm text-gray-800 font-semibold">Ranked University</p>
-              </div>
-            </div>
-            <div className="mt-6 text-center">
-              <p className="text-2xl font-bold text-gray-900 mb-2 font-serif">Innovation, Incubation and Startup Cell</p>
-              <p className="text-gray-800 font-serif font-semibold">Gauhati University, Guwahati-781014, Assam, India</p>
-              <p className="text-gray-800 font-serif font-semibold">Web: www.gauhati.ac.in/guenark2025</p>
-            </div>
-          </div>
         </div>
       </section>
 
