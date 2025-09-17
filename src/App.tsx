@@ -952,7 +952,7 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
             Patrons & Leadership
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <ThreeDCard className="text-center" depth={30}>
               <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">Chief Patron</h3>
               <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">Dr. Himanta Biswa Sarma</p>
@@ -979,7 +979,7 @@ function App() {
           {/* Advisors Section */}
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-center mb-8 text-gray-900 font-serif">Advisory Team</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               <ThreeDCard className="text-center" depth={20}>
                 <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">Administrative Advisor</h4>
                 <p className="text-base font-semibold text-gray-800 mb-1 font-serif">Prof. Utpal Sarma</p>
