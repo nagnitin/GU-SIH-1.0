@@ -1074,15 +1074,19 @@ function App() {
             Get In Touch
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/80 p-8 rounded-2xl border border-slate-200 shadow-lg">
-              <Mail className="mx-auto mb-4 text-gray-800" size={48} />
-              <h3 className="text-xl font-bold mb-2 font-serif text-gray-900">Email Us</h3>
-              <p className="text-gray-800 font-semibold">guenark@gauhati.ac.in</p>
+            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-4 border-2 border-gray-800 rounded-full flex items-center justify-center">
+                <Mail className="text-gray-800" size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 font-serif text-gray-900">Email Us</h3>
+              <p className="text-gray-800 font-semibold mb-2">guenark@gauhati.ac.in</p>
               <p className="text-gray-800 font-semibold">iis_gu@gauhati.ac.in</p>
             </div>
-            <div className="bg-white/80 p-8 rounded-2xl border border-slate-200 shadow-lg">
-              <Phone className="mx-auto mb-4 text-gray-800" size={48} />
-              <h3 className="text-xl font-bold mb-2 font-serif text-gray-900">Website</h3>
+            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-4 border-2 border-gray-800 rounded-full flex items-center justify-center">
+                <Phone className="text-gray-800" size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 font-serif text-gray-900">Website</h3>
               <p className="text-gray-800 font-semibold">www.gauhati.ac.in/guenark2025</p>
             </div>
           </div>
