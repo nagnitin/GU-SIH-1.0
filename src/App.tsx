@@ -245,7 +245,7 @@ function App() {
                   <Calendar className="w-8 h-8 text-gray-800" />
                 </div>
                 <h3 className="text-gray-900 text-lg md:text-xl font-semibold mb-2">Date</h3>
-                <p className="text-gray-700 font-medium text-base md:text-lg">10<sup>th</sup> & 11<sup>th</sup> October, 2025</p>
+                <p className="text-gray-700 font-medium text-base md:text-lg" dangerouslySetInnerHTML={{ __html: "10<sup>th</sup> & 11<sup>th</sup> October, 2025" }}></p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600/15 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -755,7 +755,7 @@ function App() {
                   {index + 1}
                 </div>
                 <div className="bg-gray-700 p-6 rounded-xl flex-1 border border-gray-600">
-                  <h3 className="text-xl font-bold text-white mb-4 font-serif">{day.day} - {day.time}</h3>
+                  <h3 className="text-xl font-bold text-white mb-4 font-serif" dangerouslySetInnerHTML={{ __html: `${day.day} - ${day.time}` }}></h3>
                   <ul className="space-y-3">
                     {day.events.map((event, i) => (
                       <li key={i} className="flex items-center">
