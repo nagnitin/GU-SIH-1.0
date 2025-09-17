@@ -751,16 +751,16 @@ function App() {
               { day: 'Day 2', time: '11<sup>th</sup> October 2025', events: ['Coding & development of core features', 'Integration & testing', 'Final touches & deployment setup', 'Final presentations & live demos (5 min/team)'] }
             ].map((day, index) => (
               <div key={index} className="flex items-start space-x-6 group">
-                <div className="bg-gradient-to-r from-blue-700 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center font-bold shrink-0 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-r from-blue-700 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center font-bold text-white shrink-0 group-hover:scale-110 transition-transform">
                   {index + 1}
                 </div>
-                <div className="bg-gray-800/50 p-6 rounded-xl flex-1 backdrop-blur-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-serif">{day.day} - {day.time}</h3>
-                  <ul className="space-y-2 text-gray-800">
+                <div className="bg-gray-700 p-6 rounded-xl flex-1 border border-gray-600">
+                  <h3 className="text-xl font-bold text-white mb-4 font-serif">{day.day} - {day.time}</h3>
+                  <ul className="space-y-3">
                     {day.events.map((event, i) => (
                       <li key={i} className="flex items-center">
-                        <Clock className="mr-2 text-gray-800" size={16} />
-                        <span className="font-serif font-semibold">{event}</span>
+                        <Clock className="mr-3 text-white" size={16} />
+                        <span className="text-white font-serif font-semibold">{event}</span>
                       </li>
                     ))}
                   </ul>
