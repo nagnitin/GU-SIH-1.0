@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Calendar, Users, Trophy, MapPin, Clock, Mail, Phone, Code, Zap, Award, Star } from 'lucide-react';
+import { Calendar, Users, Trophy, MapPin, Clock, Mail, Phone, Globe, Code, Zap, Award, Star } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -1084,7 +1084,7 @@ function App() {
             </div>
             <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
               <div className="w-16 h-16 mx-auto mb-4 border-2 border-gray-800 rounded-full flex items-center justify-center">
-                <Phone className="text-gray-800" size={32} />
+                <Globe className="text-gray-800" size={32} />
               </div>
               <h3 className="text-xl font-bold mb-4 font-serif text-gray-900">Website</h3>
               <p className="text-gray-800 font-semibold">www.gauhati.ac.in/guenark2025</p>
