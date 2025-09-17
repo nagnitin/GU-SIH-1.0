@@ -23,13 +23,13 @@ const AssamCulture: React.FC = () => {
             <div className="w-4 h-4 bg-red-500 rounded-full animate-bounce"></div>
           </div>
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-            <div className="w-4 h-4 bg-yellow-500 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+            <div className="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
           </div>
           <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
             <div className="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
           </div>
           <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-            <div className="w-4 h-4 bg-yellow-500 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+            <div className="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
           </div>
           
           {/* Traditional musical instruments */}
@@ -43,7 +43,7 @@ const AssamCulture: React.FC = () => {
             <div className="w-4 h-4 bg-red-600 rounded-full animate-pulse opacity-60" style={{ animationDelay: '1s' }}></div>
           </div>
           <div className="absolute bottom-4 right-4">
-            <div className="w-3 h-3 bg-yellow-600 rounded-full animate-pulse opacity-60" style={{ animationDelay: '1.5s' }}></div>
+            <div className="w-3 h-3 bg-blue-600 rounded-full animate-pulse opacity-60" style={{ animationDelay: '1.5s' }}></div>
           </div>
         </div>
         

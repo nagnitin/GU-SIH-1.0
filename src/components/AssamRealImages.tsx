@@ -98,10 +98,10 @@ const AssamRealImages: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent pixel-font">
+        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-serif">
           Real Assam & Northeast India
         </h2>
-        <p className="text-center text-gray-300 mb-12 text-lg retro-font">
+        <p className="text-center text-gray-300 mb-12 text-lg font-serif">
           Discover the authentic beauty and culture of Assam through these real images
         </p>
         <div ref={imagesRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -118,15 +118,15 @@ const AssamRealImages: React.FC = () => {
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4">
-                  <span className="bg-yellow-600/80 text-white px-3 py-1 rounded-full text-sm retro-font">
+                  <span className="bg-blue-600/80 text-white px-3 py-1 rounded-full text-sm font-serif">
                     Assam
                   </span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-xl font-bold mb-2 retro-font">{image.title}</h3>
-                    <p className="text-sm text-gray-200 retro-font mb-1">{image.location}</p>
-                    <p className="text-sm text-gray-300 retro-font">{image.description}</p>
+                    <h3 className="text-xl font-bold mb-2 font-serif">{image.title}</h3>
+                    <p className="text-sm text-gray-200 font-serif mb-1">{image.location}</p>
+                    <p className="text-sm text-gray-300 font-serif">{image.description}</p>
                   </div>
                 </div>
               </div>

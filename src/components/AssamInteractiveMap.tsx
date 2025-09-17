@@ -124,10 +124,10 @@ const AssamInteractiveMap: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 text-yellow-600 pixel-font-large drop-shadow-2xl" style={{textShadow: '3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-blue-700 font-serif tracking-wide">
           Interactive Assam Map
         </h2>
-        <p className="text-center text-gray-900 mb-12 text-lg retro-font font-semibold">
+        <p className="text-center text-gray-900 mb-12 text-lg font-serif font-semibold">
           Click on the points to explore key locations across Assam
         </p>
         
@@ -149,14 +149,14 @@ const AssamInteractiveMap: React.FC = () => {
                 <button
                   key={location.id}
                   onClick={() => handleLocationClick(location)}
-                  className="map-point absolute w-4 h-4 bg-yellow-600 rounded-full border-2 border-white shadow-lg hover:scale-150 transition-transform duration-300 cursor-pointer"
+                  className="map-point absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white shadow-lg hover:scale-150 transition-transform duration-300 cursor-pointer"
                   style={{ 
                     left: `${location.x}%`, 
                     top: `${location.y}%`,
                     transform: 'translate(-50%, -50%)'
                   }}
                 >
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-xs retro-font whitespace-nowrap opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-xs font-serif whitespace-nowrap opacity-0 hover:opacity-100 transition-opacity duration-300">
                     {location.name}
                   </div>
                 </button>
@@ -164,10 +164,10 @@ const AssamInteractiveMap: React.FC = () => {
               
               {/* Categories */}
               <div className="absolute bottom-4 left-4 bg-gray-800/80 backdrop-blur-sm p-4 rounded-lg">
-                <h4 className="text-white font-semibold mb-2 retro-font">Categories</h4>
+                <h4 className="text-white font-semibold mb-2 font-serif">Categories</h4>
                 <div className="flex flex-wrap gap-2">
                   {categories.map((category) => (
-                    <span key={category} className="bg-yellow-600 text-white px-3 py-1 rounded-full text-xs retro-font">
+                    <span key={category} className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-serif">
                       {category}
                     </span>
                   ))}
@@ -181,16 +181,16 @@ const AssamInteractiveMap: React.FC = () => {
             {selectedLocation ? (
               <ThreeDCard className="location-details" depth={30}>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 retro-font">{selectedLocation.name}</h3>
-                  <span className="inline-block bg-yellow-600/20 text-gray-800 px-3 py-1 rounded-full text-sm retro-font mb-4 font-semibold">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-serif">{selectedLocation.name}</h3>
+                  <span className="inline-block bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-sm font-serif mb-4 font-semibold">
                     {selectedLocation.category}
                   </span>
-                  <p className="text-gray-800 mb-4 retro-font font-semibold">{selectedLocation.description}</p>
+                  <p className="text-gray-800 mb-4 font-serif font-semibold">{selectedLocation.description}</p>
                   <img 
                     src={selectedLocation.image} 
                     alt={selectedLocation.name}
@@ -201,13 +201,13 @@ const AssamInteractiveMap: React.FC = () => {
             ) : (
               <ThreeDCard className="location-details" depth={30}>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 retro-font">Explore Assam</h3>
-                  <p className="text-gray-800 retro-font font-semibold">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-serif">Explore Assam</h3>
+                  <p className="text-gray-800 font-serif font-semibold">
                     Click on any point on the map to learn more about that location
                   </p>
                 </div>

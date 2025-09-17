@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ThreeDCard, ThreeDFloating } from './3DElements';
+import { ThreeDCard } from './3DElements';
 
 interface ImageItem {
   id: string;
@@ -98,10 +98,10 @@ const ImageGallery: React.FC = () => {
   return (
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 text-yellow-600 pixel-font-large drop-shadow-2xl leading-relaxed" style={{textShadow: '3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000', letterSpacing: '0.1em', lineHeight: '1.4'}}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-blue-700 font-serif tracking-wide">
           Northeast India in Pictures
         </h2>
-        <p className="text-center text-gray-900 mb-12 text-lg retro-font font-semibold">
+        <p className="text-center text-gray-900 mb-12 text-lg font-serif font-semibold">
           Discover the diverse beauty and culture of Northeast India
         </p>
         <div ref={galleryRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,8 +119,8 @@ const ImageGallery: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-xl font-bold mb-2 retro-font text-white drop-shadow-lg">{image.title}</h3>
-                    <p className="text-sm text-gray-100 retro-font font-semibold drop-shadow-md">{image.description}</p>
+                    <h3 className="text-xl font-bold mb-2 font-serif text-white drop-shadow-lg">{image.title}</h3>
+                    <p className="text-sm text-gray-100 font-serif font-semibold drop-shadow-md">{image.description}</p>
                   </div>
                 </div>
               </div>

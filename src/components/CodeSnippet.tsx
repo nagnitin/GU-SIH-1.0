@@ -15,7 +15,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ className, delay = 0 }) => {
 
   return (
     <div 
-      className={`bg-gray-900 rounded-lg p-4 font-mono text-sm text-yellow-400 shadow-lg animate-slideInUp ${className}`}
+      className={`bg-gray-900 rounded-lg p-4 font-mono text-sm text-blue-400 shadow-lg animate-slideInUp ${className}`}
       style={{ animationDelay: `${delay}ms` }}
     >
       {codeLines.map((line, index) => (

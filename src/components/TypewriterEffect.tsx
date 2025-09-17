@@ -49,7 +49,7 @@ const TypewriterEffect: React.FC<TypewriterEffectProps> = ({
 
   return (
     <div className="inline-block">
-      <span className="retro-font">{currentText}</span>
+      <span className="font-serif">{currentText}</span>
       <span className="animate-pulse">|</span>
     </div>
   );

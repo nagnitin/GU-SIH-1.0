@@ -40,27 +40,27 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <div className="text-center">
-      <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900 retro-font">Event Starts In</h3>
+      <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900 font-serif">Event Starts In</h3>
       <div className="flex justify-center space-x-2 md:space-x-4 perspective-1000">
         {timeUnits.map((unit, index) => (
           <div 
             key={unit.label}
-            className="bg-gradient-to-br from-yellow-600 to-yellow-500 backdrop-blur-sm border-2 border-yellow-700 rounded-lg md:rounded-xl p-2 md:p-4 min-w-[60px] md:min-w-[80px] transform-gpu hover:scale-110 transition-transform duration-300 shadow-lg"
+            className="bg-gradient-to-br from-blue-600 to-blue-500 backdrop-blur-sm border-2 border-blue-700 rounded-lg md:rounded-xl p-2 md:p-4 min-w-[60px] md:min-w-[80px] transform-gpu hover:scale-110 transition-transform duration-300 shadow-lg"
             style={{
               transformStyle: 'preserve-3d',
               transform: `rotateX(${Math.sin(Date.now() / 2000 + index) * 3}deg) rotateY(${Math.cos(Date.now() / 2000 + index) * 3}deg)`
             }}
           >
-            <div className="text-2xl md:text-3xl font-bold text-white pixel-font mb-1">
+            <div className="text-2xl md:text-3xl font-bold text-white font-serif mb-1">
               {unit.value.toString().padStart(2, '0')}
             </div>
-            <div className="text-sm md:text-sm text-white retro-font">
+            <div className="text-sm md:text-sm text-white font-serif">
               {unit.label}
             </div>
           </div>
         ))}
       </div>
-      <p className="text-sm md:text-sm text-gray-900 mt-3 md:mt-4 retro-font px-2 font-semibold">
+      <p className="text-sm md:text-sm text-gray-900 mt-3 md:mt-4 font-serif px-2 font-semibold">
         October 10-11, 2025 - Gauhati University, Guwahati
       </p>
     </div>
