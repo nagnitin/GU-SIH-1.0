@@ -105,9 +105,9 @@ const ImageGallery: React.FC = () => {
           Discover the diverse beauty and culture of Northeast India
         </p>
         <div ref={galleryRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {images.map((image, index) => (
+          {images.map((image) => (
             <ThreeDCard 
-              key={image.id} 
+              key={image.id}
               className="image-card group cursor-pointer"
               depth={40}
             >

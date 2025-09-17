@@ -171,7 +171,7 @@ function App() {
                   { name: 'Timeline', href: '#timeline' },
                   { name: 'Prizes', href: '#prizes' },
                   { name: 'Contact', href: '#contact' },
-                ].map((item, index) => (
+                ].map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -216,6 +216,12 @@ function App() {
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-800 mb-8 md:mb-12 px-4 leading-relaxed font-medium max-w-5xl mx-auto">
               Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
+            </p>
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-6 md:mb-8 px-4 font-bold">
+              ⚡ 24-Hour Hackathon | Ideathon | Startup ⚡
+            </div>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 md:mb-12 px-4 font-semibold">
+              Choose Your Challenge. Build. Innovate. Impact.
             </p>
             <div className="text-lg sm:text-xl md:text-2xl text-gray-700 font-medium min-h-[2.5rem] md:min-h-[3rem] px-4 mb-12">
               <TypewriterEffect 
@@ -369,7 +375,7 @@ function App() {
             GUenARK Activities
           </h2>
           <p className="text-center text-gray-800 mb-8 md:mb-12 text-lg md:text-xl lg:text-2xl px-4 font-medium max-w-4xl mx-auto">
-            Three major events building tomorrow at the crossroads of ideas, investment & governance
+            Choose your challenge: Participate in any ONE of these three major events building tomorrow at the crossroads of ideas, investment & governance
           </p>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <ThreeDCard className="group cursor-pointer" depth={50}>
