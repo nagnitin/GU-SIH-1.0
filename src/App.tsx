@@ -506,8 +506,8 @@ function App() {
           <p className="text-center text-gray-800 mb-8 md:mb-12 text-lg md:text-xl lg:text-2xl px-4 font-medium max-w-4xl mx-auto">
             Choose your challenge: Participate in either Hackathon OR Ideathon building tomorrow at the crossroads of ideas, investment & governance
           </p>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <ThreeDCard className="group cursor-pointer" depth={50}>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
+            <ThreeDCard className="group cursor-pointer h-full flex flex-col" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Code className="text-white" size={32} />
@@ -515,30 +515,32 @@ function App() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2 font-serif">HACKATHON</h3>
                 <p className="text-sm text-gray-700 font-semibold">24-Hour Technology Challenge</p>
               </div>
-              <p className="text-gray-800 text-center font-medium mb-4">
-                The 24-hour Hackathon on Technology for Sustainable Development will engage students and innovators in building practical solutions for Northeast India's key challenges—water, tea agriculture, waste, tourism, healthcare, and urban resilience. Aligned with the UN SDGs, it promotes interdisciplinary teamwork, inclusivity, and outcome-driven prototypes with scope for real-world pilots.
-              </p>
-              <div className="mb-4">
-                <h4 className="text-gray-900 font-semibold mb-2">Tracks (Pick One):</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Water & Sanitation [SDG 6]</li>
-                  <li>• Agriculture & Tea [SDG 2]</li>
-                  <li>• Waste Management [SDG 12]</li>
-                  <li>• Tourism & Heritage [SDG 8]</li>
-                  <li>• Healthcare [SDG 7]</li>
-                  <li>• Urban Resilience [SDG 13]</li>
-                </ul>
+              <div className="flex-grow">
+                <p className="text-gray-800 text-center font-medium mb-4">
+                  The 24-hour Hackathon on Technology for Sustainable Development will engage students and innovators in building practical solutions for Northeast India's key challenges—water, tea agriculture, waste, tourism, healthcare, and urban resilience. Aligned with the UN SDGs, it promotes interdisciplinary teamwork, inclusivity, and outcome-driven prototypes with scope for real-world pilots.
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-gray-900 font-semibold mb-2">Tracks (Pick One):</h4>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Water & Sanitation [SDG 6]</li>
+                    <li>• Agriculture & Tea [SDG 2]</li>
+                    <li>• Waste Management [SDG 12]</li>
+                    <li>• Tourism & Heritage [SDG 8]</li>
+                    <li>• Healthcare [SDG 7]</li>
+                    <li>• Urban Resilience [SDG 13]</li>
+                  </ul>
+                </div>
+                <div className="mb-4">
+                  <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Prototypes and pilot-ready solutions addressing key regional issues</li>
+                    <li>• Opportunities for collaboration with government, NGOs and industry</li>
+                    <li>• Enhanced student skills in innovation, sustainability and entrepreneurship</li>
+                    <li>• Selected teams to receive follow-up incubation and mentorship support</li>
+                  </ul>
+                </div>
               </div>
-              <div className="mb-4">
-                <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Prototypes and pilot-ready solutions addressing key regional issues</li>
-                  <li>• Opportunities for collaboration with government, NGOs and industry</li>
-                  <li>• Enhanced student skills in innovation, sustainability and entrepreneurship</li>
-                  <li>• Selected teams to receive follow-up incubation and mentorship support</li>
-                </ul>
-              </div>
-              <div className="text-center">
+              <div className="text-center mt-auto">
                 <p className="text-blue-700 font-bold text-lg">Cash Prize: ₹1.5 Lakh</p>
               </div>
               <div className="mt-4 p-4 bg-blue-600/10 rounded-lg border border-blue-400/20">
@@ -550,7 +552,7 @@ function App() {
               </div>
             </ThreeDCard>
             
-                        <ThreeDCard className="group cursor-pointer" depth={50}>
+                        <ThreeDCard className="group cursor-pointer h-full flex flex-col" depth={50}>
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Zap className="text-white" size={32} />
@@ -558,29 +560,31 @@ function App() {
                   <h3 className="text-xl font-bold text-black mb-2 font-serif">IDEATHON</h3>
                   <p className="text-sm text-gray-700 font-semibold">24-Hour Innovation Challenge</p>
                 </div>
-                <p className="text-gray-800 text-center font-medium mb-4">
-                  The 24-hour Ideathon on Sustainable Futures for Northeast India will challenge students to design business models, policies, community campaigns, financial tools, and educational innovations addressing regional issues beyond technology. Through research, mentoring, and pitching, teams will deliver practical, policy-ready solutions with potential for community adoption and impact.
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-gray-900 font-semibold mb-2">Tracks (Pick One):</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Sustainable Business Models</li>
-                    <li>• Policy & Governance</li>
-                    <li>• Community & Media</li>
-                    <li>• Green Financial Inclusion</li>
-                    <li>• Education & Lifestyle</li>
-                  </ul>
+                <div className="flex-grow">
+                  <p className="text-gray-800 text-center font-medium mb-4">
+                    The 24-hour Ideathon on Sustainable Futures for Northeast India will challenge students to design business models, policies, community campaigns, financial tools, and educational innovations addressing regional issues beyond technology. Through research, mentoring, and pitching, teams will deliver practical, policy-ready solutions with potential for community adoption and impact.
+                  </p>
+                  <div className="mb-4">
+                    <h4 className="text-gray-900 font-semibold mb-2">Tracks (Pick One):</h4>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• Sustainable Business Models</li>
+                      <li>• Policy & Governance</li>
+                      <li>• Community & Media</li>
+                      <li>• Green Financial Inclusion</li>
+                      <li>• Education & Lifestyle</li>
+                    </ul>
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• Actionable business, policy, and community models addressing Northeast challenges</li>
+                      <li>• Practical deliverables such as business canvases, policy drafts, campaigns, and product prototypes</li>
+                      <li>• Opportunities for pilot adoption with local stakeholders, NGOs, or industry</li>
+                      <li>• Strengthened student capacity in innovation, entrepreneurship, and sustainable problem-solving</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="mb-4">
-                  <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Actionable business, policy, and community models addressing Northeast challenges</li>
-                    <li>• Practical deliverables such as business canvases, policy drafts, campaigns, and product prototypes</li>
-                    <li>• Opportunities for pilot adoption with local stakeholders, NGOs, or industry</li>
-                    <li>• Strengthened student capacity in innovation, entrepreneurship, and sustainable problem-solving</li>
-                  </ul>
-                </div>
-                <div className="text-center">
+                <div className="text-center mt-auto">
                   <p className="text-blue-700 font-bold text-lg">Cash Prize: ₹1 Lakh</p>
                 </div>
                 <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
@@ -592,7 +596,7 @@ function App() {
                 </div>
               </ThreeDCard>
             
-            <ThreeDCard className="group cursor-pointer" depth={50}>
+            <ThreeDCard className="group cursor-pointer h-full flex flex-col" depth={50}>
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Trophy className="text-white" size={32} />
@@ -600,18 +604,20 @@ function App() {
                 <h3 className="text-xl font-bold text-gray-800 mb-2 font-serif">STARTUP EXHIBITION</h3>
                 <p className="text-sm text-gray-700 font-semibold">100+ Innovation Stalls</p>
               </div>
-              <p className="text-gray-800 text-center font-medium mb-4">
-                The Startup & Innovation Exhibition will showcase 100+ startups, innovators, and student entrepreneurs from Assam and Northeast India, highlighting solutions in agritech, clean energy, tourism, digital commerce, and more. By bringing together startups, investors, policymakers, and academia, it offers visibility, funding opportunities, and vital linkages positioning Gauhati University as a hub for innovation and regional ecosystem development.
-              </p>
-              <div className="mb-4">
-                <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Knowledge sharing and inspiration for young innovators</li>
-                  <li>• Policy-level insights for ecosystem development in Assam & NE</li>
-                  <li>• Strengthened academia-industry-government linkages</li>
-                </ul>
+              <div className="flex-grow">
+                <p className="text-gray-800 text-center font-medium mb-4">
+                  The Startup & Innovation Exhibition will showcase 100+ startups, innovators, and student entrepreneurs from Assam and Northeast India, highlighting solutions in agritech, clean energy, tourism, digital commerce, and more. By bringing together startups, investors, policymakers, and academia, it offers visibility, funding opportunities, and vital linkages positioning Gauhati University as a hub for innovation and regional ecosystem development.
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Knowledge sharing and inspiration for young innovators</li>
+                    <li>• Policy-level insights for ecosystem development in Assam & NE</li>
+                    <li>• Strengthened academia-industry-government linkages</li>
+                  </ul>
+                </div>
               </div>
-              <div className="text-center">
+              <div className="text-center mt-auto">
                 <p className="text-blue-700 font-bold text-lg">Linkage for Seed Money</p>
               </div>
               <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
