@@ -425,8 +425,7 @@ function App() {
                 <p className="text-sm text-gray-700 font-semibold">24-Hour Technology Challenge</p>
               </div>
               <p className="text-gray-800 text-center font-medium mb-4">
-                24-hour Hackathon on Technology for Sustainable Development focusing on practical solutions 
-                for Northeast India's challenges, aligned with UN SDGs, promoting interdisciplinary teamwork and outcome-driven prototypes.
+                The 24-hour Hackathon on Technology for Sustainable Development will engage students and innovators in building practical solutions for Northeast India's key challenges—water, tea agriculture, waste, tourism, healthcare, and urban resilience. Aligned with the UN SDGs, it promotes interdisciplinary teamwork, inclusivity, and outcome-driven prototypes with scope for real-world pilots.
               </p>
               <div className="mb-4">
                 <h4 className="text-gray-900 font-semibold mb-2">Tracks (Pick One):</h4>
@@ -437,6 +436,15 @@ function App() {
                   <li>• Tourism & Heritage [SDG 8]</li>
                   <li>• Healthcare [SDG 7]</li>
                   <li>• Urban Resilience [SDG 13]</li>
+                </ul>
+              </div>
+              <div className="mb-4">
+                <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Prototypes and pilot-ready solutions addressing key regional issues</li>
+                  <li>• Opportunities for collaboration with government, NGOs and industry</li>
+                  <li>• Enhanced student skills in innovation, sustainability and entrepreneurship</li>
+                  <li>• Selected teams to receive follow-up incubation and mentorship support</li>
                 </ul>
               </div>
               <div className="text-center">
@@ -460,9 +468,7 @@ function App() {
                   <p className="text-sm text-gray-700 font-semibold">24-Hour Innovation Challenge</p>
                 </div>
                 <p className="text-gray-800 text-center font-medium mb-4">
-                  24-hour Ideathon on Sustainable Futures for Northeast India challenging students to design 
-                  business models, policy frameworks, community campaigns, financial tools, and education innovations 
-                  addressing regional issues beyond technology.
+                  The 24-hour Ideathon on Sustainable Futures for Northeast India will challenge students to design business models, policies, community campaigns, financial tools, and educational innovations addressing regional issues beyond technology. Through research, mentoring, and pitching, teams will deliver practical, policy-ready solutions with potential for community adoption and impact.
                 </p>
                 <div className="mb-4">
                   <h4 className="text-gray-900 font-semibold mb-2">Tracks (Pick One):</h4>
@@ -472,6 +478,15 @@ function App() {
                     <li>• Community & Media</li>
                     <li>• Green Financial Inclusion</li>
                     <li>• Education & Lifestyle</li>
+                  </ul>
+                </div>
+                <div className="mb-4">
+                  <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Actionable business, policy, and community models addressing Northeast challenges</li>
+                    <li>• Practical deliverables such as business canvases, policy drafts, campaigns, and product prototypes</li>
+                    <li>• Opportunities for pilot adoption with local stakeholders, NGOs, or industry</li>
+                    <li>• Strengthened student capacity in innovation, entrepreneurship, and sustainable problem-solving</li>
                   </ul>
                 </div>
                 <div className="text-center">
@@ -495,10 +510,16 @@ function App() {
                 <p className="text-sm text-gray-700 font-semibold">100+ Innovation Stalls</p>
               </div>
               <p className="text-gray-800 text-center font-medium mb-4">
-                Startup & Innovation Exhibition showcasing 100+ startups, innovators, and student entrepreneurs 
-                from Assam and Northeast India, focusing on solutions in agritech, clean energy, tourism, 
-                digital commerce, etc. Offering visibility, funding, and vital linkages.
+                The Startup & Innovation Exhibition will showcase 100+ startups, innovators, and student entrepreneurs from Assam and Northeast India, highlighting solutions in agritech, clean energy, tourism, digital commerce, and more. By bringing together startups, investors, policymakers, and academia, it offers visibility, funding opportunities, and vital linkages positioning Gauhati University as a hub for innovation and regional ecosystem development.
               </p>
+              <div className="mb-4">
+                <h4 className="text-gray-900 font-semibold mb-2">Outcome:</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Knowledge sharing and inspiration for young innovators</li>
+                  <li>• Policy-level insights for ecosystem development in Assam & NE</li>
+                  <li>• Strengthened academia-industry-government linkages</li>
+                </ul>
+              </div>
               <div className="text-center">
                 <p className="text-blue-700 font-bold text-lg">Linkage for Seed Money</p>
               </div>
@@ -949,6 +970,97 @@ function App() {
               >
                 Contact Us for Sponsorship
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* IIS Cell Team Section */}
+      <section className="relative z-10 py-20 px-6 bg-transparent">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
+            Who Are We - IIS Cell
+          </h2>
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-200 shadow-lg">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 font-serif">Innovation, Incubation & Start-Up (IIS) Cell</h3>
+              <p className="text-lg text-gray-700 font-semibold">... from ideas to impact</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <h4 className="text-xl font-bold text-gray-900 mb-4 font-serif">About Us</h4>
+                <p className="text-gray-700 leading-relaxed">
+                  The Innovation, Incubation & Start-Up (IIS) Cell at Gauhati University is dedicated to converting research and ideas into sustainable ventures. We conduct hackathons, workshops, and incubation cohorts to foster innovation and entrepreneurship.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-gray-900 mb-4 font-serif">Vision</h4>
+                <p className="text-gray-700 leading-relaxed">
+                  Gauhati University aims to be a catalyst for inclusive, sustainable innovation across Assam and Northeast India, driving regional development through technology and entrepreneurship.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-gray-900 mb-4 font-serif">Mission</h4>
+                <p className="text-gray-700 leading-relaxed">
+                  To empower students, faculty, and local entrepreneurs through mentorship, incubation, seed support, and industry linkages, creating a vibrant innovation ecosystem.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-2xl font-bold text-center mb-6 text-gray-900 font-serif">Meet The Team</h4>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Prof. Ratul Mahanta</p>
+                  <p className="text-sm text-gray-700">Dept. of Economics - <span className="font-bold">Chairperson</span></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Prof. Kandarpa Kumar Sarma</p>
+                  <p className="text-sm text-gray-700">Dept. of ECE (on lien) and COE, GU</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Tilak Ch Das</p>
+                  <p className="text-sm text-gray-700">Dept of Commerce</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Debashis Saikia</p>
+                  <p className="text-sm text-gray-700">Dept of USIC</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Jyoti Prakash Medhi</p>
+                  <p className="text-sm text-gray-700">Dept of ECE</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Nabamita Deb</p>
+                  <p className="text-sm text-gray-700">Dept of IT</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Samir Sarkar</p>
+                  <p className="text-sm text-gray-700">Dept of Business Admin</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Bitopi Gogoi</p>
+                  <p className="text-sm text-gray-700">Dept of Business Admin</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Pranjit Hazarika</p>
+                  <p className="text-sm text-gray-700">Dept of Geological Sc</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Principal</p>
+                  <p className="text-sm text-gray-700">University Law College, GU</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold text-gray-900">Dr. Rupamjyoti Nath</p>
+                  <p className="text-sm text-gray-700">Dept of Economics - <span className="font-bold">Convener</span></p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-lg text-gray-800 font-semibold mb-2">Contact IIS Cell</p>
+              <p className="text-blue-600 font-bold">iis_cell@gauhati.ac.in</p>
             </div>
           </div>
         </div>
