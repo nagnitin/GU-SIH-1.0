@@ -1216,59 +1216,96 @@ function App() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section id="timeline" className="relative z-10 py-20 px-6">
-        <div className="max-w-4xl mx-auto">
+      {/* 24-Hour Activity Plan */}
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
-            Event Timeline
+            24-Hour Activity Plan
           </h2>
-          <div className="space-y-8">
-            {[
-              {
-                day: "Day 1",
-                time: "10<sup>th</sup> October 2025",
-                events: [
-                  "Problem statement briefing & team formation",
-                  "Requirement analysis & brainstorming",
-                  "Initial prototyping & system design",
-                  "Mentor check-in & technical validation",
-                ],
-              },
-              {
-                day: "Day 2",
-                time: "11<sup>th</sup> October 2025",
-                events: [
-                  "Coding & development of core features",
-                  "Integration & testing",
-                  "Final touches & deployment setup",
-                  "Final presentations & live demos (5 min/team)",
-                ],
-              },
-            ].map((day, index) => (
-              <div key={index} className="flex items-start space-x-6 group">
-                <div className="bg-gradient-to-r from-blue-700 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center font-bold text-white shrink-0 group-hover:scale-110 transition-transform">
-                  {index + 1}
-                </div>
-                <div className="bg-gray-700 p-6 rounded-xl flex-1 border border-gray-600">
-                  <h3
-                    className="text-xl font-bold text-white mb-4 font-serif"
-                    dangerouslySetInnerHTML={{
-                      __html: `${day.day} - ${day.time}`,
-                    }}
-                  ></h3>
-                  <ul className="space-y-3">
-                    {day.events.map((event, i) => (
-                      <li key={i} className="flex items-center">
-                        <Clock className="mr-3 text-white" size={16} />
-                        <span className="text-white font-serif font-semibold">
-                          {event}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ThreeDCard className="space-y-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif">Hackathon</h3>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Day 1 (Afternoon – Night)</h4>
+                <ul className="space-y-2 text-gray-800">
+                  <li>• Hour 1–2: Problem statement briefing & team formation</li>
+                  <li>• Hour 3–5: Requirement analysis & brainstorming (define scope, assign roles)</li>
+                  <li>• Hour 6: Short break + quick sync-up</li>
+                  <li>• Hour 7–9: Initial prototyping (UI sketches, system design, data models)</li>
+                  <li>• Hour 10–11: Mentor check-in (technical validation & guidance)</li>
+                  <li>• Hour 12: Refine prototype plan & set milestones for Day 2</li>
+                </ul>
               </div>
-            ))}
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Day 2 (Morning – Afternoon)</h4>
+                <ul className="space-y-2 text-gray-800">
+                  <li>• Hour 13–15: Coding & development of core features</li>
+                  <li>• Hour 16: Break + mentor checkpoint</li>
+                  <li>• Hour 17–19: Integration & testing (debugging, refining functionality)</li>
+                  <li>• Hour 20: Buffer for incomplete modules or troubleshooting</li>
+                  <li>• Hour 21–22: Final touches (UI polish, performance check, deployment setup)</li>
+                  <li>• Hour 23: Team sync + pitch preparation (demo flow & Q&A)</li>
+                  <li>• Hour 24: Final presentations & live demos (5 min/team, max 6 slides)</li>
+                </ul>
+              </div>
+            </ThreeDCard>
+
+            <ThreeDCard className="space-y-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif">Ideathon</h3>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Day 1 (Afternoon – Night)</h4>
+                <ul className="space-y-2 text-gray-800">
+                  <li>• Hour 1–2: Problem orientation & team formation</li>
+                  <li>• Hour 3–5: Research & problem scoping (market gaps, policies, stakeholders)</li>
+                  <li>• Hour 6: Break & team reflection</li>
+                  <li>• Hour 7–9: Draft initial solutions (business models, policy frameworks, prototypes)</li>
+                  <li>• Hour 10–11: Mentor check‑in & validation feedback</li>
+                  <li>• Hour 12: Refine ideas & set milestones for Day 2</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Day 2 (Morning – Afternoon)</h4>
+                <ul className="space-y-2 text-gray-800">
+                  <li>• Hour 13–15: Develop concrete deliverables (pitch decks, canvases, policy notes, prototypes)</li>
+                  <li>• Hour 16: Break & mentor checkpoint</li>
+                  <li>• Hour 17–19: Finalize deliverables (unit economics, roadmaps, rollout strategies)</li>
+                  <li>• Hour 20: Buffer for pending work</li>
+                  <li>• Hour 21–22: Rehearse presentations & finalize visuals</li>
+                  <li>• Hour 23: Team reflection & Q&A prep</li>
+                  <li>• Hour 24: Jury presentations (5 min/team, max 6 slides)</li>
+                </ul>
+              </div>
+            </ThreeDCard>
+          </div>
+        </div>
+      </section>
+
+      {/* Expected Outcomes */}
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
+            Expected Outcomes
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ThreeDCard className="space-y-4" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif">Hackathon</h3>
+              <ul className="space-y-2 text-gray-800">
+                <li>• Prototypes & Demos – Early-stage working solutions (apps, devices, dashboards)</li>
+                <li>• Technical Models – AI/ML models, algorithms, or simulation results</li>
+                <li>• Designs & Frameworks – System architectures, workflow designs, or engineering blueprints</li>
+                <li>• Scalable Solutions – Roadmaps for pilot testing and deployment</li>
+              </ul>
+            </ThreeDCard>
+
+            <ThreeDCard className="space-y-4" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif">Ideathon</h3>
+              <ul className="space-y-2 text-gray-800">
+                <li>• Business Models – Canvases, unit economics, and market linkage strategies</li>
+                <li>• Policy Drafts – 2–3 page actionable policy notes with adoption roadmap</li>
+                <li>• Financial Models – FinTech/microfinance concepts with impact mapping</li>
+                <li>• Education/Lifestyle Models – Innovation frameworks with feasibility & adoption mapping</li>
+              </ul>
+            </ThreeDCard>
           </div>
         </div>
       </section>
