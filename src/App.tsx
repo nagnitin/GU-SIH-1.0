@@ -234,7 +234,7 @@ function App() {
               {/* Register Button */}
               <div className="px-6 pb-6">
                 <a
-                  href="#registration"
+                  href="https://forms.gle/5sAbicfHShUE6KyW9"
                   onClick={handleNavLinkClick}
                   className="bg-gradient-to-r from-blue-600 to-blue-500 px-6 py-3 rounded-full text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all w-full block text-center font-serif text-white"
                 >
@@ -327,10 +327,12 @@ function App() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
             <a
-              href="#registration"
-              className="bg-gradient-to-r from-blue-600 to-blue-500 px-12 py-4 md:px-16 md:py-5 rounded-lg text-lg md:text-xl font-semibold hover:shadow-lg hover:scale-105 transition-all inline-block text-white text-center"
+              href="https://forms.gle/5sAbicfHShUE6KyW9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-700 to-blue-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
             >
-              Register Now
+              Register Now - Google Form
             </a>
             <a
               href="#themes"
@@ -1411,7 +1413,7 @@ function App() {
             </div>
             <div className="space-y-4">
               <a
-                href="https://forms.gle/example"
+                href="https://forms.gle/5sAbicfHShUE6KyW9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blue-700 to-blue-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
