@@ -1354,7 +1354,7 @@ function App() {
             </ThreeDCard>
           </div>
           <div className="mt-8 bg-blue-50 rounded-2xl border border-blue-200 p-6">
-            <p className="text-gray-900 font-serif font-semibold mb-2">All the registration fees are refundable after successful participation in <span className="font-bold">GUenARK SIH 1.0</span>.</p>
+            <p className="text-gray-900 font-serif font-semibold mb-2">All the registration fees are refundable after successful participation in <span className="font-bold">GUenARK 2025</span>.</p>
             <p className="text-red-600 font-semibold">Note: The fee will not be refunded in case of withdrawal or absence after registration.</p>
           </div>
         </div>
@@ -1368,7 +1368,7 @@ function App() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ThreeDCard className="p-6" depth={30}>
-              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Registration – SIH 1.0</h3>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Registration – GUenARK 2025</h3>
               <p className="text-gray-700 font-semibold mb-4">Google Form for team registration</p>
               <a
                 href="https://forms.gle/5sAbicfHShUE6KyW9"
