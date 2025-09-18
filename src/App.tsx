@@ -116,8 +116,12 @@ function App() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 bg-white/90 backdrop-blur-sm border-b border-slate-200">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-serif tracking-wide">
-            GUenARK 2025
+          <div className="flex items-center gap-3 md:gap-4">
+            <div aria-label="Gauhati University logo placeholder" className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-dashed border-slate-400 bg-white/70" />
+            <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-serif tracking-wide">
+              GUenARK 2025
+            </div>
+            <div aria-label="GUenARK 2025 logo placeholder" className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-dashed border-blue-400 bg-white/70" />
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
             <a
@@ -253,6 +257,10 @@ function App() {
       >
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6 md:mb-8 animate-fadeInUp">
+            <div className="flex items-center justify-center gap-6 mb-6">
+              <div aria-label="Gauhati University logo placeholder" className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-dashed border-slate-400 bg-white/70" />
+              <div aria-label="GUenARK 2025 logo placeholder" className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-dashed border-blue-400 bg-white/70" />
+            </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-8 md:mb-12 font-serif tracking-wide leading-tight">
               <span className="text-blue-700">GUenARK</span>
               <br />
