@@ -1310,6 +1310,56 @@ function App() {
         </div>
       </section>
 
+      {/* 2-Days Startup Expo */}
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
+            2-Days Startup Expo
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ThreeDCard className="space-y-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif">Facilities Provided</h3>
+              <ul className="space-y-2 text-gray-800">
+                <li>• Exhibition stall space (table; standees permitted)</li>
+                <li>• Access to power supply and internet</li>
+                <li>• Basic logistical support for smooth participation</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Participant Responsibilities</h3>
+              <ul className="space-y-2 text-gray-800">
+                <li>• Bring own banners, posters, product demos, and prototypes</li>
+                <li>• Set up and dismantle stalls within allotted time</li>
+                <li>• Comply with Gauhati University regulations for any on-site sales</li>
+              </ul>
+            </ThreeDCard>
+
+            <ThreeDCard className="space-y-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif">Application & Submission</h3>
+              <ul className="space-y-2 text-gray-800">
+                <li>• Applications must be submitted through the GUenARK Portal</li>
+                <li>• Deadline: <span className="font-semibold">October 3, 2025</span></li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Required Documents</h3>
+              <ul className="space-y-2 text-gray-800">
+                <li>• Startup registration certificate / incorporation details</li>
+                <li>• Brief startup profile (founders, sector, key achievements)</li>
+                <li>• Pitch deck or presentation (PDF, max. 10 slides)</li>
+                <li>• Logo, product images, and promotional materials (if available)</li>
+                <li>• Each startup may apply under one thematic track only (to be finalized)</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Registration Fees</h3>
+              <p className="text-gray-800 font-semibold">₹3000/- per team <span className="font-normal">(Refundable after participation in the event)</span></p>
+            </ThreeDCard>
+          </div>
+          <div className="mt-8 bg-blue-50 rounded-2xl border border-blue-200 p-6">
+            <p className="text-gray-900 font-serif font-semibold mb-2">All the registration fees are refundable after successful participation in <span className="font-bold">GUenARK SIH 1.0</span>.</p>
+            <p className="text-red-600 font-semibold">Note: The fee will not be refunded in case of withdrawal or absence after registration.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Prizes */}
       <section id="prizes" className="relative z-10 py-20 px-6 bg-transparent">
         <div className="max-w-7xl mx-auto text-center">
