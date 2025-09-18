@@ -1890,7 +1890,7 @@ function App() {
                 guenark@gauhati.ac.in
               </p>
               <p className="text-gray-800 font-semibold">
-                iis_gu@gauhati.ac.in
+                iis_cell@gauhati.ac.in
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
