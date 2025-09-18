@@ -17,7 +17,7 @@ const ImageGallery: React.FC = () => {
   const images: ImageItem[] = [
     {
       id: '1',
-      src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop',
+      src: 'https://images.unsplash.com/photo-1685948704729-ea8b6af566b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Assam Tea Gardens',
       title: 'Tea Gardens of Assam',
       description: 'Lush green tea plantations stretching across the rolling hills',
@@ -25,7 +25,7 @@ const ImageGallery: React.FC = () => {
     },
     {
       id: '2',
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
+      src: 'https://images.unsplash.com/photo-1621789547000-b74d615ce6c5?q=80&w=1334&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Brahmaputra River',
       title: 'Mighty Brahmaputra',
       description: 'The lifeline of Northeast India flowing through the valley',
@@ -33,7 +33,7 @@ const ImageGallery: React.FC = () => {
     },
     {
       id: '3',
-      src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop',
+      src: 'https://images.unsplash.com/photo-1668007598394-292ee944e83b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Northeast Forests',
       title: 'Biodiversity Hotspot',
       description: 'Rich biodiversity and dense forests of Northeast India',
@@ -41,7 +41,7 @@ const ImageGallery: React.FC = () => {
     },
     {
       id: '4',
-      src: 'https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800&h=600&fit=crop',
+      src: 'https://i.pinimg.com/736x/4c/88/94/4c8894faf7b15fc026f98f646436c6b2.jpg',
       alt: 'Traditional Assamese Culture',
       title: 'Cultural Heritage',
       description: 'Traditional Assamese culture and heritage',
@@ -49,7 +49,7 @@ const ImageGallery: React.FC = () => {
     },
     {
       id: '5',
-      src: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop',
+      src: 'https://images.unsplash.com/photo-1675296098308-f9f526c6b724?q=80&w=1134&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Assam Wildlife',
       title: 'Wildlife Sanctuary',
       description: 'Diverse wildlife and natural habitats',
@@ -57,7 +57,7 @@ const ImageGallery: React.FC = () => {
     },
     {
       id: '6',
-      src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=600&fit=crop',
+      src: 'https://images.unsplash.com/photo-1625418828597-8ffc3d2e666d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Assam Landscapes',
       title: 'Scenic Landscapes',
       description: 'Breathtaking landscapes of Northeast India',

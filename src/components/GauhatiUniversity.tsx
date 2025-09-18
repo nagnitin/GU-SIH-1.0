@@ -19,7 +19,7 @@ const GauhatiUniversity: React.FC = () => {
       id: '1',
       title: 'Gauhati University Campus',
       description: 'Established in 1948, Gauhati University is one of the oldest and most prestigious universities in Northeast India.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9e1?w=800&h=600&fit=crop',
+      image: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/28/New_academic_building%2C_Gauhati_university.jpg/1200px-New_academic_building%2C_Gauhati_university.jpg?20190426191602',
       stats: [
         { value: '75+', label: 'Years of Excellence', color: 'text-blue-700' },
         { value: '50+', label: 'Academic Departments', color: 'text-blue-600' },
@@ -31,7 +31,7 @@ const GauhatiUniversity: React.FC = () => {
       id: '2',
       title: 'Academic Excellence',
       description: 'Committed to providing world-class education and fostering innovation across diverse disciplines.',
-      image: 'https://images.unsplash.com/photo-1523240794102-9eb5ccb83336?w=800&h=600&fit=crop',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkL-EEq6_TtGPiI8rl0TPyLQbKZYYVqvu3vQ&s',
       stats: [
         { value: '95%', label: 'Graduation Rate', color: 'text-blue-700' },
         { value: '150+', label: 'Research Papers', color: 'text-blue-400' },
@@ -43,7 +43,7 @@ const GauhatiUniversity: React.FC = () => {
       id: '3',
       title: 'Research & Innovation',
       description: 'Leading cutting-edge research in sustainable development, technology, and regional challenges.',
-      image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSurJi-IFeVzwO7RX0Ye3aU8oyLxlNTQXmBLQ&s',
       stats: [
         { value: '50+', label: 'Ongoing Projects', color: 'text-blue-700' },
         { value: '₹10Cr+', label: 'Research Funding', color: 'text-blue-400' },
@@ -55,7 +55,7 @@ const GauhatiUniversity: React.FC = () => {
       id: '4',
       title: 'Student Life',
       description: 'Vibrant campus life with diverse cultural activities, sports, and student organizations.',
-      image: 'https://images.unsplash.com/photo-1523240794102-9eb5ccb83336?w=800&h=600&fit=crop',
+      image: 'https://www.ujudebug.com/wp-content/uploads/2025/04/Gauhati-University-Hackdays-Ujudebug-8-1024x768.jpg',
       stats: [
         { value: '100+', label: 'Student Clubs', color: 'text-blue-700' },
         { value: '15+', label: 'Sports Facilities', color: 'text-blue-400' },
