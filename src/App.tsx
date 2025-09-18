@@ -1040,6 +1040,53 @@ function App() {
                 </li>
               </ul>
             </ThreeDCard>
+
+            {/* Team Identity (new) */}
+            <ThreeDCard className="space-y-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-serif">
+                Team Identity
+              </h3>
+              <ul className="space-y-4 text-gray-800">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">Team name must be unique and should not include the institute name</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">A student cannot be a member of more than one team (Hackathon / Ideathon)</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">Teams submit their idea under a single track only, using the same team name</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">Teams must submit an undertaking agreeing to all terms and conditions</span>
+                </li>
+              </ul>
+            </ThreeDCard>
+
+            {/* Idea Submission Guidelines (new) */}
+            <ThreeDCard className="space-y-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-serif">
+                Idea Submission Guidelines
+              </h3>
+              <ul className="space-y-4 text-gray-800">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">Only the team leader can submit the idea on the GUenARK portal</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">Each team may submit ideas for a maximum of 1 problem statement</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3"></div>
+                  <span className="font-semibold">Submission must include: Team name, Authorization/Nomination letter scans, Team member details, Problem statement chosen, and a 10‑slide PDF (title, description, presentation)</span>
+                </li>
+              </ul>
+              <p className="text-sm text-gray-800 font-semibold">Results to be declared on or before <span className="font-bold">October 3, 2025</span>.</p>
+            </ThreeDCard>
           </div>
 
           <ThreeDCard className="mt-12" depth={40}>
@@ -1146,6 +1193,25 @@ function App() {
                 </p>
               </div>
             </div>
+          </ThreeDCard>
+
+          {/* Grand Finale (new) */}
+          <ThreeDCard className="mt-8" depth={30}>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Grand Finale</h3>
+            <ul className="space-y-3 text-gray-800">
+              <li className="flex items-start">
+                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                <span className="font-semibold">Grand Finale to be held offline at <span className="font-bold">GUIST (Guru Prasad Das Bhaban), Gauhati University</span></span>
+              </li>
+              <li className="flex items-start">
+                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                <span className="font-semibold">Teams must travel to their assigned venue and be available for meetings, training, and preparation prior to the finale</span>
+              </li>
+              <li className="flex items-start">
+                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
+                <span className="font-semibold">Accommodation and Travel Allowance (TA) to be borne by participants</span>
+              </li>
+            </ul>
           </ThreeDCard>
         </div>
       </section>
