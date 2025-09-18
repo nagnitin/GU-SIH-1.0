@@ -112,7 +112,7 @@ function App() {
       <FloatingParticles />
       <AssamPattern />
       <GamusaAccent />
-
+      
       {/* Header */}
       <header className="relative z-10 p-4 md:p-6 bg-white/90 backdrop-blur-sm border-b border-slate-200">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
@@ -166,7 +166,7 @@ function App() {
           <div className="flex items-center space-x-2 md:space-x-4">
             <button className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white">
               Register
-            </button>
+          </button>
             <button
               className="md:hidden text-gray-900 font-semibold hover:text-blue-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -269,7 +269,7 @@ function App() {
               Choose Your Challenge. Build. Innovate. Impact.
             </p>
             <div className="text-lg sm:text-xl md:text-2xl text-gray-700 font-medium min-h-[2.5rem] md:min-h-[3rem] px-4 mb-12">
-              <TypewriterEffect
+              <TypewriterEffect 
                 texts={[
                   "Shelter for ideas, Launchpad for Startups.",
                   "Building Tomorrow at the Crossroads of Ideas, Investment & Governance.",
@@ -288,7 +288,7 @@ function App() {
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600/15 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Calendar className="w-8 h-8 text-gray-800" />
-                </div>
+            </div>
                 <h3 className="text-gray-900 text-lg md:text-xl font-semibold mb-2">
                   Date
                 </h3>
@@ -298,7 +298,7 @@ function App() {
                     __html: "10<sup>th</sup> & 11<sup>th</sup> October, 2025",
                   }}
                 ></p>
-              </div>
+            </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600/15 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-gray-800" />
@@ -790,7 +790,7 @@ function App() {
                     <li>
                       • Prototypes and pilot-ready solutions addressing key
                       regional issues
-                    </li>
+                      </li>
                     <li>
                       • Opportunities for collaboration with government, NGOs
                       and industry
@@ -1360,6 +1360,68 @@ function App() {
         </div>
       </section>
 
+      {/* Important Links */}
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
+            Important Links
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ThreeDCard className="p-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Registration – SIH 1.0</h3>
+              <p className="text-gray-700 font-semibold mb-4">Google Form for team registration</p>
+              <a
+                href="https://forms.gle/5sAbicfHShUE6KyW9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
+              >
+                Open Registration Form
+              </a>
+            </ThreeDCard>
+
+            <ThreeDCard className="p-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Nomination – Letter Format</h3>
+              <p className="text-gray-700 font-semibold mb-4">Institute nomination letter template</p>
+              <a
+                href="https://docs.google.com/document/d/1S02lICcSu1S3kWiawReR0ddvSp0ySC9i/edit?usp=sharing&ouid=11722306056772865341&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
+              >
+                Open Nomination Format
+              </a>
+            </ThreeDCard>
+
+            <ThreeDCard className="p-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">NOC (Parents/Guardian) – Letter Format</h3>
+              <p className="text-gray-700 font-semibold mb-4">Parent/guardian NOC template</p>
+              <a
+                href="https://docs.google.com/document/d/1POxi_q8RGVl8RalcoZzkcmjSBD2vPhxrG/edit?usp=sharing&ouid=11722306056772865341&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
+              >
+                Open NOC Format
+              </a>
+            </ThreeDCard>
+
+            <ThreeDCard className="p-6" depth={30}>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Presentation – Format</h3>
+              <p className="text-gray-700 font-semibold mb-4">Presentation folder (max 10 slides)</p>
+              <a
+                href="https://drive.google.com/drive/folders/1uvGtjyMAMVzSzke76DQCNQlDAW8Zf6x5q?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
+              >
+                Open Presentation Folder
+              </a>
+            </ThreeDCard>
+          </div>
+        </div>
+      </section>
+
       {/* Prizes */}
       <section id="prizes" className="relative z-10 py-20 px-6 bg-transparent">
         <div className="max-w-7xl mx-auto text-center">
@@ -1408,7 +1470,7 @@ function App() {
                   <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-4 right-4 w-20 h-20 bg-white/20 rounded-full blur-xl"></div>
                     <div className="absolute bottom-4 left-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
-                  </div>
+              </div>
 
                   {/* Badge Icon */}
                   <div className="relative flex justify-center mb-6">
@@ -1820,7 +1882,7 @@ function App() {
             <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
               <div className="w-16 h-16 mx-auto mb-4 border-2 border-gray-800 rounded-full flex items-center justify-center">
                 <Mail className="text-gray-800" size={32} />
-              </div>
+            </div>
               <h3 className="text-xl font-bold mb-4 font-serif text-gray-900">
                 Email Us
               </h3>
