@@ -1410,7 +1410,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Presentation – Format</h3>
               <p className="text-gray-700 font-semibold mb-4">Presentation folder (max 10 slides)</p>
               <a
-                href="https://drive.google.com/drive/folders/1uvGtjyMAMVzSzke76DQCNQlDAW8Zf6x5q?usp=sharing"
+                href="https://drive.google.com/drive/folders/1vuGtyjMAVvSZzke76DQCNj0AW8ZfdX5q"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
