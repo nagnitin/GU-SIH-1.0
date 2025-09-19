@@ -118,15 +118,10 @@ function App() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-lg">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src={GUenArkLogo} 
               alt="GUenARK Logo" 
-              className="h-8 md:h-12 w-auto"
-            />
-            <img 
-              src={GULogo} 
-              alt="Gauhati University Logo" 
               className="h-8 md:h-12 w-auto"
             />
           </div>
@@ -175,9 +170,14 @@ function App() {
             </a>
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
+            <img 
+              src={GULogo} 
+              alt="Gauhati University Logo" 
+              className="h-6 md:h-8 w-auto"
+            />
             <button className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white">
               Register
-          </button>
+            </button>
             <button
               className="md:hidden text-gray-900 font-semibold hover:text-blue-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
