@@ -175,9 +175,14 @@ function App() {
               alt="Gauhati University Logo" 
               className="h-10 md:h-12 w-auto"
             />
-            <button className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdNMiKTlSt1dAuDsoEwmM9sMcjfI_OgHBn9vecOHn3jGrh4XA/closedform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white"
+            >
               Register
-          </button>
+            </a>
             <button
               className="md:hidden text-gray-900 font-semibold hover:text-blue-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
