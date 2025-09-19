@@ -85,7 +85,7 @@ const ThreeDElement: React.FC<ThreeDElementProps> = ({
 export const ThreeDCard: React.FC<ThreeDElementProps> = ({ children, className = '', depth = 30 }) => {
   return (
     <ThreeDElement className={`${className} transition-all duration-300`} depth={depth}>
-      <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-600/30 rounded-2xl p-6 shadow-2xl">
+      <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/30 backdrop-blur-sm border border-blue-400/30 rounded-2xl p-6 shadow-2xl">
         {children}
       </div>
     </ThreeDElement>
