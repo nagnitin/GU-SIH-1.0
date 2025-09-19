@@ -173,7 +173,7 @@ function App() {
             <img 
               src={GULogo} 
               alt="Gauhati University Logo" 
-              className="h-6 md:h-8 w-auto"
+              className="h-10 md:h-12 w-auto"
             />
             <button className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white">
               Register
