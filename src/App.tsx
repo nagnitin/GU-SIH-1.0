@@ -272,8 +272,9 @@ function App() {
               />
             </div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-800 mb-8 md:mb-12 px-4 leading-relaxed font-medium max-w-5xl mx-auto">
-              Gauhati University Entrepreneurship and Nurturing, Advancement
-              through Research and Knowledge
+              <span className="font-bold">G</span>auhati <span className="font-bold">U</span>niversity <span className="font-bold">E</span>ntrepreneurship <span className="font-bold">a</span>nd <span className="font-bold">N</span>urturing, <span className="font-bold">A</span>dvancement
+              <br />
+              through <span className="font-bold">R</span>esearch <span className="font-bold">a</span>nd <span className="font-bold">K</span>nowledge
             </p>
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-6 md:mb-8 px-4 font-bold">
               ⚡ 24-Hour Hackathon | Ideathon | Startup ⚡
