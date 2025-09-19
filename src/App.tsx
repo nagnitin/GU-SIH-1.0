@@ -1384,7 +1384,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Nomination – Letter Format</h3>
               <p className="text-gray-700 font-semibold mb-4">Institute nomination letter template</p>
               <a
-                href="https://docs.google.com/document/d/1S02lICcSu1S3kWiawReR0ddvSp0ySC9i/edit?usp=sharing&ouid=11722306056772865341&rtpof=true&sd=true"
+                href="https://docs.google.com/document/d/1S02lCIc5uiSl3kWiawRetQddwSp0ySC9/edit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
