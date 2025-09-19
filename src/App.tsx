@@ -864,11 +864,11 @@ function App() {
                     Tracks (Pick One):
                   </h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Sustainable Business Models</li>
-                    <li>• Policy & Governance</li>
-                    <li>• Community & Media</li>
-                    <li>• Green Financial Inclusion</li>
-                    <li>• Education & Lifestyle</li>
+                    <li>• Business, Market & Digital Commerce [SDG 8, 9, 12, 15]</li>
+                    <li>• Policy & Governance Innovation [SDG 11, 12, 13, 16]</li>
+                    <li>• Community Engagement & Storytelling [SDG 8, 11, 12, 17]</li>
+                    <li>• Financial Inclusion for Green Growth [SDG 1, 5, 8, 10, 13]</li>
+                    <li>• Education, Skills & Lifestyle Innovation [SDG 4, 8, 11, 12, 13]</li>
                   </ul>
                 </div>
                 <div className="mb-4">
