@@ -264,11 +264,13 @@ function App() {
       >
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6 md:mb-8 animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-8 md:mb-12 font-serif tracking-wide leading-tight">
-              <span className="text-blue-700">GUenARK</span>
-              <br />
-              <span className="text-blue-500">2025</span>
-            </h1>
+            <div className="mb-8 md:mb-12 flex justify-center">
+              <img 
+                src={GUenArkLogo} 
+                alt="GUenARK 2025" 
+                className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto"
+              />
+            </div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-800 mb-8 md:mb-12 px-4 leading-relaxed font-medium max-w-5xl mx-auto">
               Gauhati University Entrepreneurship and Nurturing, Advancement
               through Research and Knowledge
