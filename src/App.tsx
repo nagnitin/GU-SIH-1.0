@@ -1397,7 +1397,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">NOC (Parents/Guardian) – Letter Format</h3>
               <p className="text-gray-700 font-semibold mb-4">Parent/guardian NOC template</p>
               <a
-                href="https://docs.google.com/document/d/1POxi_q8RGVl8RalcoZzkcmjSBD2vPhxrG/edit?usp=sharing&ouid=11722306056772865341&rtpof=true&sd=true"
+                href="https://docs.google.com/document/d/1PQxi_d8GVjBKacIoZakxmjSjD2vPhruG/edit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition"
