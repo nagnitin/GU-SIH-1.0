@@ -1742,8 +1742,14 @@ function App() {
                 <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
                   Prof. Pradeep Kr. Jain
                 </p>
-                <p className="text-gray-800 font-semibold text-sm">
+                <p className="text-gray-800 font-semibold text-sm mb-2">
                   Dean, Faculty of Comm. & Mngt., GU
+                </p>
+                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
+                  Prof. Ratul Mahanta
+                </p>
+                <p className="text-gray-800 font-semibold text-sm">
+                  Dean Faculty of Arts, GU
                 </p>
               </ThreeDCard>
               <ThreeDCard className="text-center" depth={20}>
