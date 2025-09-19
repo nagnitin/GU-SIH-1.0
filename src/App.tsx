@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import GUenArkLogo from "/GUenArk.png";
+import GULogo from "/GU Digital Logo.png";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -116,8 +118,17 @@ function App() {
       {/* Header */}
       <header className="relative z-10 p-4 md:p-6 bg-white/90 backdrop-blur-sm border-b border-slate-200">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="text-lg md:text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-serif tracking-wide">
-            GUenARK 2025
+          <div className="flex items-center space-x-3">
+            <img 
+              src={GUenArkLogo} 
+              alt="GUenARK Logo" 
+              className="h-8 md:h-12 w-auto"
+            />
+            <img 
+              src={GULogo} 
+              alt="Gauhati University Logo" 
+              className="h-8 md:h-12 w-auto"
+            />
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
             <a
