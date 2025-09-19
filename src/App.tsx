@@ -116,7 +116,7 @@ function App() {
       <GamusaAccent />
       
       {/* Header */}
-      <header className="relative z-10 p-4 md:p-6 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+      <header className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-lg">
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="flex items-center space-x-3">
             <img 
@@ -259,7 +259,7 @@ function App() {
 
       {/* Hero Section */}
       <section
-        className="relative z-10 py-12 md:py-20 px-4 md:px-6"
+        className="relative z-10 pt-24 pb-12 md:pt-32 md:pb-20 px-4 md:px-6"
         ref={heroRef}
       >
         <div className="max-w-7xl mx-auto text-center">
