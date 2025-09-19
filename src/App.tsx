@@ -177,7 +177,7 @@ function App() {
             />
             <button className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 md:px-6 md:py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base font-semibold whitespace-nowrap text-white">
               Register
-            </button>
+          </button>
             <button
               className="md:hidden text-gray-900 font-semibold hover:text-blue-600 transition-colors p-1"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -453,7 +453,7 @@ function App() {
                     Prof. Kandarpa Kumar Sarma
                   </p>
                   <p className="text-sm text-gray-700">
-                    Dept. of ECE (on lien) and COE, GU
+                    Dept. of Electronics and Communication Engineering (on lien) and COE, GU
                   </p>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
@@ -472,13 +472,13 @@ function App() {
                   <p className="font-semibold text-gray-900">
                     Dr. Jyoti Prakash Medhi
                   </p>
-                  <p className="text-sm text-gray-700">Dept of ECE</p>
+                  <p className="text-sm text-gray-700">Dept of Electronics and Communication Engineering</p>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                   <p className="font-semibold text-gray-900">
                     Dr. Nabamita Deb
                   </p>
-                  <p className="text-sm text-gray-700">Dept of IT</p>
+                  <p className="text-sm text-gray-700">Dept of Information Technology</p>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                   <p className="font-semibold text-gray-900">
@@ -1683,7 +1683,7 @@ function App() {
                 Shri Keshab Mahanta
               </p>
               <p className="text-gray-800 font-semibold mb-2">
-                Hon'ble Minister of Revenue, Disaster Management, IT, Science,
+                Hon'ble Minister of Revenue, Disaster Management, Information Technology, Science,
                 Technology & Climate Change
               </p>
               <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
