@@ -119,18 +119,9 @@ const GauhatiUniversity: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-blue-700 font-serif tracking-wide">
           Gauhati University
         </h2>
-        <p className="text-center text-gray-900 mb-8 text-lg font-serif font-semibold">
+        <p className="text-center text-gray-900 mb-12 text-lg font-serif font-semibold">
           The premier institution of higher education in Northeast India, fostering innovation and sustainable development since 1948
         </p>
-        
-        {/* GUenARK Logo */}
-        <div className="flex justify-center mb-8">
-          <img 
-            src="/GUenArk.png" 
-            alt="GUenARK 2025 Logo" 
-            className="h-16 md:h-20 w-auto"
-          />
-        </div>
         
         {/* Tab Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
