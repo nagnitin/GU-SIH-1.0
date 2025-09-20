@@ -1461,7 +1461,7 @@ function App() {
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                place: "Hackathon Winner",
+                place: "Hackathon Prizes worth",
                 prize: "₹1,50,000",
                 gradient: "from-blue-300 via-blue-400 to-blue-600",
                 border: "border-blue-300/30",
@@ -1470,7 +1470,7 @@ function App() {
                 subtitle: "24-Hour Technology Challenge",
               },
               {
-                place: "Ideathon Winner",
+                place: "Ideathon Prizes worth",
                 prize: "₹1,00,000",
                 gradient: "from-slate-300 via-slate-400 to-slate-600",
                 border: "border-slate-400/30",
