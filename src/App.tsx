@@ -1684,6 +1684,10 @@ function App() {
           </h2>
           
           <div className="max-w-2xl mx-auto space-y-8">
+            {/* Chief Patron Heading */}
+            <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 font-serif">
+              Chief Patron
+            </h3>
             {/* Chief Patron Card */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <div className="text-center">
@@ -1702,6 +1706,10 @@ function App() {
                 </p>
               </div>
             </div>
+            {/* Patrons Heading */}
+            <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 font-serif">
+              Patrons
+            </h3>
             {/* Patrons Card */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <div className="text-center">
@@ -1734,11 +1742,12 @@ function App() {
                 </p>
               </div>
             </div>
+            {/* Co-Patrons Heading */}
+            <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 font-serif">
+              Co-Patrons
+            </h3>
             {/* Co-Patrons Cards */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-center mb-8 text-blue-800 font-serif">
-                Co-Patrons
-              </h3>
               
               {/* Prof. Nani Gopal Mahanta */}
               <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
