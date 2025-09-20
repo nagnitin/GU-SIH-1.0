@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Force dark background when mobile menu is open to prevent white flash on some browsers */
 html.menu-open, body.menu-open, body.menu-open #root {
   background-color: #000 !important;

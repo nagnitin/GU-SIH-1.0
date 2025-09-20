@@ -209,7 +209,7 @@ function App() {
                   />
                 )}
               </svg>
-            </button>
+          </button>
           </div>
         </nav>
 
@@ -1243,7 +1243,7 @@ function App() {
       </section>
 
       {/* 24-Hour Activity Plan */}
-      <section className="relative z-10 py-20 px-6">
+      <section id="timeline" className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
             24-Hour Activity Plan
