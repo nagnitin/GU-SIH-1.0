@@ -1672,40 +1672,68 @@ function App() {
       {/* Patrons Section */}
       <section className="relative z-10 py-20 px-6 bg-transparent">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
-            Patrons & Leadership
+          {/* Organizing Committee Button */}
+          <div className="text-center mb-8">
+            <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 px-8 py-3 rounded-full text-white font-semibold shadow-lg">
+              Organizing Committee
+            </div>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-800 font-serif tracking-wide">
+            PATRON
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">
-                Chief Patron
-              </h3>
-              <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
-                Dr. Himanta Biswa Sarma
-              </p>
-              <p className="text-gray-800 font-semibold">
-                Hon'ble Chief Minister, Assam
-              </p>
-            </ThreeDCard>
-            <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">
-                Patrons
-              </h3>
-              <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
-                Shri Keshab Mahanta
-              </p>
-              <p className="text-gray-800 font-semibold mb-2">
-                Hon'ble Minister of Revenue, Disaster Management, Information Technology, Science,
-                Technology & Climate Change
-              </p>
-              <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
-                Shri Bimal Borah
-              </p>
-              <p className="text-gray-800 font-semibold">
-                Hon'ble Minister of Cultural Affairs, Industries, Commerce and
-                Public Enterprises
-              </p>
-            </ThreeDCard>
+          
+          <div className="max-w-2xl mx-auto space-y-8">
+            {/* Chief Patron Card */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                    alt="Dr. Himanta Biswa Sarma"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2 font-serif">
+                  Dr. Himanta Biswa Sarma
+                </h3>
+                <p className="text-lg text-gray-600 italic">
+                  Hon'ble Chief Minister, Assam
+                </p>
+              </div>
+            </div>
+            {/* Patrons Card */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" 
+                    alt="Shri Keshab Mahanta"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2 font-serif">
+                  Shri Keshab Mahanta
+                </h3>
+                <p className="text-lg text-gray-600 italic mb-6">
+                  Hon'ble Minister of Revenue, Disaster Management, Information Technology, Science, Technology & Climate Change
+                </p>
+                
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face" 
+                    alt="Shri Bimal Borah"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2 font-serif">
+                  Shri Bimal Borah
+                </h3>
+                <p className="text-lg text-gray-600 italic">
+                  Hon'ble Minister of Cultural Affairs, Industries, Commerce and Public Enterprises
+                </p>
+              </div>
+            </div>
             <ThreeDCard className="text-center" depth={30}>
               <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">
                 Co-Patrons
