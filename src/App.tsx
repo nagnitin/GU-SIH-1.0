@@ -1674,7 +1674,7 @@ function App() {
         <div className="max-w-6xl mx-auto">
           {/* Organizing Committee Button */}
           <div className="text-center mb-8">
-            <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 px-8 py-3 rounded-full text-white font-semibold shadow-lg">
+            <div className="inline-block bg-gradient-to-r from-blue-500 to-blue-600 px-8 py-3 rounded-full text-white font-semibold shadow-lg">
               Organizing Committee
             </div>
           </div>
