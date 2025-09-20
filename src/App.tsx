@@ -1689,7 +1689,7 @@ function App() {
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                    src="/Himanta.png" 
                     alt="Dr. Himanta Biswa Sarma"
                     className="w-full h-full object-cover"
                   />
@@ -1707,7 +1707,7 @@ function App() {
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" 
+                    src="/Keshab.png" 
                     alt="Shri Keshab Mahanta"
                     className="w-full h-full object-cover"
                   />
@@ -1721,7 +1721,7 @@ function App() {
                 
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face" 
+                    src="/Bimal.png" 
                     alt="Shri Bimal Borah"
                     className="w-full h-full object-cover"
                   />
@@ -1745,7 +1745,7 @@ function App() {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                      src="/Nanigopal.png" 
                       alt="Prof. Nani Gopal Mahanta"
                       className="w-full h-full object-cover"
                     />
@@ -1764,7 +1764,7 @@ function App() {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" 
+                      src="/Krishna.png" 
                       alt="Dr. Krishna Kumar Dwivedi"
                       className="w-full h-full object-cover"
                     />
@@ -1783,7 +1783,7 @@ function App() {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face" 
+                      src="/Jeevan.png" 
                       alt="Dr. Jeevan Basavaraj"
                       className="w-full h-full object-cover"
                     />
