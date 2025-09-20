@@ -1680,7 +1680,7 @@ function App() {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-800 font-serif tracking-wide">
-            PATRON
+            Patrons & Leadership
           </h2>
           
           <div className="max-w-2xl mx-auto space-y-8">
@@ -1734,95 +1734,124 @@ function App() {
                 </p>
               </div>
             </div>
-            <ThreeDCard className="text-center" depth={30}>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 font-serif">
+            {/* Co-Patrons Card */}
+            <div className="bg-blue-100 rounded-2xl p-8 shadow-xl border border-blue-200">
+              <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 font-serif">
                 Co-Patrons
               </h3>
-              <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
-                Prof. Nani Gopal Mahanta
-              </p>
-              <p className="text-gray-800 font-semibold mb-2">
-                Hon'ble Vice Chancellor, Gauhati University
-              </p>
-              <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
-                Dr. Krishna Kumar Dwivedi, IAS
-              </p>
-              <p className="text-gray-800 font-semibold mb-2">
-                Principal Secretary to Hon'ble CM Assam
-              </p>
-              <p className="text-lg font-semibold text-gray-800 mb-2 font-serif">
-                Dr. Jeevan Basavaraj, IAS
-              </p>
-              <p className="text-gray-800 font-semibold">
-                Secretary, Dept. of Innovation, Incubation and Startups, Govt.
-                of Assam
-              </p>
-            </ThreeDCard>
+              <div className="space-y-4">
+                <div className="text-center">
+                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                    Prof. Nani Gopal Mahanta
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    Hon'ble Vice Chancellor, Gauhati University
+                  </p>
+                </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                    Dr. Krishna Kumar Dwivedi, IAS
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    Principal Secretary to Hon'ble CM Assam
+                  </p>
+                </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                    Dr. Jeevan Basavaraj, IAS
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    Secretary, Dept. of Innovation, Incubation and Startups, Govt. of Assam
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Advisors Section */}
+          {/* Advisory Team Section */}
           <div className="mt-12">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-900 font-serif">
+            <h3 className="text-2xl font-bold text-center mb-8 text-blue-800 font-serif">
               Advisory Team
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <ThreeDCard className="text-center" depth={20}>
-                <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">
+              {/* Administrative Advisor */}
+              <div className="bg-blue-100 rounded-2xl p-6 shadow-xl border border-blue-200">
+                <h4 className="text-xl font-bold text-center mb-4 text-blue-800 font-serif">
                   Administrative Advisor
                 </h4>
-                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
-                  Prof. Utpal Sarma
-                </p>
-                <p className="text-gray-800 font-semibold text-sm">
-                  Registrar, GU
-                </p>
-              </ThreeDCard>
-              <ThreeDCard className="text-center" depth={20}>
-                <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">
+                <div className="text-center">
+                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                    Prof. Utpal Sarma
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    Registrar, GU
+                  </p>
+                </div>
+              </div>
+
+              {/* Technical Advisors */}
+              <div className="bg-blue-100 rounded-2xl p-6 shadow-xl border border-blue-200">
+                <h4 className="text-xl font-bold text-center mb-4 text-blue-800 font-serif">
                   Technical Advisors
                 </h4>
-                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
-                  Prof. Shikhar Kumar Sarma
-                </p>
-                <p className="text-gray-800 font-semibold text-sm mb-2">
-                  Dean Faculty of Tech, GU
-                </p>
-                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
-                  Prof. Kumananda Tayung
-                </p>
-                <p className="text-gray-800 font-semibold text-sm mb-2">
-                  Dean Faculty of Science, GU
-                </p>
-                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
-                  Prof. Pradeep Kr. Jain
-                </p>
-                <p className="text-gray-800 font-semibold text-sm mb-2">
-                  Dean, Faculty of Comm. & Mngt., GU
-                </p>
-                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
-                  Prof. Ratul Mahanta
-                </p>
-                <p className="text-gray-800 font-semibold text-sm">
-                  Dean Faculty of Arts, GU
-                </p>
-              </ThreeDCard>
-              <ThreeDCard className="text-center" depth={20}>
-                <h4 className="text-lg font-bold text-gray-900 mb-3 font-serif">
+                <div className="space-y-3">
+                  <div className="text-center">
+                    <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                      Prof. Shikhar Kumar Sarma
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Dean Faculty of Tech, GU
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                      Prof. Kumananda Tayung
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Dean Faculty of Science, GU
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                      Prof. Pradeep Kr. Jain
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Dean, Faculty of Comm. & Mngt., GU
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                      Prof. Ratul Mahanta
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Dean Faculty of Arts, GU
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Strategic Advisor */}
+              <div className="bg-blue-100 rounded-2xl p-6 shadow-xl border border-blue-200">
+                <h4 className="text-xl font-bold text-center mb-4 text-blue-800 font-serif">
                   Strategic Advisor
                 </h4>
-                <p className="text-base font-semibold text-gray-800 mb-1 font-serif">
-                  Neha K Mehra
-                </p>
-                <p className="text-gray-800 font-semibold text-sm">
-                  Promoter, York Print
-                </p>
-                <p className="text-gray-800 font-semibold text-sm">
-                  Board Member, FIEO
-                </p>
-                <p className="text-gray-800 font-semibold text-sm">
-                  Secretary, Laghu Udyog Bharti NE Women's Wing
-                </p>
-              </ThreeDCard>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                    Neha K Mehra
+                  </p>
+                  <div className="space-y-1">
+                    <p className="text-gray-700 text-sm">
+                      Promoter, York Print
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Board Member, FIEO
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Secretary, Laghu Udyog Bharti NE Women's Wing
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
