@@ -354,6 +354,13 @@ function App() {
               Register Now - Google Form
             </a>
             <a
+              href="/GUenARK_2025.pdf"
+              download="GUenARK_2025_Brochure.pdf"
+              className="bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
+            >
+              Download Brochure
+            </a>
+            <a
               href="#themes"
               className="bg-transparent border-2 border-slate-300 text-slate-800 px-12 py-4 md:px-16 md:py-5 rounded-lg text-lg md:text-xl font-semibold hover:bg-slate-100 hover:text-slate-900 transition-all inline-block text-center"
             >
