@@ -607,7 +607,7 @@ function App() {
                 Gauhati University, Guwahati-781014, Assam, India
               </p>
               <p className="text-gray-800 font-serif font-semibold">
-                Web: www.gauhati.ac.in/guenark2025
+                Web: www.gauhati.ac.in
               </p>
             </div>
           </div>
@@ -1933,7 +1933,7 @@ function App() {
                 Website
               </h3>
               <p className="text-gray-800 font-semibold">
-                www.gauhati.ac.in/guenark2025
+                www.gauhati.ac.in
               </p>
             </div>
           </div>
