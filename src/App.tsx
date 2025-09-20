@@ -1734,33 +1734,64 @@ function App() {
                 </p>
               </div>
             </div>
-            {/* Co-Patrons Card */}
-            <div className="bg-blue-100 rounded-2xl p-8 shadow-xl border border-blue-200">
-              <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 font-serif">
+            {/* Co-Patrons Cards */}
+            <div className="space-y-8">
+              <h3 className="text-2xl font-bold text-center mb-8 text-blue-800 font-serif">
                 Co-Patrons
               </h3>
-              <div className="space-y-4">
+              
+              {/* Prof. Nani Gopal Mahanta */}
+              <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="text-center">
-                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                      alt="Prof. Nani Gopal Mahanta"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 font-serif">
                     Prof. Nani Gopal Mahanta
-                  </p>
-                  <p className="text-gray-700 text-sm">
+                  </h3>
+                  <p className="text-lg text-gray-600 italic">
                     Hon'ble Vice Chancellor, Gauhati University
                   </p>
                 </div>
+              </div>
+
+              {/* Dr. Krishna Kumar Dwivedi */}
+              <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="text-center">
-                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" 
+                      alt="Dr. Krishna Kumar Dwivedi"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 font-serif">
                     Dr. Krishna Kumar Dwivedi, IAS
-                  </p>
-                  <p className="text-gray-700 text-sm">
+                  </h3>
+                  <p className="text-lg text-gray-600 italic">
                     Principal Secretary to Hon'ble CM Assam
                   </p>
                 </div>
+              </div>
+
+              {/* Dr. Jeevan Basavaraj */}
+              <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="text-center">
-                  <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face" 
+                      alt="Dr. Jeevan Basavaraj"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 font-serif">
                     Dr. Jeevan Basavaraj, IAS
-                  </p>
-                  <p className="text-gray-700 text-sm">
+                  </h3>
+                  <p className="text-lg text-gray-600 italic">
                     Secretary, Dept. of Innovation, Incubation and Startups, Govt. of Assam
                   </p>
                 </div>
