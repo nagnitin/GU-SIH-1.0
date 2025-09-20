@@ -351,7 +351,7 @@ function App() {
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-700 to-blue-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
             >
-              Register Now - Google Form
+              Register Now
             </a>
             <a
               href="/GUenARK_2025.pdf"
@@ -1395,7 +1395,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <ThreeDCard className="p-6" depth={30}>
               <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Registration – GUenARK 2025</h3>
-              <p className="text-gray-700 font-semibold mb-4">Google Form for team registration</p>
+              <p className="text-gray-700 font-semibold mb-4">Team registration</p>
               <a
                 href="https://forms.gle/5sAbicfHShUE6KyW9"
                 target="_blank"
@@ -1659,7 +1659,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blue-700 to-blue-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
               >
-                Register Now - Google Form
+                Register Now
               </a>
               <p className="text-sm text-gray-900 font-serif font-semibold">
                 Registration deadline: Coming Soon
