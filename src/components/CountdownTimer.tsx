@@ -9,8 +9,8 @@ const CountdownTimer: React.FC = () => {
   });
 
   useEffect(() => {
-    // Set target date to October 10, 2025 (GUenARK 2025 start date)
-    const targetDate = new Date('2025-10-10T09:00:00').getTime();
+    // Event postponed - no countdown needed
+    const targetDate = new Date('2025-12-31T23:59:59').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -61,7 +61,7 @@ const CountdownTimer: React.FC = () => {
         ))}
       </div>
       <p className="text-sm md:text-sm text-gray-900 mt-3 md:mt-4 font-serif px-2 font-semibold">
-        October 10-11, 2025 - Gauhati University, Guwahati
+        Due to unavoidable circumstances, the event has been postponed until further notice.
       </p>
     </div>
   );

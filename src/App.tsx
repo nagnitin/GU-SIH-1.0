@@ -314,7 +314,7 @@ function App() {
                 <p
                   className="text-gray-700 font-medium text-base md:text-lg"
                   dangerouslySetInnerHTML={{
-                    __html: "10<sup>th</sup> & 11<sup>th</sup> October, 2025",
+                    __html: "Due to unavoidable circumstances, the event has been postponed until further notice.",
                   }}
                 ></p>
             </div>
@@ -1111,7 +1111,7 @@ function App() {
                   <span className="font-semibold">Submission must include: Team name, Authorization/Nomination letter scans, Team member details, Problem statement chosen, and a 10‑slide PDF (title, description, presentation)</span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-800 font-semibold">Results to be declared on or before <span className="font-bold">October 3, 2025</span>.</p>
+              <p className="text-sm text-gray-800 font-semibold">Due to unavoidable circumstances, the event has been postponed until further notice.</p>
             </ThreeDCard>
           </div>
 
@@ -1363,7 +1363,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 font-serif">Application & Submission</h3>
               <ul className="space-y-2 text-gray-800">
                 <li>• Applications must be submitted through the GUenARK Portal</li>
-                <li>• Deadline: <span className="font-semibold">October 3, 2025</span></li>
+                <li>• Due to unavoidable circumstances, the event has been postponed until further notice.</li>
               </ul>
 
               <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Required Documents</h3>
