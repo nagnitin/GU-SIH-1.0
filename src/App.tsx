@@ -1111,7 +1111,7 @@ function App() {
                   <span className="font-semibold">Submission must include: Team name, Authorization/Nomination letter scans, Team member details, Problem statement chosen, and a 10‑slide PDF (title, description, presentation)</span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-800 font-semibold">Due to unavoidable circumstances, the event has been postponed until further notice.</p>
+              <p className="text-sm text-red-800 font-semibold">Due to unavoidable circumstances, the event has been postponed until further notice.</p>
             </ThreeDCard>
           </div>
 
@@ -1363,7 +1363,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 font-serif">Application & Submission</h3>
               <ul className="space-y-2 text-gray-800">
                 <li>• Applications must be submitted through the GUenARK Portal</li>
-                <li>• Due to unavoidable circumstances, the event has been postponed until further notice.</li>
+                <li>• <span className="text-red-800">Due to unavoidable circumstances, the event has been postponed until further notice.</span></li>
               </ul>
 
               <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Required Documents</h3>
