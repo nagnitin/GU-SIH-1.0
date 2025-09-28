@@ -312,7 +312,7 @@ function App() {
                   Date
                 </h3>
                 <p
-                  className="text-gray-700 font-medium text-base md:text-lg"
+                  className="text-red-800 font-medium text-base md:text-lg"
                   dangerouslySetInnerHTML={{
                     __html: "Due to unavoidable circumstances, the event has been postponed until further notice.",
                   }}
