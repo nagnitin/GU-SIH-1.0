@@ -9,26 +9,8 @@ const CountdownTimer: React.FC = () => {
   });
 
   useEffect(() => {
-    // Event postponed - no countdown needed
-    const targetDate = new Date('2025-12-31T23:59:59').getTime();
-
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000)
-        });
-      } else {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      }
-    }, 1000);
-
-    return () => clearInterval(timer);
+    // Event postponed - countdown stopped
+    setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   }, []);
 
   const timeUnits = [
@@ -60,7 +42,7 @@ const CountdownTimer: React.FC = () => {
           </div>
         ))}
       </div>
-      <p className="text-sm md:text-sm text-gray-900 mt-3 md:mt-4 font-serif px-2 font-semibold">
+      <p className="text-sm md:text-sm text-red-800 mt-3 md:mt-4 font-serif px-2 font-semibold">
         Due to unavoidable circumstances, the event has been postponed until further notice.
       </p>
     </div>
