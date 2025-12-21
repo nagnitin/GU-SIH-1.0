@@ -358,6 +358,14 @@ function App() {
               Download Brochure
             </a>
             <a
+              href="https://drive.google.com/file/d/1ZGSVDeqnsv6Pa12GThfpkvgzNfb--tU2/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-purple-600 to-purple-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
+            >
+              Rulebook
+            </a>
+            <a
               href="#themes"
               className="bg-transparent border-2 border-slate-300 text-slate-800 px-12 py-4 md:px-16 md:py-5 rounded-lg text-lg md:text-xl font-semibold hover:bg-slate-100 hover:text-slate-900 transition-all inline-block text-center"
             >
