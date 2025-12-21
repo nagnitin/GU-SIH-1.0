@@ -1,15 +1,15 @@
-# GUenARK 2025
+# GUenARK 2026
 
 ## Gauhati University Entrepreneurship and Nurturing, Advancement through Research and Knowledge
 
 A mega event building tomorrow at the crossroads of ideas, investment & governance.
 
 ### Event Details
-- **Date**: October 10-11, 2025
+- **Date**: 2nd & 3rd February, 2026
 - **Venue**: Gauhati University, Guwahati-781014, Assam, India
 - **Organized by**: Innovation, Incubation and Startup Cell, Gauhati University
 - **Email**: guenark@gauhati.ac.in
-- **Web**: www.gauhati.ac.in/guenark2025
+- **Web**: www.gauhati.ac.in/guenark2026
 
 ### Activities
 1. **HACKATHON** - 24-hour Technology Challenge for Sustainable Development

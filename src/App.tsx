@@ -272,7 +272,7 @@ function App() {
             <div className="mb-8 md:mb-12 flex justify-center">
               <img 
                 src={GUenArkLogo} 
-                alt="GUenARK 2025" 
+                alt="GUenARK 2026" 
                 className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto"
               />
             </div>
@@ -311,12 +311,9 @@ function App() {
                 <h3 className="text-gray-900 text-lg md:text-xl font-semibold mb-2">
                   Date
                 </h3>
-                <p
-                  className="text-red-800 font-medium text-base md:text-lg"
-                  dangerouslySetInnerHTML={{
-                    __html: "Due to unavoidable circumstances, the event has been postponed until further notice.",
-                  }}
-                ></p>
+                <p className="text-gray-700 font-medium text-base md:text-lg">
+                  2nd & 3rd February, 2026
+                </p>
             </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600/15 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -621,12 +618,12 @@ function App() {
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-8 text-blue-700 font-serif tracking-wide">
-            About GUenARK 2025
+            About GUenARK 2026
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-4 md:space-y-6">
               <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-medium">
-                GUenARK 2025 is a pioneering initiative to ignite innovation,
+                GUenARK 2026 is a pioneering initiative to ignite innovation,
                 foster entrepreneurship, and build a vibrant research-driven
                 ecosystem. The name ARK symbolizes a vessel of hope and a
                 repository of knowledge, reflecting GUenARK's mission to
@@ -661,7 +658,7 @@ function App() {
             <div className="relative">
               <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-xl border border-slate-200">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 font-serif tracking-wide text-gray-900">
-                  Why GUenARK 2025?
+                  Why GUenARK 2026?
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
@@ -1111,7 +1108,6 @@ function App() {
                   <span className="font-semibold">Submission must include: Team name, Authorization/Nomination letter scans, Team member details, Problem statement chosen, and a 10‑slide PDF (title, description, presentation)</span>
                 </li>
               </ul>
-              <p className="text-sm text-red-800 font-semibold">Due to unavoidable circumstances, the event has been postponed until further notice.</p>
             </ThreeDCard>
           </div>
 
@@ -1363,7 +1359,6 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 font-serif">Application & Submission</h3>
               <ul className="space-y-2 text-gray-800">
                 <li>• Applications must be submitted through the GUenARK Portal</li>
-                <li>• <span className="text-red-800">Due to unavoidable circumstances, the event has been postponed until further notice.</span></li>
               </ul>
 
               <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Required Documents</h3>
@@ -1380,7 +1375,7 @@ function App() {
             </ThreeDCard>
           </div>
           <div className="mt-8 bg-blue-50 rounded-2xl border border-blue-200 p-6">
-            <p className="text-gray-900 font-serif font-semibold mb-2">All the registration fees are refundable after successful participation in <span className="font-bold">GUenARK 2025</span>.</p>
+            <p className="text-gray-900 font-serif font-semibold mb-2">All the registration fees are refundable after successful participation in <span className="font-bold">GUenARK 2026</span>.</p>
             <p className="text-red-600 font-semibold">Note: The fee will not be refunded in case of withdrawal or absence after registration.</p>
           </div>
         </div>
@@ -1394,7 +1389,7 @@ function App() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ThreeDCard className="p-6" depth={30}>
-              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Registration – GUenARK 2025</h3>
+              <h3 className="text-2xl font-bold text-gray-900 font-serif mb-2">Registration – GUenARK 2026</h3>
               <p className="text-gray-700 font-semibold mb-4">Team registration</p>
               <a
                 href="https://forms.gle/5sAbicfHShUE6KyW9"
@@ -1560,7 +1555,7 @@ function App() {
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-200 shadow-lg">
             <p className="text-lg text-gray-900 mb-8 font-serif font-semibold">
               Ready to be part of the innovation ecosystem? Register for GUenARK
-              2025 and join the mega event building tomorrow at the crossroads
+              2026 and join the mega event building tomorrow at the crossroads
               of ideas, investment & governance.
             </p>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -1988,7 +1983,7 @@ function App() {
             </div>
             <div className="mt-8 text-center">
               <p className="text-lg text-gray-800 font-semibold mb-4">
-                Interested in sponsoring GUenARK 2025?
+                Interested in sponsoring GUenARK 2026?
               </p>
               <a
                 href="mailto:guenark@gauhati.ac.in"
@@ -2071,7 +2066,7 @@ function App() {
                 </a>
               </div>
               <p className="text-white text-sm">
-                © 2025-26 GUenARK 2025. All rights reserved
+                © 2025-26 GUenARK 2026. All rights reserved
               </p>
             </div>
 

@@ -9,8 +9,29 @@ const CountdownTimer: React.FC = () => {
   });
 
   useEffect(() => {
-    // Event postponed - countdown stopped
-    setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    // Event date: February 2, 2026, 00:00 IST
+    const eventDate = new Date('2026-02-02T00:00:00+05:30'); // IST is UTC+5:30
+    
+    const updateCountdown = () => {
+      const now = new Date();
+      const difference = eventDate.getTime() - now.getTime();
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const timeUnits = [
@@ -42,8 +63,8 @@ const CountdownTimer: React.FC = () => {
           </div>
         ))}
       </div>
-      <p className="text-sm md:text-sm text-red-800 mt-3 md:mt-4 font-serif px-2 font-semibold">
-        Due to unavoidable circumstances, the event has been postponed until further notice.
+      <p className="text-sm md:text-sm text-gray-700 mt-3 md:mt-4 font-serif px-2 font-semibold">
+        2nd & 3rd February, 2026 | Gauhati University, Guwahati
       </p>
     </div>
   );
