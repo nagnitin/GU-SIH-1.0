@@ -1371,7 +1371,7 @@ function App() {
               </ul>
 
               <h3 className="text-2xl font-bold text-gray-900 font-serif mt-6">Registration Fees</h3>
-              <p className="text-gray-800 font-semibold">₹3000/- per team <span className="font-normal">(Refundable after participation in the event)</span></p>
+              <p className="text-gray-800 font-semibold">₹1500/- exhibition stall fare <span className="font-normal">(Refundable after participation in the event)</span></p>
             </ThreeDCard>
           </div>
           <div className="mt-8 bg-blue-50 rounded-2xl border border-blue-200 p-6">
@@ -1622,7 +1622,7 @@ function App() {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Fees:</h4>
                     <p className="text-gray-700">
-                      ₹3000/- exhibition stall fare (refundable)
+                      ₹1500/- exhibition stall fare (refundable)
                     </p>
                   </div>
                 </div>
