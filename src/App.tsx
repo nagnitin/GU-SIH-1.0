@@ -358,7 +358,7 @@ function App() {
               Download Brochure
             </a>
             <a
-              href="https://drive.google.com/file/d/1ZGSVDeqnsv6Pa12GThfpkvgzNfb--tU2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XIBtobMwHHbvhGiurMdNU8-A1BZlre63/view"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-600 to-purple-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
