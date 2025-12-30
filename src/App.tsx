@@ -358,7 +358,8 @@ function App() {
               Download Brochure
             </a>
             <a
-              href="https://drive.google.com/file/d/1XIBtobMwHHbvhGiurMdNU8-A1BZlre63/view"
+              href="/RuleBook_GUenARK_2026.pdf"
+              download="RuleBook_GUenARK_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-600 to-purple-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
