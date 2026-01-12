@@ -35,6 +35,28 @@ import LazyComponent from "./components/LazyComponent";
 
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  
+  const videos = [
+    {
+      id: 1,
+      title: "GUenARK SIH 1.0 | Innovation, Entrepreneurship & Startup Ecosystem at Gauhati University",
+      embedId: "-3Awsc7C0UY"
+    },
+    {
+      id: 2,
+      title: "GUenARK SIH 1.0 | Registration Process Explained (Step-by-Step Guide)",
+      embedId: "f6x-uY7UaFY"
+    }
+  ];
+
+  const nextVideo = () => {
+    setCurrentVideoIndex((prev) => (prev + 1) % videos.length);
+  };
+
+  const prevVideo = () => {
+    setCurrentVideoIndex((prev) => (prev - 1 + videos.length) % videos.length);
+  };
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   // Prevent background scroll and potential white flash when menu is open
@@ -402,41 +424,63 @@ function App() {
       </section>
 
       {/* Video Section */}
-      <section className="relative z-10 py-20 px-6 bg-transparent">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12">
-            {/* Main Video */}
-            <div className="w-full">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 font-serif text-center md:text-left">
-                GUenARK SIH 1.0 | Innovation, Entrepreneurship & Startup Ecosystem at Gauhati University
-              </h3>
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
-                  src="https://www.youtube.com/embed/-3Awsc7C0UY"
-                  title="GUenARK SIH 1.0 | Innovation, Entrepreneurship & Startup Ecosystem at Gauhati University"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+      <section className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-transparent">
+        <div className="w-full mx-auto">
+          {/* Large Title */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12 text-red-600 font-serif tracking-tight">
+            {videos[currentVideoIndex].title}
+          </h2>
+          
+          {/* Video Carousel Container */}
+          <div className="relative w-full max-w-7xl mx-auto">
+            {/* Video Player */}
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                key={currentVideoIndex}
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
+                src={`https://www.youtube.com/embed/${videos[currentVideoIndex].embedId}`}
+                title={videos[currentVideoIndex].title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
             
-            {/* Sliding/Secondary Video */}
-            <div className="w-full">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 font-serif text-center md:text-left">
-                GUenARK SIH 1.0 | Registration Process Explained (Step-by-Step Guide)
-              </h3>
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
-                  src="https://www.youtube.com/embed/f6x-uY7UaFY"
-                  title="GUenARK SIH 1.0 | Registration Process Explained (Step-by-Step Guide)"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevVideo}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 md:p-4 shadow-2xl transition-all duration-300 hover:scale-110 z-10"
+              aria-label="Previous video"
+            >
+              <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            
+            <button
+              onClick={nextVideo}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 md:p-4 shadow-2xl transition-all duration-300 hover:scale-110 z-10"
+              aria-label="Next video"
+            >
+              <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            
+            {/* Video Indicators */}
+            <div className="flex justify-center gap-2 mt-4">
+              {videos.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentVideoIndex(index)}
+                  className={`h-2 md:h-3 rounded-full transition-all duration-300 ${
+                    index === currentVideoIndex 
+                      ? 'bg-red-600 w-8 md:w-12' 
+                      : 'bg-gray-300 w-2 md:w-3 hover:bg-gray-400'
+                  }`}
+                  aria-label={`Go to video ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
