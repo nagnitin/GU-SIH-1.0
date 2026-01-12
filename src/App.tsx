@@ -427,7 +427,7 @@ function App() {
       <section className="relative z-10 py-12 md:py-20 px-4 md:px-6 bg-transparent">
         <div className="w-full mx-auto">
           {/* Large Title */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12 text-red-600 font-serif tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-blue-700 font-serif tracking-wide">
             {videos[currentVideoIndex].title}
           </h2>
           
