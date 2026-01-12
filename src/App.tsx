@@ -401,6 +401,47 @@ function App() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="relative z-10 py-20 px-6 bg-transparent">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-blue-700 font-serif tracking-wide">
+            GUenARK SIH 1.0 | Innovation, Entrepreneurship & Startup Ecosystem at Gauhati University
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12">
+            {/* Main Video */}
+            <div className="w-full">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
+                  src="https://www.youtube.com/embed/-3Awsc7C0UY"
+                  title="GUenARK SIH 1.0 | Innovation, Entrepreneurship & Startup Ecosystem at Gauhati University"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            
+            {/* Sliding/Secondary Video */}
+            <div className="w-full">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 font-serif text-center md:text-left">
+                GUenARK SIH 1.0 | Registration Process Explained (Step-by-Step Guide)
+              </h3>
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-2xl"
+                  src="https://www.youtube.com/embed/f6x-uY7UaFY"
+                  title="GUenARK SIH 1.0 | Registration Process Explained (Step-by-Step Guide)"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* IIS Cell Team Section */}
       <section className="relative z-10 py-20 px-6 bg-transparent">
         <div className="max-w-6xl mx-auto">
