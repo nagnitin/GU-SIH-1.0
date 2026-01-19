@@ -396,6 +396,21 @@ function App() {
             </a>
           </div>
 
+          {/* Deadline Extension Notice */}
+          <div className="max-w-4xl mx-auto mb-8 md:mb-12">
+            <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-6 md:p-8 shadow-2xl border-2 border-orange-600">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <svg className="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 className="text-xl md:text-2xl font-bold text-white font-serif">Deadline Extended!</h3>
+              </div>
+              <p className="text-white text-center text-base md:text-lg font-semibold">
+                The deadline for submitting forms for <span className="font-bold">Hackathon, Ideathon, and Startup Exhibition</span> has been extended till <span className="font-bold text-yellow-200">24th January, 2026</span>
+              </p>
+            </div>
+          </div>
+
           {/* Countdown Timer */}
           <div className="max-w-2xl mx-auto mb-8 md:mb-12">
             <CountdownTimer />
@@ -1188,6 +1203,11 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4 font-serif">
                 Idea Submission Guidelines
               </h3>
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-4 rounded">
+                <p className="text-orange-800 font-bold text-sm md:text-base">
+                  ⏰ Deadline Extended: Submission deadline for Hackathon & Ideathon has been extended till <span className="underline">24th January, 2026</span>
+                </p>
+              </div>
               <ul className="space-y-4 text-gray-800">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3"></div>
@@ -1451,6 +1471,11 @@ function App() {
 
             <ThreeDCard className="space-y-6" depth={30}>
               <h3 className="text-2xl font-bold text-gray-900 font-serif">Application & Submission</h3>
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-4 rounded">
+                <p className="text-orange-800 font-bold text-sm md:text-base">
+                  ⏰ Deadline Extended: Application deadline for Startup Exhibition has been extended till <span className="underline">24th January, 2026</span>
+                </p>
+              </div>
               <ul className="space-y-2 text-gray-800">
                 <li>• Applications must be submitted through the GUenARK Portal</li>
               </ul>
@@ -1751,7 +1776,7 @@ function App() {
                 Register Now
               </a>
               <p className="text-sm text-gray-900 font-serif font-semibold">
-                Registration deadline: Coming Soon
+                Registration deadline: <span className="text-orange-600 font-bold">Extended till 24th January, 2026</span>
               </p>
             </div>
           </div>
