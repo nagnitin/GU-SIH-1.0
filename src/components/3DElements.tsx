@@ -83,9 +83,10 @@ const ThreeDElement: React.FC<ThreeDElementProps> = ({
 
 // 3D Card Component
 export const ThreeDCard: React.FC<ThreeDElementProps> = ({ children, className = '', depth = 30 }) => {
+  const hasFullHeight = className.includes('h-full');
   return (
     <ThreeDElement className={`${className} transition-all duration-300`} depth={depth}>
-      <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/30 backdrop-blur-sm border border-blue-400/30 rounded-2xl p-6 shadow-2xl">
+      <div className={`bg-gradient-to-br from-blue-500/20 to-blue-600/30 backdrop-blur-sm border border-blue-400/30 rounded-2xl p-6 shadow-2xl ${hasFullHeight ? 'h-full flex flex-col' : ''}`}>
         {children}
       </div>
     </ThreeDElement>
