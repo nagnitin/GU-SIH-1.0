@@ -2115,6 +2115,26 @@ function App() {
         </div>
       </section>
 
+      {/* Platinum Sponsors Section */}
+      <section className="relative z-10 py-12 md:py-16 px-6 bg-transparent">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 md:p-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-blue-700 font-serif tracking-wide uppercase">
+              Platinum Sponsors
+            </h2>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <div className="flex items-center justify-center">
+                <img 
+                  src="/adani.jpeg" 
+                  alt="Adani Power" 
+                  className="h-16 md:h-20 lg:h-24 w-auto object-contain filter drop-shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
