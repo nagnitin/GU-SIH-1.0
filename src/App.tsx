@@ -373,8 +373,8 @@ function App() {
               Register Now
             </a>
             <a
-              href="/GUenARK_2025.pdf"
-              download="GUenARK_2025_Brochure.pdf"
+              href="/GUenARK_2027_Brochure.pdf"
+              download="GUenARK_2027_Brochure.pdf"
               className="bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block text-white"
             >
               Download Brochure
