@@ -523,10 +523,7 @@ function App() {
                   About Us
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  The Innovation, Incubation & Start-Up (IIS) Cell at Gauhati
-                  University is dedicated to converting research and ideas into
-                  sustainable ventures. We conduct hackathons, workshops, and
-                  incubation cohorts to foster innovation and entrepreneurship.
+                  The Innovation, Incubation & Start-Up (IIS) Cell at Gauhati University converts research, traditional knowledge, and student ideas into sustainable ventures. Blending tech innovation, social entrepreneurship, and rural enterprise, it provides mentorship, training, seed support, workspace, and industry links. Focusing on contemporary challenges, the Cell runs hackathons, workshops, and incubation cohorts to help founders prototype, validate, and scale impact ventures—bridging campus and community for regional development.
                 </p>
               </div>
               <div>
@@ -534,10 +531,7 @@ function App() {
                   Vision
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  Gauhati University aims to be a catalyst for inclusive,
-                  sustainable innovation across Assam and Northeast India,
-                  driving regional development through technology and
-                  entrepreneurship.
+                  To position Gauhati University as the catalyst for inclusive, sustainable innovation across Assam and Northeast India—where cutting-edge research, traditional knowledge, and community entrepreneurship unite to generate scalable green solutions and shared prosperity.
                 </p>
               </div>
               <div>
@@ -545,9 +539,7 @@ function App() {
                   Mission
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  To empower students, faculty, and local entrepreneurs through
-                  mentorship, incubation, seed support, and industry linkages,
-                  creating a vibrant innovation ecosystem.
+                  To empower students, faculty and local entrepreneurs by providing mentorship, incubation infrastructure, seed support and industry linkages to translate research and traditional knowledge into sustainable, scalable ventures that address Assam and Northeast India's social, economic and environmental challenges.
                 </p>
               </div>
             </div>
@@ -1967,10 +1959,10 @@ function App() {
                   </div>
                   <div className="text-center">
                     <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
-                      Prof. Pradeep Kr. Jain
+                      Prof. Prasanta Sharma
                     </p>
                     <p className="text-gray-700 text-sm">
-                      Dean, Faculty of Comm. & Mngt., GU
+                      Dean Faculty of Comm. & Mngt., GU
                     </p>
                   </div>
                   <div className="text-center">
