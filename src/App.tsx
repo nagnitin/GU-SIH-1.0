@@ -47,6 +47,11 @@ function App() {
       id: 2,
       title: "GUenARK SIH 1.0 | Registration Process Explained (Step-by-Step Guide)",
       embedId: "f6x-uY7UaFY"
+    },
+    {
+      id: 3,
+      title: "GUenARK SIH 1.0",
+      embedId: "xXLx5aU9MDU"
     }
   ];
 
