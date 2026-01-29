@@ -52,6 +52,11 @@ function App() {
       id: 3,
       title: "GUenARK SIH 1.0",
       embedId: "xXLx5aU9MDU"
+    },
+    {
+      id: 4,
+      title: "GUenARK 2026",
+      embedId: "hPeZEjyyk8M"
     }
   ];
 
