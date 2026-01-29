@@ -1988,17 +1988,20 @@ function App() {
                 </h4>
                 <div className="text-center">
                   <p className="text-lg font-bold text-gray-800 mb-1 font-serif">
-                    Neha K Mehra
+                    Mr. Nava Baro
                   </p>
                   <div className="space-y-1">
                     <p className="text-gray-700 text-sm">
-                      Promoter, York Print
+                      Co-Founder, Northeast Angels Network
                     </p>
                     <p className="text-gray-700 text-sm">
-                      Board Member, FIEO
+                      Founder, Northeast India Public Policy Forum
                     </p>
                     <p className="text-gray-700 text-sm">
-                      Secretary, Laghu Udyog Bharti NE Women's Wing
+                      Mentor, IIT Guwahati Technology Incubation Centre
+                    </p>
+                    <p className="text-gray-700 text-sm">
+                      Partner, CoCreate Ventures
                     </p>
                   </div>
                 </div>
